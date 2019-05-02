@@ -1,0 +1,132 @@
+\chapter{CERN research for exotic particles through LHC collider}
+
+Searching for exotic particles never observed before implies a need for an enormous amount of energy in the processes involved in their creation. In fact, if we want to study something never obseved before at the scales of energy normally reached, it is highly unlikely we will find something new and interesting. This is the reason for which the Large Hadron Collider, namely LHC, was designed and built.
+
+LHC is actually the world's largest and most powerful particle accelerator. Its project was conceived in 1976 when the European particle physics community began to discuss building a Large Electron Positron (LEP) collider at CERN, and it was realized between 1998 and 2008. It required a collaboration of over 10000 scientists and hundreds of universities and laboratories, as well as more than 100 countries. It first started up on 10 September 2008, and remains the latest addition to CERN’s accelerator complex.
+
+
+
+\section{An insight into LHC structure}
+% https://home.cern/science/accelerators/large-hadron-collider
+% https://home.cern/science/experiments/how-detector-works
+The LHC consists of a ring 27-kilometers long of superconducting magnets with a number of accelerating structures to boost the energy of the particles along the way. Inside the accelerator, two high-energy particle beams travel at relativistic speed, close to the speed of light $c$. Before they are made to collide, they both are accelerated to a energy of the order of TeV. The two beams travel in opposite directions in separate beam pipes, which are fundamentally two tubes kept at ultrahigh vacuum. They are guided around the accelerator ring by a strong magnetic field mainteined by superconducting electromagnets, built from coils of special electric cable that operates in a superconductive state. It is of primary importance to conduct electricity with the lowest resistence, therefore loss of energy, possibile. Such technique requires cooling the magnets to a temperature close to $0~\si{K}$, which is even colder than the outer space. In order to get those temperatures, much of the accelerator is connected to a distribution system of liquid helium and the cooling phase takes a long time.
+
+Thousands of magnets of different varieties and sizes are exploited to direct the beams around the accelerator. In total, there are:
+\begin{itemize}
+	\item 1232 dipole magnets whose length is 15 metres and their purpose is bending the beams.
+	\item 392 quadrupole magnets, each 5-7 metres long, which focus the beams, thanks to their properties of magnetic lens.
+\end{itemize}
+Just prior to collision, another type of magnet is used to "squeeze" the particles closer together to increase the chances of collisions. In fact, the particles can be imagined as very tiny objects, so it is clear that the task of making them collide must be thought with such precision.
+
+The beams inside LHC are made to collide at four locations around the accelerator ring, corrisponding to the positions of four particle detectors: CMS, ATLAS, ALICE and LHCb. All the controls for the accelerator, its services and technical infrastructure are housed at the CERN Control Centre.
+
+
+
+
+
+\section{CMS experiment}
+% https://home.cern/science/experiments/cms
+% https://cms.cern/detector
+The acronym CMS means Compact Muon Solenoid and it is a general-purpose detector amongst one of the four mentioned before. It has a broad physics programme ranging from studying the Standard Model, namely SM, to searching for extra dimensions and particles that could make up dark matter, whose existence belongs to physics beyond the SM. CMS also stands for one of the largest international scientific collaborations in history, involving 4300 particle physicists, engineers, technicians, students and support staff from 182 institutes in 42 countries (by February 2014).
+
+It is built around a huge solenoid magnet. This takes the form of a cylindrical coil of superconducting cable that generates a field of 4 Tesla. The importance of this value can be better understood thinking that it is 100000 times the magnetic field of Earth. The field is confined by a steel "yoke" that forms the bulk of the detector, whose weight is about 14000 tons. It was built in 15 sections, which were reassembled in situ. The detector gets its name from the fact that:
+\begin{itemize}
+	\item It is 15 metres high and 21 metres long, so it is quite compact for all the detector material it contains.
+	\item It is designed to detect particles known as muons (and indicated with $\mu$) very accurately.
+	\item It has the most powerful solenoid magnet ever made.
+\end{itemize}
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=1.0\textwidth]{Images/LHC/cms.png}
+		\caption{CMS detector section.}
+		\label{fig:CMS_SECTION}
+	\end{center}
+\end{figure}
+
+The detector is shaped like a cylindrical onion, with several concentric layers of components. These components help prepare "photographs" of each collision event by determining the properties of the particles produced in that particular collision. This is done by:
+\begin{itemize}
+	\item \textbf{Bending particles:}\\
+	A powerful magnet is needed to bend charged particles as they fly outwards from the collision point. This process is done in order to identify the charge and to measure the momentum of the particle. In fact, positive and negative charged particles bend in opposite directions in the same magnetic field and, in particular, high momentum particles bend less compared with low-momentum ones.
+	
+	The solenoid magnet is formed by a cylindrical coil of superconductiong fibres. A current up to $18500~\si{A}$ flows within these coils and it encounters no resistence for the phenomenon of superconductivity. The magnetic field of $4~\si{T}$ must be confined to the volume of the detector and is done by the steel "yoke" that forms the bulk of the detector's mass.
+	
+	\item \textbf{Identifying tracks:}\\
+	It is fundamental to identify the paths taken by the bent charged particles and it must be done with extreme precision. This is done by a silicon tracker made of around 75 million individual electronic sensors arranged in concentric layers. A charged particle that passes through these layers interacts electromagnetically with the silicon and produces a signal. The information carried by individual signals can be joined together in order to identify the track of the traversing particle.
+	
+	\item \textbf{Measuring energy:}\\
+	The energy of the various particles produced in each collision is a crucial information in the understanding of what happened in the collision process. This information is collected by calorimeters, which are particle detectors made to measure the energy. Inside CMS there are two kind of these. The Electromagnetic Calorimeter (ECAL) is the inner layer of the two and measures the energy of electrons and photons by stopping them completely. The other particles, i.e. hadrons, fly through the ECAL and are stopped in the outer layer by the Hadron Calorimeter (HCAL).
+	
+	\item \textbf{Detecting muons:}\\
+	The final particles that CMS observe directly are the muons. They are not stopped by any calorimeter, so there are other special detectors interleaved with the return yoke of the solenoid. It is possible to measure each muon's momentum both inside the superconducting coil (by the tracking devices) and outside of it (by the muon chambers).
+\end{itemize}
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=1.0\textwidth]{Images/LHC/cms_transverse_section.png}
+		\caption{CMS detector transverse section.}
+		\label{fig:CMS_TRANSVERSE_SECTION}
+	\end{center}
+\end{figure}
+
+Thanks to the ensemble of all these components, it is possible to detect the energies of the products of the collision, except the energies carried by neutrinos $\nu$. In fact, these are elementary particles that can't be detected by this kind of detectors. Each layer of the composition gives an information about the processes happened after the collision. By putting together all of those informations, the intermediate states of the processes could be studied as well as the laws that regulate the whole process.
+
+As stated before, every layer can give informations about an intermediate state. So the particles observed are not the initial products of the process, but they are the traces of pre-existing unstable particles that decays in other products before the detector could observe them. The intermediate unstable states are called resonances and to better understand them it is appropriate to describe the classical definition.
+
+
+
+
+
+\section{From data to discoveries: resonance formation study}
+Resonant phenomena are ubiquitous in physics at both the macroscopic and microscopic levels. Resonances have an extremely important role in hadron spectroscopy.
+
+In Classical Physics, a resonance is a phenomenon that occurs when the frequency at which a periodical force is applied is equal or nearly equal to one of the natural frequencies of the system on which it acts. The visible effect of the resonance is that the system oscillates to a larger amplitude respect to the one when a force is applied with a different frequency.
+
+Let's analyze this phenomenon in the case of an oscillating system with an external force that drives the oscillation. The second order differential equation that describes the system is the following one:
+\begin{equation}
+	\devN{x}{\theta}{2} + 2 \gamma \omega_{0} \dev{x}{\theta} + \omega_{0}^2 x = \frac{F_0}{m} \sin{\Omega t} = \Gamma \sin{\Omega t}
+\end{equation}
+where $F_{0}$ is the amplitude of the driving force, $\Omega$ is its angular frequency, $\omega_{0}$ is the undamped angular frequency and $\gamma$ is the damping ratio. The general solution of this ODE is a combination of sinusoidal function exponentially damped and another sinusoidal function that describes a stationary state:
+\begin{equation}
+	x(t) = A e^{-\gamma \omega_{0}} \sin{(2\gamma \omega_{0} + \phi)} + B \sin{(\Omega t - \delta)}
+\end{equation}
+where:
+\begin{align}
+	B &= \frac{\Gamma}{\sqrt{(\omega_{0}^2 - \Omega^2)^2 + 4 \gamma^2 \omega_{0}^2 \Omega^2}}	\\
+	\delta &= \arctan{\left( \frac{2 \gamma \omega_{0} \Omega}{\omega_{0}^2 - \Omega^2} \right)}
+\end{align}
+
+The relation for the amplitude of the solution in the stationary state shows there is a maximum value for $B$, which is reached for a particular value of the angular frequency of the drive. It means that the system becomes resonant for a certain value of $\Omega$ and the transfert of energy from the drive to the system is maximized. The plots for different values of the parameters $\omega_{0}$ and $\gamma$ are presented below along with the corresponding plot for the phase shift $\delta$.
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=0.8\textwidth]{Python/LHC/resonance.pdf}
+		\caption{Resonance plot.}
+		\label{fig:RESONANCE_PLOT}
+	\end{center}
+\end{figure}
+
+In subnuclear physics, the extremely unstable hadrons can be observed as 'resonances' in two different ways. The first approach is searching for very unstable particles by measuring as a function of energy the cross-section of processes of the following type:
+\begin{equation}
+	a + b \rightarrow c + d + \dots
+\end{equation}
+In a quantum scattering process the relevant functions of energy are the scattering amplitude and the cross section, which is the measured observable. Near a resonance, the distribution of $\sigma$ will remark the shape of the resonant peak in Figure \ref{fig:RESONANCE_PLOT}.
+
+The second approach, corresponding to a specific class of experiments, is based on resonance production. To better explain the method, let's suppose we are studying the following process:
+\begin{equation}
+	a + b \rightarrow c + d + e
+\end{equation}
+where we are searching for a particle decaying into the stable or metastable particles $c$, $d$. In this example, this particle will called $r$, which obviously stands for resonance. If $r$ exists, the decay process could develop into more channels:
+\begin{equation}
+	a + b \rightarrow r + e \rightarrow c + d + e
+\end{equation}
+In these cases, the mass of $c+d$, called $M_{cd}$, is expected to be equal to the mass of $r$, called $M_{r}$, and it follows a Breit-Wigner distribution peaked at $M_{r}$ and with width $\Gamma$. If the decay goes directly in the final state (this is the non-resonant process), $M_{cd}$ can have any value in the range imposed by physical constraints of energy and momentum conservation, as it is a three-body decay process, and there is no peak in the distribution. Now, we have to measure the energies and the moment for each event by computing:
+\begin{equation}
+	M_{cd} = \sqrt{(\mathcal{E}_{c} + \mathcal{E}_{d})^2 - (\vec{p}_{c} + \vec{p}_{d})^2}
+\end{equation}
+The resonance appears as a peak on a smooth background in the $M_{cd}$ distribution.
+
+
+\begin{comment}
+All the particles interact with some of the existing forces, so there exist potentials of a certain type between them, forming bound states if the energetics of the interaction are appropriate. A resonance describes a stete in these potentials that is unstable, i.e. it decays in a certain time within our observational horizon. For low, non-relativistic energies a resonance is a temporary excitation seen in scattering experiments, for example. In relativistic particle physics, particles and states are just two different languages for the same reality and so resonance could be understood as the excited level or bound state of two colliding particles.
+\end{comment}

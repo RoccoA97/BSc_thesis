@@ -1,0 +1,18 @@
+\begin{thebibliography}{1}
+
+\bibitem{Madgraph}
+???
+\newblock \textsc{MadGraph5}.
+
+\bibitem{Goodfellow-et-al-2016}
+Ian Goodfellow, Yoshua Bengio, and Aaron Courville.
+\newblock {\em Deep Learning}.
+\newblock MIT Press, 2016.
+\newblock \url{http://www.deeplearningbook.org}.
+
+\bibitem{Geron}
+Aurélien Géron.
+\newblock {\em Hands-On Machine Learning with Scikit-Learn \& TensorFlow}.
+\newblock Cambridge, 2017.
+
+\end{thebibliography}

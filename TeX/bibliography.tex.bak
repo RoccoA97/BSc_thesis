@@ -1,0 +1,64 @@
+\begin{thebibliography}{99}
+\bibitem{python}
+\textsc{Python 3} Documentation
+\\\url{https://docs.python.org/3/}
+
+\bibitem{keras} 
+\textsc{Keras} Documentation 
+\\\url{https://keras.io/}
+ 
+\bibitem{tensorflow} 
+\textsc{TensorFlow} Documentation 
+\\\url{https://www.tensorflow.org/guide}
+
+\bibitem{cvmfs}
+Cern Virtual Machine File System (CernVM-FS)
+\\\url{https://cernvm.cern.ch/portal/filesystem}
+
+\bibitem{lsf}
+IBM Spectrum LSF V10.1 documentation
+\\\url{https://www.ibm.com/support/knowledgecenter/en/SSWRJV_10.1.0/lsf_welcome/lsf_welcome.html}
+
+\bibitem{madgraph}
+\textsc{MadGraph5}
+\\\url{https://cp3.irmp.ucl.ac.be/projects/madgraph/}
+ 
+\bibitem{deeplearningbook} 
+\textit{Deep Learning}
+\\Ian Goodfellow and Yoshua Bengio and Aaron Courville, 2016, MIT Press
+\\\url{http://www.deeplearningbook.org}
+
+\bibitem{oreilly}
+\textit{Hands-On Machine Learning with Scikit-Learn \& TensorFlow}
+\\Aurélien Géron, 2017, Cambridge University Press.
+
+\bibitem{cern}
+Large Hadron Collider (LHC)
+\\\url{https://home.cern/science/accelerators/large-hadron-collider}
+
+\bibitem{cms}
+CMS experiment at \textsc{cern}: detector description
+\\\url{https://cms.cern/detector}
+
+\bibitem{bettini}
+\textit{Introduction to Elementary Particle Physics}, 2nd edition
+\\Alessandro Bettini, 2014, Cambridge University Press
+
+\bibitem{zboson}
+Decay of $Z$ bosons
+\\\url{https://atlas.physicsmasterclasses.org/en/zpath_lhcphysics2.htm}
+
+\bibitem{look-elsewhere}
+\textit{Should you get excited by your data? Let the Look-Elsewhere Effect decide}
+\\\url{http://cms.web.cern.ch/news/should-you-get-excited-your-data-let-look-elsewhere-effect-decide}
+
+\bibitem{wulzer}
+\textit{Learning New Physics from a Machine}
+\\Raffaele Tito D'Agnolo, Andrea Wulzer, June 8, 2018
+\\\url{https://arxiv.org/abs/1806.02350}
+
+\bibitem{baldi}
+\textit{Searching for exotic particles in high-energy physics with deep learning}
+\\P. Baldi, P. Sadowski \& D. Whiteson, July 2, 2014
+\\\url{https://arxiv.org/abs/1402.4735}
+\end{thebibliography}

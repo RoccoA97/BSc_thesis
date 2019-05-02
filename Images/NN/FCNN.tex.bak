@@ -1,0 +1,40 @@
+% Fully Connected Neural Network
+\begin{tikzpicture}[shorten >=1pt,->,draw=black!50, node distance=\layersep, scale=0.5]
+    \tikzstyle{every pin edge}=[<-,shorten <=1pt]
+    \tikzstyle{neuron}=[circle,fill=black!25,minimum size=10pt,inner sep=0pt]
+    \tikzstyle{input neuron}=[neuron, fill=green!50];
+    \tikzstyle{output neuron}=[neuron, fill=red!50];
+    \tikzstyle{hidden neuron}=[neuron, fill=blue!50];
+    \tikzstyle{annot} = [text width=4em, text centered]
+
+    % Draw the input layer nodes
+    \foreach \name / \y in {1,...,4}
+    % This is the same as writing \foreach \name / \y in {1/1,2/2,3/3,4/4}
+        \node[input neuron, draw=black!100, thick, pin=left:{\scriptsize In{[}\#\y{]}}] (I-\name) at (-\layersep,-1.5-1*\y) {};
+
+    % Draw the hidden layer nodes
+    \foreach \name / \y in {1,...,8}
+        \path[yshift=0.5cm]
+            node[hidden neuron,draw=black!100,thick] (H-\name) at (\layersep,-\y cm) {};
+
+    % Draw the output layer node
+    \node[output neuron,draw=black!100,thick,pin={[pin edge={->}]right:{\scriptsize Out{[}\#1{]}}}, right of=H-4] (O1) {};
+    \node[output neuron,draw=black!100,thick,pin={[pin edge={->}]right:{\scriptsize Out{[}\#2{]}}}, right of=H-5] (O2) {};
+
+    % Connect every node in the input layer with every node in the
+    % hidden layer.
+    \foreach \source in {1,...,4}
+        \foreach \dest in {1,...,8}
+            \path (I-\source) edge (H-\dest);
+
+    % Connect every node in the hidden layer with the output layer
+    \foreach \source in {1,...,8}
+        \path (H-\source) edge (O1);
+    \foreach \source in {1,...,8}
+        \path (H-\source) edge (O2);
+
+    % Annotate the layers
+    \node[annot,above of=H-1, node distance=1.0cm] (hl) {Hidden layer};
+    \node[annot,left of=hl] {Input layer};
+    \node[annot,right of=hl] {Output layer};
+\end{tikzpicture}

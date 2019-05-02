@@ -1,0 +1,5 @@
+Eseguire
+
+sh update.sh
+
+per mettere su git

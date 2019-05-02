@@ -1,0 +1,52 @@
+% Algorithms
+\usepackage{algpseudocode}
+\usepackage{algorithm}
+
+% Babel
+\usepackage[english]{babel}
+
+% Code writing
+\usepackage[procnames]{listings}
+
+% Font
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amssymb,amsmath,amsthm,amsfonts}
+\usepackage{eucal}
+\usepackage{textcomp}
+
+% Hyperref
+\usepackage[hyphens]{url}
+\usepackage{cite}
+\usepackage{hyperref}
+
+% Images
+\usepackage[pdftex]{graphicx}
+\usepackage{subfigure}
+\usepackage{eso-pic}
+\usepackage[small]{caption}
+\usepackage{wrapfig}
+
+% SI units
+\usepackage{siunitx}
+
+%Tables
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{multirow}
+
+% TiKz and graphs
+\usepackage{pgf,tikz,pgfplots}
+\usepackage{gnuplottex}
+
+% Typeset
+\usepackage[top=2cm,bottom=2cm,left=2cm,right=2cm]{geometry}
+\usepackage{fancyhdr}
+\usepackage{indentfirst}
+\usepackage{titlesec}
+\usepackage{setspace}
+\usepackage{xspace}
+% \usepackage{parskip}  % Elimina il separatore a inizio paragrafo
+\usepackage{listings}
+\usepackage{afterpage}
+\usepackage{comment}

@@ -1,0 +1,63 @@
+\thispagestyle{empty}
+\frontmatter
+\begin{titlepage}
+\vspace{5mm}
+\begin{figure}[hbtp]
+\centering
+\includegraphics[scale=.13]{Images/UNIPD.png}
+\end{figure}
+\vspace{5mm}
+\begin{center}
+{{\huge{\textsc{\bf UNIVERSIT\`A DEGLI STUDI DI PADOVA}}}\\}
+\vspace{5mm}
+{\Large{\bf Dipartimento di Fisica e Astronomia ``Galileo Galilei''}} \\
+\vspace{5mm}
+{\Large{\textsc{\bf Corso di Laurea in Fisica}}}\\
+\vspace{20mm}
+{\Large{\textsc{\bf Tesi di Laurea}}}\\
+\vspace{30mm}
+\begin{spacing}{3}
+{\LARGE \textbf{Development of a ML-based model-independent \\analysis strategy at the LHC}}\\
+\end{spacing}
+\vspace{8mm}
+\end{center}
+
+\vspace{15mm}
+\begin{spacing}{2}
+\begin{tabular}{ c  c  c c c  ccccccc c c c  c  c }
+{\Large{\bf Relatore}} &&&&&&&&&&&&&&&& {\Large{\bf Laureando}}\\
+{\Large{\bf Prof. Marco Zanetti}} &&&&&&&&&&&&&&&& {\Large{\bf Rocco Ardino}}\\
+% {\Large{\bf Correlatore}}\\
+% {\Large{\bf Prof./Dr. Nome Cognome}}\\
+\end{tabular}
+\end{spacing}
+\vspace{15 mm}
+
+\begin{center}
+{\Large{\bf Anno Accademico 2018/2019}}
+\end{center}
+\end{titlepage}
+
+
+
+
+
+
+\begin{center}
+{{\large{\bf Abstract}}}
+\end{center}
+%\vspace{10mm}
+
+\begin{center}
+Searching for New Physics is the primary goal of the CMS experiment at the LHC. Performing such search without relying on a
+specific theory extending the Standard Model (SM) is of paramount importance but at the same time highly non-trivial. Recently,
+several proposal have been made in that sense, in particular exploiting the power of modern ML techniques. The goal of this thesis is
+to apply such model-independent strategies to concrete physics cases, aiming at detecting signals solely by comparing the collision
+data with what predicted by the SM.
+\end{center}
+
+
+
+
+
+\clearpage{\pagestyle{empty}\cleardoublepage}

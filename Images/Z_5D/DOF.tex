@@ -1,0 +1,67 @@
+% DOF of Neural Network
+\begin{tikzpicture}[shorten >=1pt,->,draw=black!50, node distance=\layersep, scale=0.8]
+    \tikzstyle{every pin edge}=[<-,shorten <=1pt]
+    \tikzstyle{neuron}=[circle,fill=black!25,minimum size=15pt,inner sep=0pt]
+    \tikzstyle{input neuron}=[neuron, fill=green!50];
+    \tikzstyle{sigmoid}=[neuron, fill=cyan!50]
+    \tikzstyle{output neuron}=[neuron, fill=red!50];
+    \tikzstyle{hidden neuron}=[neuron, fill=blue!50];
+    \tikzstyle{annot} = [text width=5em, text centered]
+
+    % Draw the input layer nodes
+    \foreach \name / \y in {1,...,5}
+    % This is the same as writing \foreach \name / \y in {1/1,2/2,3/3,4/4}
+        \node[input neuron, draw=black!100, thick, pin=left:{\scriptsize In{[}\#\y{]}}] (I-\name) at (-3.0*\layersep,\y) {};
+
+    % Draw the input layer nodes
+    \foreach \name / \y in {1,...,5}
+    % This is the same as writing \foreach \name / \y in {1/1,2/2,3/3,4/4}
+        \node[sigmoid, draw=black!100, thick] (S1-\name) at (-1.0*\layersep,\y) {$\sigma$};
+
+    % Draw the hidden layer nodes
+    \foreach \name / \y in {1,...,5}
+        \node[hidden neuron, draw=black!100, thick] (H-\name) at (\layersep,\y) {};
+
+    % Draw the input layer nodes
+    \foreach \name / \y in {1,...,5}
+    % This is the same as writing \foreach \name / \y in {1/1,2/2,3/3,4/4}
+        \node[sigmoid, draw=black!100, thick] (S2-\name) at (3.0*\layersep,\y) {$\sigma$};
+
+    % Draw the output layer node
+    \node[output neuron, draw=black!100, thick, pin={[pin edge={->}]right:{\scriptsize Out{[}\#1{]}}}, right of=S2-3] (O1) {$\propto$};
+
+    % Connect every node in the input layer with every node in the
+    % hidden layer.
+    \foreach \source in {1,...,5}
+        \foreach \dest in {1,...,5}
+            \path (I-\source) edge (S1-\dest);
+
+    % Connect every node in the input layer with every node in the
+    % hidden layer.
+    \foreach \source in {1,...,5}
+    	\foreach \dest in {1,...,5}
+        	\path (S1-\source) edge (H-\dest);
+
+    % Connect every node in the input layer with every node in the
+    % hidden layer.
+    \foreach \source in {1,...,5}
+        \foreach \dest in {1,...,5}
+            \path (H-\source) edge (S2-\dest);
+
+    % Connect every node in the input layer with every node in the
+    % hidden layer.
+    \foreach \source in {1,...,5}
+        \path (S2-\source) edge (O1);
+
+    % Annotate the layers
+    \node[annot,above of=I-5, node distance=1.0cm] (ail) {Input layer};
+    \node[annot,above of=S1-5, node distance=1.0cm] (as1) {Sigmoid};
+    \node[annot,above of=H-5, node distance=1.0cm] (ahl) {Hidden layer};
+    \node[annot,above of=S2-5, node distance=1.0cm] (as2) {Sigmoid};
+    \node[annot,right of=as2] {Output layer};
+    
+    \node[annot,below of=S1-1, node distance=1.0cm] (bs1) {25 weights\\5 biases};
+    \node[annot,below of=H-1, node distance=1.0cm] (bhl) {25 weights\\5 biases};
+    \node[annot,below of=S2-1, node distance=1.0cm] (bs2) {25 weights\\5 biases};
+    \node[annot,right of=bs2] {5 weights\\1 bias};
+\end{tikzpicture}
