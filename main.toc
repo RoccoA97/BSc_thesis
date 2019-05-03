@@ -1,42 +1,43 @@
 \babel@toc {english}{}
-\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
-\contentsline {section}{\numberline {1.1}The progress of Particle Physics}{1}{section.1.1}
-\contentsline {subsection}{\numberline {1.1.1}The research for new physics}{1}{subsection.1.1.1}
-\contentsline {subsection}{\numberline {1.1.2}The need for a model-independent approach}{1}{subsection.1.1.2}
-\contentsline {section}{\numberline {1.2}Why do we choose Neural Networks?}{2}{section.1.2}
-\contentsline {chapter}{\numberline {2}Introduction to Neural Networks}{3}{chapter.2}
-\contentsline {section}{\numberline {2.1}Artificial Neural Networks}{3}{section.2.1}
-\contentsline {section}{\numberline {2.2}Choice of NN architecture and activation functions}{4}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Number of hidden layers}{4}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Number of neurons per hidden layer}{5}{subsection.2.2.2}
-\contentsline {subsection}{\numberline {2.2.3}Activation functions}{5}{subsection.2.2.3}
-\contentsline {section}{\numberline {2.3}Loss functions}{6}{section.2.3}
-\contentsline {section}{\numberline {2.4}Backpropagation algorithm}{7}{section.2.4}
-\contentsline {section}{\numberline {2.5}Updating free parameters: Optimizers}{8}{section.2.5}
-\contentsline {subsection}{\numberline {2.5.1}An example of algorithm with fixed learning rate}{9}{subsection.2.5.1}
-\contentsline {subsection}{\numberline {2.5.2}An example of algorithm with adaptive learning rates}{9}{subsection.2.5.2}
-\contentsline {section}{\numberline {2.6}Advanced tecniques}{9}{section.2.6}
-\contentsline {subsection}{\numberline {2.6.1}Regularizers}{9}{subsection.2.6.1}
-\contentsline {subsection}{\numberline {2.6.2}Dropout}{10}{subsection.2.6.2}
-\contentsline {subsection}{\numberline {2.6.3}Parameter initialization strategies}{10}{subsection.2.6.3}
-\contentsline {chapter}{\numberline {3}CERN research for exotic particles through LHC collider}{11}{chapter.3}
-\contentsline {section}{\numberline {3.1}An insight into LHC structure}{11}{section.3.1}
-\contentsline {section}{\numberline {3.2}CMS experiment}{12}{section.3.2}
-\contentsline {section}{\numberline {3.3}From data to discoveries: resonance formation study}{14}{section.3.3}
-\contentsline {chapter}{\numberline {4}$Z \rightarrow \mu ^{+}\mu ^{-}$ decaying process}{17}{chapter.4}
-\contentsline {section}{\numberline {4.1}The $Z^{0}$ boson}{17}{section.4.1}
-\contentsline {section}{\numberline {4.2}High Level Features for the analysis of the decay}{18}{section.4.2}
-\contentsline {section}{\numberline {4.3}The dataset analyzed}{18}{section.4.3}
-\contentsline {chapter}{\numberline {5}Development of the algorithm for NP research}{21}{chapter.5}
-\contentsline {section}{\numberline {5.1}Statistical foundations}{21}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Construction of a test statistic}{21}{subsection.5.1.1}
-\contentsline {subsection}{\numberline {5.1.2}Ideal test statistic}{22}{subsection.5.1.2}
-\contentsline {subsection}{\numberline {5.1.3}Adaptation of $t(\EuScript {D})$ as a loss function}{22}{subsection.5.1.3}
-\contentsline {section}{\numberline {5.2}The algorithm}{23}{section.5.2}
-\contentsline {section}{\numberline {5.3}Computing resources}{23}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}\textsc {TensorFlow} back-end and \textsc {Keras} API}{24}{subsection.5.3.1}
-\contentsline {subsection}{\numberline {5.3.2}LSF and clustering}{24}{subsection.5.3.2}
-\contentsline {section}{\numberline {5.4}Degrees of freedom of the network}{25}{section.5.4}
-\contentsline {section}{\numberline {5.5}The "look-elsewhere" effect}{26}{section.5.5}
-\contentsline {section}{\numberline {5.6}Weight clipping}{26}{section.5.6}
-\contentsline {chapter}{\numberline {6}Tuning of weight clipping parameter}{29}{chapter.6}
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}% 
+\contentsline {section}{\numberline {1.1}The progress of Particle Physics}{1}{section.1.1}% 
+\contentsline {subsection}{\numberline {1.1.1}The research for new physics}{1}{subsection.1.1.1}% 
+\contentsline {subsection}{\numberline {1.1.2}The need for a model-independent approach}{1}{subsection.1.1.2}% 
+\contentsline {section}{\numberline {1.2}Why do we choose Neural Networks?}{2}{section.1.2}% 
+\contentsline {chapter}{\numberline {2}Introduction to Neural Networks}{3}{chapter.2}% 
+\contentsline {section}{\numberline {2.1}Artificial Neural Networks}{3}{section.2.1}% 
+\contentsline {section}{\numberline {2.2}Choice of NN architecture and activation functions}{4}{section.2.2}% 
+\contentsline {subsection}{\numberline {2.2.1}Number of hidden layers}{4}{subsection.2.2.1}% 
+\contentsline {subsection}{\numberline {2.2.2}Number of neurons per hidden layer}{5}{subsection.2.2.2}% 
+\contentsline {subsection}{\numberline {2.2.3}Activation functions}{5}{subsection.2.2.3}% 
+\contentsline {section}{\numberline {2.3}Loss functions}{6}{section.2.3}% 
+\contentsline {section}{\numberline {2.4}Backpropagation algorithm}{7}{section.2.4}% 
+\contentsline {section}{\numberline {2.5}Updating free parameters: Optimizers}{8}{section.2.5}% 
+\contentsline {subsection}{\numberline {2.5.1}An example of algorithm with fixed learning rate}{9}{subsection.2.5.1}% 
+\contentsline {subsection}{\numberline {2.5.2}An example of algorithm with adaptive learning rates}{9}{subsection.2.5.2}% 
+\contentsline {section}{\numberline {2.6}Advanced tecniques}{9}{section.2.6}% 
+\contentsline {subsection}{\numberline {2.6.1}Regularizers}{9}{subsection.2.6.1}% 
+\contentsline {subsection}{\numberline {2.6.2}Dropout}{10}{subsection.2.6.2}% 
+\contentsline {subsection}{\numberline {2.6.3}Parameter initialization strategies}{10}{subsection.2.6.3}% 
+\contentsline {chapter}{\numberline {3}CERN research for exotic particles through LHC collider}{11}{chapter.3}% 
+\contentsline {section}{\numberline {3.1}An insight into LHC structure}{11}{section.3.1}% 
+\contentsline {section}{\numberline {3.2}CMS experiment}{12}{section.3.2}% 
+\contentsline {section}{\numberline {3.3}From data to discoveries: resonance formation study}{14}{section.3.3}% 
+\contentsline {chapter}{\numberline {4}$Z \rightarrow \mu ^{+}\mu ^{-}$ decaying process}{17}{chapter.4}% 
+\contentsline {section}{\numberline {4.1}The $Z^{0}$ boson}{17}{section.4.1}% 
+\contentsline {section}{\numberline {4.2}High Level Features for the analysis of the decay}{18}{section.4.2}% 
+\contentsline {section}{\numberline {4.3}The dataset analyzed}{18}{section.4.3}% 
+\contentsline {chapter}{\numberline {5}Development of the algorithm for NP research}{21}{chapter.5}% 
+\contentsline {section}{\numberline {5.1}Statistical foundations}{21}{section.5.1}% 
+\contentsline {subsection}{\numberline {5.1.1}Construction of a test statistic}{21}{subsection.5.1.1}% 
+\contentsline {subsection}{\numberline {5.1.2}Ideal test statistic}{22}{subsection.5.1.2}% 
+\contentsline {subsection}{\numberline {5.1.3}Adaptation of $t(\EuScript {D})$ as a loss function}{22}{subsection.5.1.3}% 
+\contentsline {section}{\numberline {5.2}The algorithm}{23}{section.5.2}% 
+\contentsline {section}{\numberline {5.3}Computing resources}{23}{section.5.3}% 
+\contentsline {subsection}{\numberline {5.3.1}\textsc {TensorFlow} back-end and \textsc {Keras} API}{24}{subsection.5.3.1}% 
+\contentsline {subsection}{\numberline {5.3.2}LSF and clustering}{24}{subsection.5.3.2}% 
+\contentsline {section}{\numberline {5.4}Degrees of freedom of the network}{25}{section.5.4}% 
+\contentsline {section}{\numberline {5.5}The "look-elsewhere" effect}{26}{section.5.5}% 
+\contentsline {section}{\numberline {5.6}Weight clipping}{26}{section.5.6}% 
+\contentsline {chapter}{\numberline {6}Tuning of weight clipping parameter}{29}{chapter.6}% 
+\contentsline {section}{\numberline {6.1}A criterion for optimal weight clipping}{29}{section.6.1}% 
