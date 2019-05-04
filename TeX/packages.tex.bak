@@ -24,7 +24,7 @@
 \usepackage[pdftex]{graphicx}
 \usepackage{subfigure}
 \usepackage{eso-pic}
-\usepackage[small]{caption}
+\usepackage{caption}
 \usepackage{wrapfig}
 
 % SI units

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.5.2)  3 MAY 2019 19:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.5.2)  4 MAY 2019 18:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1154,9 +1154,9 @@ Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
 Package: catchfile 2016/05/16 v1.7 Catch the contents of a file (HO)
 )
 \verbatim@out=\write4
-runsystem(touch w18-test-2019531179.tex)...disabled (restricted).
+runsystem(touch w18-test-2019541115.tex)...disabled (restricted).
 
-runsystem(rm -f w18-test-2019531179.tex)...disabled (restricted).
+runsystem(rm -f w18-test-2019541115.tex)...disabled (restricted).
 
 runsystem(rm -f "main.gnuploterrors")...disabled (restricted).
 
@@ -1368,7 +1368,7 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 7.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 (./TeX/Frontespizio_Laurea.tex
-<Images/UNIPD.png, id=175, 943.525pt x 949.5475pt>
+<Images/UNIPD.png, id=179, 943.525pt x 949.5475pt>
 File: Images/UNIPD.png Graphic file (type png)
 <use Images/UNIPD.png>
 Package pdftex.def Info: Images/UNIPD.png  used on input line 7.
@@ -1448,20 +1448,20 @@ Chapter 3.
 [11
 
 ]
-<Images/LHC/cms.png, id=341, 9741.39375pt x 6829.515pt>
+<Images/LHC/cms.png, id=346, 9741.39375pt x 6829.515pt>
 File: Images/LHC/cms.png Graphic file (type png)
 <use Images/LHC/cms.png>
 Package pdftex.def Info: Images/LHC/cms.png  used on input line 41.
 (pdftex.def)             Requested size: 483.69687pt x 339.09892pt.
  [12 <./Images/LHC/cms.png>]
-<Images/LHC/cms_transverse_section.png, id=349, 853.1875pt x 438.63875pt>
+<Images/LHC/cms_transverse_section.png, id=354, 853.1875pt x 438.63875pt>
 File: Images/LHC/cms_transverse_section.png Graphic file (type png)
 <use Images/LHC/cms_transverse_section.png>
 Package pdftex.def Info: Images/LHC/cms_transverse_section.png  used on input l
 ine 66.
 (pdftex.def)             Requested size: 483.69687pt x 248.68137pt.
  [13 <./Images/LHC/cms_transverse_section.png>]
-<Python/LHC/resonance.pdf, id=356, 722.7pt x 289.08pt>
+<Python/LHC/resonance.pdf, id=361, 722.7pt x 289.08pt>
 File: Python/LHC/resonance.pdf Graphic file (type pdf)
 <use Python/LHC/resonance.pdf>
 Package pdftex.def Info: Python/LHC/resonance.pdf  used on input line 103.
@@ -1512,17 +1512,17 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 21.
 
 [17] [18]
-<Python/Z/data.pdf, id=434, 1445.4pt x 722.7pt>
+<Python/Z/data.pdf, id=439, 1445.4pt x 722.7pt>
 File: Python/Z/data.pdf Graphic file (type pdf)
 <use Python/Z/data.pdf>
 Package pdftex.def Info: Python/Z/data.pdf  used on input line 101.
 (pdftex.def)             Requested size: 483.69687pt x 241.84409pt.
-<Python/Z/features.pdf, id=435, 1445.4pt x 722.7pt>
+<Python/Z/features.pdf, id=440, 1445.4pt x 722.7pt>
 File: Python/Z/features.pdf Graphic file (type pdf)
 <use Python/Z/features.pdf>
 Package pdftex.def Info: Python/Z/features.pdf  used on input line 109.
 (pdftex.def)             Requested size: 483.69687pt x 241.84409pt.
-<Python/Z/sig_plus_bkg.pdf, id=436, 1445.4pt x 722.7pt>
+<Python/Z/sig_plus_bkg.pdf, id=441, 1445.4pt x 722.7pt>
 File: Python/Z/sig_plus_bkg.pdf Graphic file (type pdf)
 <use Python/Z/sig_plus_bkg.pdf>
 Package pdftex.def Info: Python/Z/sig_plus_bkg.pdf  used on input line 117.
@@ -1567,8 +1567,57 @@ Underfull \vbox (badness 4967) has occurred while \output is active []
 Chapter 6.
 (c:/texlive/2019/texmf-dist/tex/latex/ucs/data/uni-0.def
 File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
-)) [29]
-(./TeX/bibliography.tex [30]
+) [29]
+<Python/W_CLIP/ref100000_bkg20000_sig0/data_ref100000_bkg20000_sig0_wclip2-15.p
+df, id=655, 1156.32pt x 867.24pt>
+File: Python/W_CLIP/ref100000_bkg20000_sig0/data_ref100000_bkg20000_sig0_wclip2
+-15.pdf Graphic file (type pdf)
+<use Python/W_CLIP/ref100000_bkg20000_sig0/data_ref100000_bkg20000_sig0_wclip2-
+15.pdf>
+Package pdftex.def Info: Python/W_CLIP/ref100000_bkg20000_sig0/data_ref100000_b
+kg20000_sig0_wclip2-15.pdf  used on input line 58.
+(pdftex.def)             Requested size: 435.32422pt x 326.48457pt.
+<Python/W_CLIP/ref200000_bkg20000_sig0/data_ref200000_bkg20000_sig0_wclip2-4.pd
+f, id=656, 1156.32pt x 867.24pt>
+File: Python/W_CLIP/ref200000_bkg20000_sig0/data_ref200000_bkg20000_sig0_wclip2
+-4.pdf Graphic file (type pdf)
+<use Python/W_CLIP/ref200000_bkg20000_sig0/data_ref200000_bkg20000_sig0_wclip2-
+4.pdf>
+Package pdftex.def Info: Python/W_CLIP/ref200000_bkg20000_sig0/data_ref200000_b
+kg20000_sig0_wclip2-4.pdf  used on input line 65.
+(pdftex.def)             Requested size: 435.32422pt x 326.48457pt.
+ [30 <./Python/W_CLIP/ref100000_bkg20000_sig0/data_ref100000_bkg20000_sig0_wcli
+p2-15.pdf>]
+<Python/W_CLIP/ref300000_bkg20000_sig0/data_ref300000_bkg20000_sig0_wclip2-3.pd
+f, id=703, 1156.32pt x 867.24pt>
+File: Python/W_CLIP/ref300000_bkg20000_sig0/data_ref300000_bkg20000_sig0_wclip2
+-3.pdf Graphic file (type pdf)
+<use Python/W_CLIP/ref300000_bkg20000_sig0/data_ref300000_bkg20000_sig0_wclip2-
+3.pdf>
+Package pdftex.def Info: Python/W_CLIP/ref300000_bkg20000_sig0/data_ref300000_b
+kg20000_sig0_wclip2-3.pdf  used on input line 72.
+(pdftex.def)             Requested size: 435.32422pt x 326.48457pt.
+<Python/W_CLIP/ref500000_bkg20000_sig0/data_ref500000_bkg20000_sig0_wclip2-55.p
+df, id=704, 1156.32pt x 867.24pt>
+File: Python/W_CLIP/ref500000_bkg20000_sig0/data_ref500000_bkg20000_sig0_wclip2
+-55.pdf Graphic file (type pdf)
+<use Python/W_CLIP/ref500000_bkg20000_sig0/data_ref500000_bkg20000_sig0_wclip2-
+55.pdf>
+Package pdftex.def Info: Python/W_CLIP/ref500000_bkg20000_sig0/data_ref500000_b
+kg20000_sig0_wclip2-55.pdf  used on input line 79.
+(pdftex.def)             Requested size: 435.32422pt x 326.48457pt.
+)
+Underfull \vbox (badness 1242) has occurred while \output is active []
+
+ [31 <./Python/W_CLIP/ref200000_bkg20000_sig0/data_ref200000_bkg20000_sig0_wcli
+p2-4.pdf> <./Python/W_CLIP/ref300000_bkg20000_sig0/data_ref300000_bkg20000_sig0
+_wclip2-3.pdf
+
+pdfTeX warning: pdflatex.exe (file ./Python/W_CLIP/ref300000_bkg20000_sig0/data
+_ref300000_bkg20000_sig0_wclip2-3.pdf): PDF inclusion: multiple pdfs with page 
+group included in a single page
+>] (./TeX/bibliography.tex [32 <./Python/W_CLIP/ref500000_bkg20000_sig0/data_re
+f500000_bkg20000_sig0_wclip2-55.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 19--21
 [][]$\T1/cmtt/m/n/10.95 https : / / www . ibm . com / support / knowledgecenter
  / en / SSWRJV _ 10 . 1 . 0 / lsf _ welcome / lsf _
@@ -1580,7 +1629,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 52--54
 u -[] get -[] excited -[] your -[] data -[] let -[] look -[] elsewhere -[]
  []
 
-) [31
+) [33
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 19.
@@ -1589,14 +1638,18 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 19.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 19.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 19.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 1B6A762B36AA82F37CC9C15111ED361C;3222.
+(rerunfilecheck)             Checksum: F6EEA0113F8700C43C91F3F53CF27AB0;3311.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 19.
  ) 
 Here is how much of TeX's memory you used:
- 46250 strings out of 492623
- 1014679 string characters out of 6133291
- 1314273 words of memory out of 5000000
- 49259 multiletter control sequences out of 15000+600000
+ 46288 strings out of 492623
+ 1016750 string characters out of 6133291
+ 1314288 words of memory out of 5000000
+ 49282 multiletter control sequences out of 15000+600000
  575501 words of font info for 150 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  71i,15n,119p,1171b,1966s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1614,30 +1667,31 @@ ist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2019/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2019/texmf-dist/fonts/type1/publ
 ic/amsfonts/cm/cmr6.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmr7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pf
-b><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/tex
-live/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2019/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2019/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2019/texmf-dist/fonts/typ
-e1/public/amsfonts/euler/eusm10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/pub
-lic/amsfonts/symbols/msam10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/
-cm-super/sfbx1095.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/s
-fbx1200.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pf
-b><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb><c:/texl
-ive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb><c:/texlive/2019/t
-exmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb><c:/texlive/2019/texmf-dist/
-fonts/type1/public/cm-super/sfcc1095.pfb><c:/texlive/2019/texmf-dist/fonts/type
-1/public/cm-super/sfrm0800.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/c
-m-super/sfrm0900.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sf
-rm1000.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb
-><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfsl1095.pfb><c:/texli
-ve/2019/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb><c:/texlive/2019/te
-xmf-dist/fonts/type1/public/cm-super/sftt1000.pfb><c:/texlive/2019/texmf-dist/f
-onts/type1/public/cm-super/sftt1095.pfb><c:/texlive/2019/texmf-dist/fonts/type1
-/public/cm-super/sfxc1200.pfb>
-Output written on main.pdf (35 pages, 3853289 bytes).
+b><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texli
+ve/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2019/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2019/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/a
+msfonts/euler/eusm10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfont
+s/symbols/msam10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sf
+bx1095.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb
+><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><c:/texli
+ve/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb><c:/texlive/2019/te
+xmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb><c:/texlive/2019/texmf-dist/f
+onts/type1/public/cm-super/sfbx2488.pfb><c:/texlive/2019/texmf-dist/fonts/type1
+/public/cm-super/sfcc1095.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm
+-super/sfrm0800.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfr
+m0900.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
+<c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb><c:/texliv
+e/2019/texmf-dist/fonts/type1/public/cm-super/sfsl1095.pfb><c:/texlive/2019/tex
+mf-dist/fonts/type1/public/cm-super/sfti1095.pfb><c:/texlive/2019/texmf-dist/fo
+nts/type1/public/cm-super/sftt1000.pfb><c:/texlive/2019/texmf-dist/fonts/type1/
+public/cm-super/sftt1095.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-
+super/sfxc1200.pfb>
+Output written on main.pdf (37 pages, 3981027 bytes).
 PDF statistics:
- 826 PDF objects out of 1000 (max. 8388607)
- 734 compressed objects within 8 object streams
- 180 named destinations out of 1000 (max. 500000)
- 384 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1001 PDF objects out of 1200 (max. 8388607)
+ 873 compressed objects within 9 object streams
+ 187 named destinations out of 1000 (max. 500000)
+ 412 words of extra memory for PDF output out of 10000 (max. 10000000)
 

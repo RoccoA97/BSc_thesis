@@ -22,4 +22,7 @@
         showstringspaces=false,
         identifierstyle=\color{blue},
         procnamekeys={def,class}}
+       
+\captionsetup[table]{font=small,skip=2pt}
+\captionsetup[figure]{font=small,skip=0pt}
 

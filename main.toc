@@ -41,3 +41,4 @@
 \contentsline {section}{\numberline {5.6}Weight clipping}{26}{section.5.6}% 
 \contentsline {chapter}{\numberline {6}Tuning of weight clipping parameter}{29}{chapter.6}% 
 \contentsline {section}{\numberline {6.1}A criterion for optimal weight clipping}{29}{section.6.1}% 
+\contentsline {section}{\numberline {6.2}Results for optimal weight clipping search}{30}{section.6.2}% 

@@ -23,7 +23,7 @@ def __plot_t_distribution__(t, chi2_test, p_val):
     x = np.linspace(chi2.ppf(0.001,dof), chi2.ppf(0.999,dof), 1000)
     plt.plot(x, chi2.pdf(x,dof), 'r-', lw=2, alpha=0.6, label='$\chi^2$ '+str(dof)+' dof')
 
-    textstr = "median Bkg only:\n%2f\nchi2:\n%2f\nchi2 test p-value:\n%2f" %(round(np.median(np.array(t)),2),
+    textstr = "median Bkg only:\n%2f\n$\chi^2$:\n%2f\n$\chi^2$ test $p$-value:\n%2f" %(round(np.median(np.array(t)),2),
                                                                                 round(chi2_test,2),
                                                                                 round(p_val, 8))
     plt.annotate(textstr, xy=(0.7, 0.6), xycoords='axes fraction',
@@ -99,7 +99,7 @@ def __analysis_plot__(FILE_NAME, OUTPUT_DIR_NAME):
     f.close()
 
 
-    fig=plt.figure(figsize=(12, 12))
+    fig=plt.figure(figsize=(16, 12))
 
     plt.subplot(2,2,1)
     __plot_t_distribution__(t, chi2_values[-1], p_values[-1])
@@ -116,7 +116,7 @@ def __analysis_plot__(FILE_NAME, OUTPUT_DIR_NAME):
     if not os.path.exists('./Python/W_CLIP/' + OUTPUT_DIR_NAME):
         os.makedirs('./Python/W_CLIP/' + OUTPUT_DIR_NAME)
 
-    fig.savefig('./Python/W_CLIP/' + OUTPUT_DIR_NAME + '/' + file + '.pdf')
+    fig.savefig('./Python/W_CLIP/' + OUTPUT_DIR_NAME + '/' + file.replace('.','-') + '.pdf')
     plt.clf()
     fig.clf()
 
