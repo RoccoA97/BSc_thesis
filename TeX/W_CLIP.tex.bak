@@ -55,28 +55,28 @@ Only the best results for each case are reported in the Figures below. Results f
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1.0\textwidth]{Python/W_CLIP/ref100000_bkg20000_sig0/data_ref100000_bkg20000_sig0_wclip2-15.pdf}
-	\caption{Results of optimal $W$ search with $W=2.15$.}
+	\includegraphics[width=0.9\textwidth]{Python/W_CLIP/ref100000_bkg20000_sig0/data_ref100000_bkg20000_sig0_wclip2-15.pdf}
+	\caption{Results of optimal $W$ search for $W=2.15$.}
 	\label{fig:REF100000_BKG20000_SIG0_WCLIP2.15}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1.0\textwidth]{Python/W_CLIP/ref200000_bkg20000_sig0/data_ref200000_bkg20000_sig0_wclip2-4.pdf}
-	\caption{Results of optimal $W$ search with $W=2.4$.}
+	\includegraphics[width=0.9\textwidth]{Python/W_CLIP/ref200000_bkg20000_sig0/data_ref200000_bkg20000_sig0_wclip2-4.pdf}
+	\caption{Results of optimal $W$ search for $W=2.4$.}
 	\label{fig:REF200000_BKG20000_SIG0_WCLIP2.4}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1.0\textwidth]{Python/W_CLIP/ref300000_bkg20000_sig0/data_ref300000_bkg20000_sig0_wclip2-3.pdf}
-	\caption{Results of optimal $W$ search with $W=2.3$.}
+	\includegraphics[width=0.9\textwidth]{Python/W_CLIP/ref300000_bkg20000_sig0/data_ref300000_bkg20000_sig0_wclip2-3.pdf}
+	\caption{Results of optimal $W$ search for $W=2.3$.}
 	\label{fig:REF300000_BKG20000_SIG0_WCLIP2.3}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1.0\textwidth]{Python/W_CLIP/ref500000_bkg20000_sig0/data_ref500000_bkg20000_sig0_wclip2-55.pdf}
-	\caption{Results of optimal $W$ search with $W=2.55$.}
+	\includegraphics[width=0.9\textwidth]{Python/W_CLIP/ref500000_bkg20000_sig0/data_ref500000_bkg20000_sig0_wclip2-55.pdf}
+	\caption{Results of optimal $W$ search for $W=2.55$.}
 	\label{fig:REF500000_BKG20000_SIG0_WCLIP2.55}
 \end{figure}

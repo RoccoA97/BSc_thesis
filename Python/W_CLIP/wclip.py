@@ -26,7 +26,7 @@ def __plot_t_distribution__(t, chi2_test, p_val):
     textstr = "median Bkg only:\n%2f\n$\chi^2$:\n%2f\n$\chi^2$ test $p$-value:\n%2f" %(round(np.median(np.array(t)),2),
                                                                                 round(chi2_test,2),
                                                                                 round(p_val, 8))
-    plt.annotate(textstr, xy=(0.7, 0.6), xycoords='axes fraction',
+    plt.annotate(textstr, xy=(0.8, 0.7), xycoords='axes fraction',
          #verticalalignment='top',horizontalalignment='right',
          fontsize=8)#, bbox=props)
 

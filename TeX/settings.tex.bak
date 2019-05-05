@@ -23,6 +23,6 @@
         identifierstyle=\color{blue},
         procnamekeys={def,class}}
        
-\captionsetup[table]{font=small,skip=2pt}
-\captionsetup[figure]{font=small,skip=0pt}
+\captionsetup[table]{font=small,skip=10pt}
+\captionsetup[figure]{font=small,skip=10pt}
 
