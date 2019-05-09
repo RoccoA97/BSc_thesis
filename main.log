@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.5.2)  4 MAY 2019 18:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.5.2)  10 MAY 2019 01:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1154,9 +1154,9 @@ Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
 Package: catchfile 2016/05/16 v1.7 Catch the contents of a file (HO)
 )
 \verbatim@out=\write4
-runsystem(touch w18-test-2019541123.tex)...disabled (restricted).
+runsystem(touch w18-test-201951065.tex)...disabled (restricted).
 
-runsystem(rm -f w18-test-2019541123.tex)...disabled (restricted).
+runsystem(rm -f w18-test-201951065.tex)...disabled (restricted).
 
 runsystem(rm -f "main.gnuploterrors")...disabled (restricted).
 
@@ -1373,15 +1373,15 @@ File: Images/UNIPD.png Graphic file (type png)
 <use Images/UNIPD.png>
 Package pdftex.def Info: Images/UNIPD.png  used on input line 7.
 (pdftex.def)             Requested size: 122.66255pt x 123.4455pt.
- [1
+ Excluding 'comment' comment. [1
 
 
 
 {c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./Images/UNIPD.
-png>] [2]) (./main.toc
+png>] [2])
+(./main.toc
 LaTeX Font Info:    Try loading font information for U+eus on input line 34.
-
-(c:/texlive/2019/texmf-dist/tex/latex/amsfonts/ueus.fd
+ (c:/texlive/2019/texmf-dist/tex/latex/amsfonts/ueus.fd
 File: ueus.fd 2013/01/14 v3.01 Euler Script
 ) [3
 
@@ -1394,10 +1394,16 @@ File: ueus.fd 2013/01/14 v3.01 Euler Script
 
 (./TeX/Introduction.tex [4]
 Chapter 1.
+<Images/Introduction/SM_particles.pdf, id=260, 1046.40938pt x 1001.24063pt>
+File: Images/Introduction/SM_particles.pdf Graphic file (type pdf)
+<use Images/Introduction/SM_particles.pdf>
+Package pdftex.def Info: Images/Introduction/SM_particles.pdf  used on input li
+ne 15.
+(pdftex.def)             Requested size: 193.47578pt x 185.11967pt.
 [1
 
 
-]) (./TeX/NN.tex [2]
+ <./Images/Introduction/SM_particles.pdf>]) (./TeX/NN.tex [2]
 Chapter 2.
 (./Images/NN/FCNN.tex
 Missing character: There is no ; in font nullfont!
@@ -1448,20 +1454,20 @@ Chapter 3.
 [11
 
 ]
-<Images/LHC/cms.png, id=346, 9741.39375pt x 6829.515pt>
+<Images/LHC/cms.png, id=543, 9741.39375pt x 6829.515pt>
 File: Images/LHC/cms.png Graphic file (type png)
 <use Images/LHC/cms.png>
 Package pdftex.def Info: Images/LHC/cms.png  used on input line 41.
 (pdftex.def)             Requested size: 483.69687pt x 339.09892pt.
  [12 <./Images/LHC/cms.png>]
-<Images/LHC/cms_transverse_section.png, id=354, 853.1875pt x 438.63875pt>
+<Images/LHC/cms_transverse_section.png, id=551, 853.1875pt x 438.63875pt>
 File: Images/LHC/cms_transverse_section.png Graphic file (type png)
 <use Images/LHC/cms_transverse_section.png>
 Package pdftex.def Info: Images/LHC/cms_transverse_section.png  used on input l
 ine 66.
 (pdftex.def)             Requested size: 483.69687pt x 248.68137pt.
  [13 <./Images/LHC/cms_transverse_section.png>]
-<Python/LHC/resonance.pdf, id=361, 722.7pt x 289.08pt>
+<Python/LHC/resonance.pdf, id=558, 722.7pt x 289.08pt>
 File: Python/LHC/resonance.pdf Graphic file (type pdf)
 <use Python/LHC/resonance.pdf>
 Package pdftex.def Info: Python/LHC/resonance.pdf  used on input line 103.
@@ -1512,17 +1518,17 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 21.
 
 [17] [18]
-<Python/Z/data.pdf, id=439, 1445.4pt x 722.7pt>
+<Python/Z/data.pdf, id=637, 1445.4pt x 722.7pt>
 File: Python/Z/data.pdf Graphic file (type pdf)
 <use Python/Z/data.pdf>
 Package pdftex.def Info: Python/Z/data.pdf  used on input line 101.
 (pdftex.def)             Requested size: 483.69687pt x 241.84409pt.
-<Python/Z/features.pdf, id=440, 1445.4pt x 722.7pt>
+<Python/Z/features.pdf, id=638, 1445.4pt x 722.7pt>
 File: Python/Z/features.pdf Graphic file (type pdf)
 <use Python/Z/features.pdf>
 Package pdftex.def Info: Python/Z/features.pdf  used on input line 109.
 (pdftex.def)             Requested size: 483.69687pt x 241.84409pt.
-<Python/Z/sig_plus_bkg.pdf, id=441, 1445.4pt x 722.7pt>
+<Python/Z/sig_plus_bkg.pdf, id=639, 1445.4pt x 722.7pt>
 File: Python/Z/sig_plus_bkg.pdf Graphic file (type pdf)
 <use Python/Z/sig_plus_bkg.pdf>
 Package pdftex.def Info: Python/Z/sig_plus_bkg.pdf  used on input line 117.
@@ -1569,7 +1575,7 @@ Chapter 6.
 File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
 ) [29]
 <Python/W_CLIP/ref100000_bkg20000_sig0/data_ref100000_bkg20000_sig0_wclip2-15.p
-df, id=655, 1156.32pt x 867.24pt>
+df, id=853, 1156.32pt x 867.24pt>
 File: Python/W_CLIP/ref100000_bkg20000_sig0/data_ref100000_bkg20000_sig0_wclip2
 -15.pdf Graphic file (type pdf)
 <use Python/W_CLIP/ref100000_bkg20000_sig0/data_ref100000_bkg20000_sig0_wclip2-
@@ -1578,7 +1584,7 @@ Package pdftex.def Info: Python/W_CLIP/ref100000_bkg20000_sig0/data_ref100000_b
 kg20000_sig0_wclip2-15.pdf  used on input line 58.
 (pdftex.def)             Requested size: 435.32422pt x 326.48457pt.
 <Python/W_CLIP/ref200000_bkg20000_sig0/data_ref200000_bkg20000_sig0_wclip2-4.pd
-f, id=656, 1156.32pt x 867.24pt>
+f, id=854, 1156.32pt x 867.24pt>
 File: Python/W_CLIP/ref200000_bkg20000_sig0/data_ref200000_bkg20000_sig0_wclip2
 -4.pdf Graphic file (type pdf)
 <use Python/W_CLIP/ref200000_bkg20000_sig0/data_ref200000_bkg20000_sig0_wclip2-
@@ -1589,7 +1595,7 @@ kg20000_sig0_wclip2-4.pdf  used on input line 65.
  [30 <./Python/W_CLIP/ref100000_bkg20000_sig0/data_ref100000_bkg20000_sig0_wcli
 p2-15.pdf>]
 <Python/W_CLIP/ref300000_bkg20000_sig0/data_ref300000_bkg20000_sig0_wclip2-3.pd
-f, id=703, 1156.32pt x 867.24pt>
+f, id=900, 1156.32pt x 867.24pt>
 File: Python/W_CLIP/ref300000_bkg20000_sig0/data_ref300000_bkg20000_sig0_wclip2
 -3.pdf Graphic file (type pdf)
 <use Python/W_CLIP/ref300000_bkg20000_sig0/data_ref300000_bkg20000_sig0_wclip2-
@@ -1598,7 +1604,7 @@ Package pdftex.def Info: Python/W_CLIP/ref300000_bkg20000_sig0/data_ref300000_b
 kg20000_sig0_wclip2-3.pdf  used on input line 72.
 (pdftex.def)             Requested size: 435.32422pt x 326.48457pt.
 <Python/W_CLIP/ref500000_bkg20000_sig0/data_ref500000_bkg20000_sig0_wclip2-55.p
-df, id=704, 1156.32pt x 867.24pt>
+df, id=901, 1156.32pt x 867.24pt>
 File: Python/W_CLIP/ref500000_bkg20000_sig0/data_ref500000_bkg20000_sig0_wclip2
 -55.pdf Graphic file (type pdf)
 <use Python/W_CLIP/ref500000_bkg20000_sig0/data_ref500000_bkg20000_sig0_wclip2-
@@ -1637,61 +1643,68 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 19.
  (./main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 19.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 19.
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: F6EEA0113F8700C43C91F3F53CF27AB0;3311.
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
 
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: EE753B847C062EB5ECB9BE0657577941;3326
+(rerunfilecheck)             After:  9552F97039B2C8301C5D941EF1CFB376;3324.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 19.
  ) 
 Here is how much of TeX's memory you used:
- 46291 strings out of 492623
- 1016778 string characters out of 6133291
- 1314288 words of memory out of 5000000
- 49283 multiletter control sequences out of 15000+600000
- 575501 words of font info for 150 fonts, out of 8000000 for 9000
+ 46317 strings out of 492623
+ 1017216 string characters out of 6133291
+ 1314287 words of memory out of 5000000
+ 49298 multiletter control sequences out of 15000+600000
+ 578420 words of font info for 160 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  71i,15n,119p,1171b,1966s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{c:/texl
-ive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2019/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2019/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmbx8.pfb><c:/texlive/2019/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmmi10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmmi12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi
-6.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/
-texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/20
-19/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2019/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2019/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmr6.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmr7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pf
-b><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texli
-ve/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2019/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2019/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/a
-msfonts/euler/eusm10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfont
-s/symbols/msam10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sf
-bx1095.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb
-><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><c:/texli
-ve/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb><c:/texlive/2019/te
-xmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb><c:/texlive/2019/texmf-dist/f
-onts/type1/public/cm-super/sfbx2488.pfb><c:/texlive/2019/texmf-dist/fonts/type1
-/public/cm-super/sfcc1095.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm
--super/sfrm0800.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfr
-m0900.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-<c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb><c:/texliv
-e/2019/texmf-dist/fonts/type1/public/cm-super/sfsl1095.pfb><c:/texlive/2019/tex
-mf-dist/fonts/type1/public/cm-super/sfti1095.pfb><c:/texlive/2019/texmf-dist/fo
-nts/type1/public/cm-super/sftt1000.pfb><c:/texlive/2019/texmf-dist/fonts/type1/
-public/cm-super/sftt1095.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-
-super/sfxc1200.pfb>
-Output written on main.pdf (38 pages, 3981440 bytes).
+pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exi
+st, replaced by a fixed one
+
+{c:/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{c:/texliv
+e/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2019/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2019/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmbx8.pfb><c:/texlive/2019/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmmi10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmmi12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.
+pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/te
+xlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2019
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2019/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmr6.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmr7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb>
+<c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive
+/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2019/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmsy8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/ams
+fonts/euler/eusm10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/
+symbols/msam10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbi
+1440.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb><
+c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><c:/texlive
+/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><c:/texlive/2019/texm
+f-dist/fonts/type1/public/cm-super/sfbx1728.pfb><c:/texlive/2019/texmf-dist/fon
+ts/type1/public/cm-super/sfbx2074.pfb><c:/texlive/2019/texmf-dist/fonts/type1/p
+ublic/cm-super/sfbx2488.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-s
+uper/sfcc1095.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm0
+600.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb><c
+:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb><c:/texlive/
+2019/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><c:/texlive/2019/texmf
+-dist/fonts/type1/public/cm-super/sfrm1095.pfb><c:/texlive/2019/texmf-dist/font
+s/type1/public/cm-super/sfsl1095.pfb><c:/texlive/2019/texmf-dist/fonts/type1/pu
+blic/cm-super/sfti1095.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-su
+per/sftt1000.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sftt10
+95.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfxc1200.pfb>
+Output written on main.pdf (38 pages, 4099328 bytes).
 PDF statistics:
- 1007 PDF objects out of 1200 (max. 8388607)
- 878 compressed objects within 9 object streams
- 189 named destinations out of 1000 (max. 500000)
- 412 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1211 PDF objects out of 1440 (max. 8388607)
+ 1028 compressed objects within 11 object streams
+ 191 named destinations out of 1000 (max. 500000)
+ 417 words of extra memory for PDF output out of 10000 (max. 10000000)
 

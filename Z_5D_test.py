@@ -40,7 +40,7 @@ INPUT_PATH_BKG = 'C:\\Users\\Ardino Pierfrancesco\\Desktop\\DATA\\Zmumu_lepFilte
 
 N_Sig = 0
 N_Bkg = 20000
-N_ref = 500000
+N_ref = 50000
 N_D = N_Bkg + N_Sig
 N_R = N_ref
 
@@ -244,7 +244,8 @@ print(target.shape, feature.shape)
 
 
 
-
+print(type(feature))
+print(type(feature[0,0]))
 
 
 # training
@@ -252,15 +253,20 @@ batch_size=feature.shape[0]
 BSMfinder = MyModel(feature.shape[1], latentsize, layers)
 
 
+# Convert to tensor
+feature = tf.convert_to_tensor(feature,dtype=tf.float32)
+target = tf.convert_to_tensor(target,dtype=tf.float32)
+
 #Loss function definition
-def Loss(yTrue,yPred):
+def Loss(model,x,yTrue):
+    yPred = model(x)
     return K.sum(-1.*yTrue*(yPred) + (1-yTrue)*N_D/float(N_R)*(K.exp(yPred)-1))
 
 
 def grad(model, inputs, targets):
     with tf.GradientTape() as tape:
-        loss_value = Loss(model(inputs),targets)
-    return loss_value, tape.gradient(loss_value, model.trainable_variables)
+        loss_value = Loss(model,inputs,targets)
+    return loss_value, tape.gradient(loss_value, model.trainable_variables())
 
 optimizer = tf.train.AdamOptimizer()
 global_step = tf.Variable(0)

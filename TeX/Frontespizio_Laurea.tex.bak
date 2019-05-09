@@ -10,26 +10,40 @@
 \begin{center}
 {{\huge{\textsc{\bf UNIVERSIT\`A DEGLI STUDI DI PADOVA}}}\\}
 \vspace{5mm}
+\hrule
+\vspace{5mm}
 {\Large{\bf Dipartimento di Fisica e Astronomia ``Galileo Galilei''}} \\
 \vspace{5mm}
 {\Large{\textsc{\bf Corso di Laurea in Fisica}}}\\
 \vspace{20mm}
 {\Large{\textsc{\bf Tesi di Laurea}}}\\
-\vspace{30mm}
-\begin{spacing}{3}
+\vspace{20mm}
+\begin{spacing}{2}
 {\LARGE \textbf{Development of a ML-based model-independent \\analysis strategy at the LHC}}\\
 \end{spacing}
 \vspace{8mm}
 \end{center}
 
-\vspace{15mm}
+\vspace{10mm}
+%----------------------------------------------------------------------
+\begin{comment}
 \begin{spacing}{2}
 \begin{tabular}{ c  c  c c c  ccccccc c c c  c  c }
 {\Large{\bf Relatore}} &&&&&&&&&&&&&&&& {\Large{\bf Laureando}}\\
-{\Large{\bf Prof. Marco Zanetti}} &&&&&&&&&&&&&&&& {\Large{\bf Rocco Ardino}}\\
+{\Large{\bf \textit{Prof. Marco Zanetti}}} &&&&&&&&&&&&&&&& {\Large{\bf \textit{Rocco Ardino}}}\\
 % {\Large{\bf Correlatore}}\\
 % {\Large{\bf Prof./Dr. Nome Cognome}}\\
 \end{tabular}
+\end{spacing}
+\end{comment}
+%----------------------------------------------------------------------
+\begin{spacing}{2}
+\begin{flushleft}                           
+{\Large \textbf{Relatore:}	\\
+\textbf{\textit{Prof. Marco Zanetti}}} \\
+{\Large \textbf{Laureando:}	\\
+\textbf{\textit{Rocco Ardino}}} \\
+\end{flushleft} 
 \end{spacing}
 \vspace{15 mm}
 
