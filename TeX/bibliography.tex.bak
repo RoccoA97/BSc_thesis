@@ -1,4 +1,14 @@
 \begin{thebibliography}{99}
+\bibitem{baldi}
+\textit{Searching for exotic particles in high-energy physics with deep learning}
+\\P. Baldi, P. Sadowski \& D. Whiteson, July 2, 2014
+\\\url{https://arxiv.org/abs/1402.4735}
+
+\bibitem{wulzer}
+\textit{Learning New Physics from a Machine}
+\\Raffaele Tito D'Agnolo, Andrea Wulzer, June 8, 2018
+\\\url{https://arxiv.org/abs/1806.02350}
+
 \bibitem{python}
 \textsc{Python 3} Documentation
 \\\url{https://docs.python.org/3/}
@@ -55,14 +65,4 @@ Decay of $Z$ bosons
 \bibitem{look-elsewhere}
 \textit{Should you get excited by your data? Let the Look-Elsewhere Effect decide}
 \\\url{http://cms.web.cern.ch/news/should-you-get-excited-your-data-let-look-elsewhere-effect-decide}
-
-\bibitem{wulzer}
-\textit{Learning New Physics from a Machine}
-\\Raffaele Tito D'Agnolo, Andrea Wulzer, June 8, 2018
-\\\url{https://arxiv.org/abs/1806.02350}
-
-\bibitem{baldi}
-\textit{Searching for exotic particles in high-energy physics with deep learning}
-\\P. Baldi, P. Sadowski \& D. Whiteson, July 2, 2014
-\\\url{https://arxiv.org/abs/1402.4735}
 \end{thebibliography}

@@ -20,130 +20,147 @@
 \@writefile{toc}{\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
+\newlabel{chap:Introduction}{{1}{1}{Introduction}{chapter.1}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {1.1}High-Energy Particle Physics and Standard Model}{1}{section.1.1}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {1.1}{\ignorespaces Standard Model particles.\relax }}{1}{figure.caption.3}\protected@file@percent }
 \providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
 \newlabel{fig:SM_PARTICLES}{{1.1}{1}{Standard Model particles.\relax }{figure.caption.3}{}}
+\citation{baldi}
+\citation{baldi}
+\citation{wulzer}
 \@writefile{toc}{\contentsline {subsection}{\numberline {1.1.1}Researches for new physics}{2}{subsection.1.1.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {1.1.2}The need for a model-independent approach}{2}{subsection.1.1.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {1.2}Why do we choose Neural Networks?}{2}{section.1.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {chapter}{\numberline {2}Introduction to Neural Networks}{3}{chapter.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.1.2}Benefits of a model-independent approach}{2}{subsection.1.1.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {1.2}Machine Learning answer to the problem}{2}{section.1.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {2}Introduction to Neural Networks}{5}{chapter.2}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {section}{\numberline {2.1}Artificial Neural Networks}{3}{section.2.1}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {2.1}{\ignorespaces Fully connected ANN.\relax }}{3}{figure.2.1}\protected@file@percent }
-\newlabel{fig:FCNN}{{2.1}{3}{Fully connected ANN.\relax }{figure.2.1}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.2}{\ignorespaces Partially connected ANN.\relax }}{3}{figure.2.2}\protected@file@percent }
-\newlabel{fig:NFCNN}{{2.2}{3}{Partially connected ANN.\relax }{figure.2.2}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {2.2}Choice of NN architecture and activation functions}{4}{section.2.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.1}Number of hidden layers}{4}{subsection.2.2.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.2}Number of neurons per hidden layer}{5}{subsection.2.2.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.3}Activation functions}{5}{subsection.2.2.3}\protected@file@percent }
-\newlabel{fig:STEP}{{2.2.3}{5}{Activation functions}{subsection.2.2.3}{}}
-\newlabel{fig:SIGMOID}{{2.2.3}{5}{Activation functions}{equation.2.2.5}{}}
-\newlabel{fig:TANH}{{2.2.3}{6}{Activation functions}{equation.2.2.6}{}}
-\newlabel{fig:RELU}{{2.2.3}{6}{Activation functions}{equation.2.2.7}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {2.3}Loss functions}{6}{section.2.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {2.4}Backpropagation algorithm}{7}{section.2.4}\protected@file@percent }
-\@writefile{loa}{\contentsline {algorithm}{\numberline {1}{\ignorespaces Forward propagation through a typical deep neural network and the computation of the cost function. The loss $L(\mathaccentV {hat}05E{y},y)$ depends on the output $\mathaccentV {hat}05E{y}$ and on the target $y$. The symbol $\theta $ will be used to indicate both weights and biases.\relax }}{8}{algorithm.1}\protected@file@percent }
-\newlabel{FORWARD_PROPAGATION}{{1}{8}{Forward propagation through a typical deep neural network and the computation of the cost function. The loss $L(\hat {y},y)$ depends on the output $\hat {y}$ and on the target $y$. The symbol $\theta $ will be used to indicate both weights and biases.\relax }{algorithm.1}{}}
-\@writefile{loa}{\contentsline {algorithm}{\numberline {2}{\ignorespaces Backward computation for the deep neural network of Algorithm \ref  {FORWARD_PROPAGATION}, which uses, in addition to the input $x$, a target $y$. This computation yields the gradients on the activations $a^{(k)}$ for each layer $k$, starting from the output layer and going backwards to the first hidden layer. From these gradients, which can be interpreted as an indication of how each layer's output should change to reduce error, one can obtain the gradient on the parameters of each layer.\relax }}{8}{algorithm.2}\protected@file@percent }
-\newlabel{BACKWARD_COMPUTATION}{{2}{8}{Backward computation for the deep neural network of Algorithm \ref {FORWARD_PROPAGATION}, which uses, in addition to the input $x$, a target $y$. This computation yields the gradients on the activations $a^{(k)}$ for each layer $k$, starting from the output layer and going backwards to the first hidden layer. From these gradients, which can be interpreted as an indication of how each layer's output should change to reduce error, one can obtain the gradient on the parameters of each layer.\relax }{algorithm.2}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {2.5}Updating free parameters: Optimizers}{8}{section.2.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.5.1}An example of algorithm with fixed learning rate}{9}{subsection.2.5.1}\protected@file@percent }
-\@writefile{loa}{\contentsline {algorithm}{\numberline {3}{\ignorespaces Stochastic Gradient Descent (SGD) update at training iteration $k$\relax }}{9}{algorithm.3}\protected@file@percent }
-\newlabel{SGD}{{3}{9}{Stochastic Gradient Descent (SGD) update at training iteration $k$\relax }{algorithm.3}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.5.2}An example of algorithm with adaptive learning rates}{9}{subsection.2.5.2}\protected@file@percent }
-\@writefile{loa}{\contentsline {algorithm}{\numberline {4}{\ignorespaces Adam algorithm\relax }}{9}{algorithm.4}\protected@file@percent }
-\newlabel{ADAM}{{4}{9}{Adam algorithm\relax }{algorithm.4}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {2.6}Advanced tecniques}{9}{section.2.6}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.6.1}Regularizers}{9}{subsection.2.6.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.6.2}Dropout}{10}{subsection.2.6.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.6.3}Parameter initialization strategies}{10}{subsection.2.6.3}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {2.1}{\ignorespaces Xavier and He initializations.\relax }}{10}{table.caption.4}\protected@file@percent }
-\newlabel{tab:XAVIER_HE_INITIALIZATIONS}{{2.1}{10}{Xavier and He initializations.\relax }{table.caption.4}{}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {3}CERN research for exotic particles through LHC collider}{11}{chapter.3}\protected@file@percent }
+\newlabel{chap:NN}{{2}{5}{Introduction to Neural Networks}{chapter.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.1}Artificial Neural Networks}{5}{section.2.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2.1}{\ignorespaces Fully connected ANN.\relax }}{5}{figure.2.1}\protected@file@percent }
+\newlabel{fig:FCNN}{{2.1}{5}{Fully connected ANN.\relax }{figure.2.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.2}{\ignorespaces Partially connected ANN.\relax }}{5}{figure.2.2}\protected@file@percent }
+\newlabel{fig:NFCNN}{{2.2}{5}{Partially connected ANN.\relax }{figure.2.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.2}Choice of NN architecture and activation functions}{6}{section.2.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.1}Number of hidden layers}{6}{subsection.2.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.2}Number of neurons per hidden layer}{7}{subsection.2.2.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.3}Activation functions}{7}{subsection.2.2.3}\protected@file@percent }
+\newlabel{fig:STEP}{{2.2.3}{7}{Activation functions}{subsection.2.2.3}{}}
+\newlabel{fig:SIGMOID}{{2.2.3}{7}{Activation functions}{equation.2.2.5}{}}
+\newlabel{fig:TANH}{{2.2.3}{8}{Activation functions}{equation.2.2.6}{}}
+\newlabel{fig:RELU}{{2.2.3}{8}{Activation functions}{equation.2.2.7}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.3}Loss functions}{8}{section.2.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {2.4}Backpropagation algorithm}{9}{section.2.4}\protected@file@percent }
+\@writefile{loa}{\contentsline {algorithm}{\numberline {1}{\ignorespaces Forward propagation through a typical deep neural network and the computation of the cost function. The loss $L(\mathaccentV {hat}05E{y},y)$ depends on the output $\mathaccentV {hat}05E{y}$ and on the target $y$. The symbol $\theta $ will be used to indicate both weights and biases.\relax }}{10}{algorithm.1}\protected@file@percent }
+\newlabel{FORWARD_PROPAGATION}{{1}{10}{Forward propagation through a typical deep neural network and the computation of the cost function. The loss $L(\hat {y},y)$ depends on the output $\hat {y}$ and on the target $y$. The symbol $\theta $ will be used to indicate both weights and biases.\relax }{algorithm.1}{}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {2}{\ignorespaces Backward computation for the deep neural network of Algorithm \ref  {FORWARD_PROPAGATION}, which uses, in addition to the input $x$, a target $y$. This computation yields the gradients on the activations $a^{(k)}$ for each layer $k$, starting from the output layer and going backwards to the first hidden layer. From these gradients, which can be interpreted as an indication of how each layer's output should change to reduce error, one can obtain the gradient on the parameters of each layer.\relax }}{10}{algorithm.2}\protected@file@percent }
+\newlabel{BACKWARD_COMPUTATION}{{2}{10}{Backward computation for the deep neural network of Algorithm \ref {FORWARD_PROPAGATION}, which uses, in addition to the input $x$, a target $y$. This computation yields the gradients on the activations $a^{(k)}$ for each layer $k$, starting from the output layer and going backwards to the first hidden layer. From these gradients, which can be interpreted as an indication of how each layer's output should change to reduce error, one can obtain the gradient on the parameters of each layer.\relax }{algorithm.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.5}Updating free parameters: Optimizers}{10}{section.2.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.5.1}An example of algorithm with fixed learning rate}{11}{subsection.2.5.1}\protected@file@percent }
+\@writefile{loa}{\contentsline {algorithm}{\numberline {3}{\ignorespaces Stochastic Gradient Descent (SGD) update at training iteration $k$\relax }}{11}{algorithm.3}\protected@file@percent }
+\newlabel{SGD}{{3}{11}{Stochastic Gradient Descent (SGD) update at training iteration $k$\relax }{algorithm.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.5.2}An example of algorithm with adaptive learning rates}{11}{subsection.2.5.2}\protected@file@percent }
+\@writefile{loa}{\contentsline {algorithm}{\numberline {4}{\ignorespaces Adam algorithm\relax }}{11}{algorithm.4}\protected@file@percent }
+\newlabel{ADAM}{{4}{11}{Adam algorithm\relax }{algorithm.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.6}Advanced tecniques}{11}{section.2.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.6.1}Regularizers}{11}{subsection.2.6.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.6.2}Dropout}{12}{subsection.2.6.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.6.3}Parameter initialization strategies}{12}{subsection.2.6.3}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {2.1}{\ignorespaces Xavier and He initializations.\relax }}{12}{table.caption.4}\protected@file@percent }
+\newlabel{tab:XAVIER_HE_INITIALIZATIONS}{{2.1}{12}{Xavier and He initializations.\relax }{table.caption.4}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {3}CERN research for exotic particles through LHC collider}{13}{chapter.3}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {section}{\numberline {3.1}An insight into LHC structure}{11}{section.3.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {3.2}CMS experiment}{12}{section.3.2}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces CMS detector section.\relax }}{12}{figure.caption.5}\protected@file@percent }
-\newlabel{fig:CMS_SECTION}{{3.1}{12}{CMS detector section.\relax }{figure.caption.5}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces CMS detector transverse section.\relax }}{13}{figure.caption.6}\protected@file@percent }
-\newlabel{fig:CMS_TRANSVERSE_SECTION}{{3.2}{13}{CMS detector transverse section.\relax }{figure.caption.6}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.3}From data to discoveries: resonance formation study}{14}{section.3.3}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces Resonance plot.\relax }}{14}{figure.caption.7}\protected@file@percent }
-\newlabel{fig:RESONANCE_PLOT}{{3.3}{14}{Resonance plot.\relax }{figure.caption.7}{}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {4}$Z \rightarrow \mu ^{+}\mu ^{-}$ decaying process}{17}{chapter.4}\protected@file@percent }
+\newlabel{chap:LHC}{{3}{13}{CERN research for exotic particles through LHC collider}{chapter.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.1}An insight into LHC structure}{13}{section.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3.2}CMS experiment}{14}{section.3.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces CMS detector section.\relax }}{14}{figure.caption.5}\protected@file@percent }
+\newlabel{fig:CMS_SECTION}{{3.1}{14}{CMS detector section.\relax }{figure.caption.5}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces CMS detector transverse section.\relax }}{15}{figure.caption.6}\protected@file@percent }
+\newlabel{fig:CMS_TRANSVERSE_SECTION}{{3.2}{15}{CMS detector transverse section.\relax }{figure.caption.6}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.3}From data to discoveries: resonance formation study}{16}{section.3.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces Resonance plot.\relax }}{16}{figure.caption.7}\protected@file@percent }
+\newlabel{fig:RESONANCE_PLOT}{{3.3}{16}{Resonance plot.\relax }{figure.caption.7}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {4}$Z \rightarrow \mu ^{+}\mu ^{-}$ decaying process}{19}{chapter.4}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {section}{\numberline {4.1}The $Z^{0}$ boson}{17}{section.4.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {4.2}High Level Features for the analysis of the decay}{18}{section.4.2}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {4.1}{\ignorespaces High Level Features legend.\relax }}{18}{table.caption.8}\protected@file@percent }
-\newlabel{tab:HLF}{{4.1}{18}{High Level Features legend.\relax }{table.caption.8}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.3}The dataset analyzed}{18}{section.4.3}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces Data distribution.\relax }}{19}{figure.caption.9}\protected@file@percent }
-\newlabel{fig:DATA_DISTRIBUTIONS}{{4.1}{19}{Data distribution.\relax }{figure.caption.9}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces Features and invariant mass distributions.\relax }}{19}{figure.caption.10}\protected@file@percent }
-\newlabel{fig:FEATURES_DISTRIBUTIONS}{{4.2}{19}{Features and invariant mass distributions.\relax }{figure.caption.10}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces Features and invariant mass distributions with signal+background in the same dataset.\relax }}{20}{figure.caption.11}\protected@file@percent }
-\newlabel{fig:SIG_PLUS_BKG_DISTRIBUTIONS}{{4.3}{20}{Features and invariant mass distributions with signal+background in the same dataset.\relax }{figure.caption.11}{}}
+\newlabel{chap:Z}{{4}{19}{$Z \rightarrow \mu ^{+}\mu ^{-}$ decaying process}{chapter.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.1}The $Z^{0}$ boson}{19}{section.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4.2}High Level Features for the analysis of the decay}{20}{section.4.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {4.1}{\ignorespaces High Level Features legend.\relax }}{20}{table.caption.8}\protected@file@percent }
+\newlabel{tab:HLF}{{4.1}{20}{High Level Features legend.\relax }{table.caption.8}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.3}The dataset analyzed}{20}{section.4.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces Data distribution.\relax }}{21}{figure.caption.9}\protected@file@percent }
+\newlabel{fig:DATA_DISTRIBUTIONS}{{4.1}{21}{Data distribution.\relax }{figure.caption.9}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces Features and invariant mass distributions.\relax }}{21}{figure.caption.10}\protected@file@percent }
+\newlabel{fig:FEATURES_DISTRIBUTIONS}{{4.2}{21}{Features and invariant mass distributions.\relax }{figure.caption.10}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces Features and invariant mass distributions with signal+background in the same dataset.\relax }}{22}{figure.caption.11}\protected@file@percent }
+\newlabel{fig:SIG_PLUS_BKG_DISTRIBUTIONS}{{4.3}{22}{Features and invariant mass distributions with signal+background in the same dataset.\relax }{figure.caption.11}{}}
 \citation{wulzer}
-\@writefile{toc}{\contentsline {chapter}{\numberline {5}Development of the algorithm for NP research}{21}{chapter.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {5}Development of the algorithm for NP research}{23}{chapter.5}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {section}{\numberline {5.1}Statistical foundations}{21}{section.5.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.1.1}Construction of a test statistic}{21}{subsection.5.1.1}\protected@file@percent }
-\newlabel{eqn:T}{{5.2}{21}{Construction of a test statistic}{equation.5.1.2}{}}
+\newlabel{chap:Z_5D}{{5}{23}{Development of the algorithm for NP research}{chapter.5}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.1}Statistical foundations}{23}{section.5.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1.1}Construction of a test statistic}{23}{subsection.5.1.1}\protected@file@percent }
+\newlabel{eqn:T}{{5.2}{23}{Construction of a test statistic}{equation.5.1.2}{}}
 \citation{wulzer}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.1.2}Ideal test statistic}{22}{subsection.5.1.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.1.3}Adaptation of $t(\EuScript  {D})$ as a loss function}{22}{subsection.5.1.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {5.2}The algorithm}{23}{section.5.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {5.3}Computing resources}{23}{section.5.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1.2}Ideal test statistic}{24}{subsection.5.1.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1.3}Adaptation of $t(\EuScript  {D})$ as a loss function}{24}{subsection.5.1.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5.2}The algorithm}{25}{section.5.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5.3}Computing resources}{25}{section.5.3}\protected@file@percent }
 \citation{python}
 \citation{keras}
 \citation{tensorflow}
 \citation{cvmfs}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.1}\textsc  {TensorFlow} back-end and \textsc  {Keras} API}{24}{subsection.5.3.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.2}LSF and clustering}{24}{subsection.5.3.2}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {5.1}{\ignorespaces Available queues.\relax }}{25}{table.caption.12}\protected@file@percent }
-\newlabel{tab:QUEUES}{{5.1}{25}{Available queues.\relax }{table.caption.12}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {5.2}{\ignorespaces Machines and resources.\relax }}{25}{table.caption.13}\protected@file@percent }
-\newlabel{tab:LONG_QUEUE_MACHINES}{{5.2}{25}{Machines and resources.\relax }{table.caption.13}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.4}Degrees of freedom of the network}{25}{section.5.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.1}\textsc  {TensorFlow} back-end and \textsc  {Keras} API}{26}{subsection.5.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.2}LSF and clustering}{26}{subsection.5.3.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {5.1}{\ignorespaces Available queues.\relax }}{27}{table.caption.12}\protected@file@percent }
+\newlabel{tab:QUEUES}{{5.1}{27}{Available queues.\relax }{table.caption.12}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5.2}{\ignorespaces Machines and resources.\relax }}{27}{table.caption.13}\protected@file@percent }
+\newlabel{tab:LONG_QUEUE_MACHINES}{{5.2}{27}{Machines and resources.\relax }{table.caption.13}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.4}Degrees of freedom of the network}{27}{section.5.4}\protected@file@percent }
 \citation{look-elsewhere}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.1}{\ignorespaces Neural Network scheme to understand the number of degrees of freedom.\relax }}{26}{figure.caption.14}\protected@file@percent }
-\newlabel{fig:DOF}{{5.1}{26}{Neural Network scheme to understand the number of degrees of freedom.\relax }{figure.caption.14}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.5}The "look-elsewhere" effect}{26}{section.5.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {5.6}Weight clipping}{26}{section.5.6}\protected@file@percent }
-\@writefile{toc}{\contentsline {chapter}{\numberline {6}Tuning of weight clipping parameter}{29}{chapter.6}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {5.1}{\ignorespaces Neural Network scheme to understand the number of degrees of freedom.\relax }}{28}{figure.caption.14}\protected@file@percent }
+\newlabel{fig:DOF}{{5.1}{28}{Neural Network scheme to understand the number of degrees of freedom.\relax }{figure.caption.14}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.5}The "look-elsewhere" effect}{28}{section.5.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5.6}Weight clipping}{28}{section.5.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {6}Tuning of weight clipping parameter}{31}{chapter.6}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{lot}{\contentsline {table}{\numberline {6.1}{\ignorespaces Sizes of the datasets for different tests.\relax }}{29}{table.caption.15}\protected@file@percent }
-\newlabel{tab:W_CLIP_TEST_SIZES}{{6.1}{29}{Sizes of the datasets for different tests.\relax }{table.caption.15}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {6.1}A criterion for optimal weight clipping}{29}{section.6.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {6.2}Results for optimal weight clipping search}{30}{section.6.2}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {6.1}{\ignorespaces Results of optimal $W$ search for $W=2.15$.\relax }}{30}{figure.caption.16}\protected@file@percent }
-\newlabel{fig:REF100000_BKG20000_SIG0_WCLIP2.15}{{6.1}{30}{Results of optimal $W$ search for $W=2.15$.\relax }{figure.caption.16}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6.2}{\ignorespaces Results of optimal $W$ search for $W=2.4$.\relax }}{31}{figure.caption.17}\protected@file@percent }
-\newlabel{fig:REF200000_BKG20000_SIG0_WCLIP2.4}{{6.2}{31}{Results of optimal $W$ search for $W=2.4$.\relax }{figure.caption.17}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6.3}{\ignorespaces Results of optimal $W$ search for $W=2.3$.\relax }}{31}{figure.caption.18}\protected@file@percent }
-\newlabel{fig:REF300000_BKG20000_SIG0_WCLIP2.3}{{6.3}{31}{Results of optimal $W$ search for $W=2.3$.\relax }{figure.caption.18}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6.4}{\ignorespaces Results of optimal $W$ search for $W=2.55$.\relax }}{32}{figure.caption.19}\protected@file@percent }
-\newlabel{fig:REF500000_BKG20000_SIG0_WCLIP2.55}{{6.4}{32}{Results of optimal $W$ search for $W=2.55$.\relax }{figure.caption.19}{}}
-\bibcite{python}{1}
-\bibcite{keras}{2}
-\bibcite{tensorflow}{3}
-\bibcite{cvmfs}{4}
-\bibcite{lsf}{5}
-\bibcite{madgraph}{6}
-\bibcite{deeplearningbook}{7}
-\bibcite{oreilly}{8}
-\bibcite{nielsen}{9}
-\bibcite{cern}{10}
-\bibcite{cms}{11}
-\bibcite{bettini}{12}
-\bibcite{zboson}{13}
-\bibcite{look-elsewhere}{14}
-\bibcite{wulzer}{15}
-\bibcite{baldi}{16}
+\newlabel{chap:W_CLIP}{{6}{31}{Tuning of weight clipping parameter}{chapter.6}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {6.1}{\ignorespaces Sizes of the datasets for different tests.\relax }}{31}{table.caption.15}\protected@file@percent }
+\newlabel{tab:W_CLIP_TEST_SIZES}{{6.1}{31}{Sizes of the datasets for different tests.\relax }{table.caption.15}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.1}A criterion for optimal weight clipping}{31}{section.6.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {6.2}Results for optimal weight clipping search}{32}{section.6.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {6.1}{\ignorespaces Results of optimal $W$ search for $W=2.15$.\relax }}{32}{figure.caption.16}\protected@file@percent }
+\newlabel{fig:REF100000_BKG20000_SIG0_WCLIP2.15}{{6.1}{32}{Results of optimal $W$ search for $W=2.15$.\relax }{figure.caption.16}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.2}{\ignorespaces Results of optimal $W$ search for $W=2.4$.\relax }}{33}{figure.caption.17}\protected@file@percent }
+\newlabel{fig:REF200000_BKG20000_SIG0_WCLIP2.4}{{6.2}{33}{Results of optimal $W$ search for $W=2.4$.\relax }{figure.caption.17}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.3}{\ignorespaces Results of optimal $W$ search for $W=2.3$.\relax }}{33}{figure.caption.18}\protected@file@percent }
+\newlabel{fig:REF300000_BKG20000_SIG0_WCLIP2.3}{{6.3}{33}{Results of optimal $W$ search for $W=2.3$.\relax }{figure.caption.18}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.4}{\ignorespaces Results of optimal $W$ search for $W=2.55$.\relax }}{34}{figure.caption.19}\protected@file@percent }
+\newlabel{fig:REF500000_BKG20000_SIG0_WCLIP2.55}{{6.4}{34}{Results of optimal $W$ search for $W=2.55$.\relax }{figure.caption.19}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {7}Training with signal events and results}{35}{chapter.7}\protected@file@percent }
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\newlabel{chap:RESULTS}{{7}{35}{Training with signal events and results}{chapter.7}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {8}Conclusion and future developments}{37}{chapter.8}\protected@file@percent }
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\newlabel{chap:CONCLUSION}{{8}{37}{Conclusion and future developments}{chapter.8}{}}
+\bibcite{baldi}{1}
+\bibcite{wulzer}{2}
+\bibcite{python}{3}
+\bibcite{keras}{4}
+\bibcite{tensorflow}{5}
+\bibcite{cvmfs}{6}
+\bibcite{lsf}{7}
+\bibcite{madgraph}{8}
+\bibcite{deeplearningbook}{9}
+\bibcite{oreilly}{10}
+\bibcite{nielsen}{11}
+\bibcite{cern}{12}
+\bibcite{cms}{13}
+\bibcite{bettini}{14}
+\bibcite{zboson}{15}
+\bibcite{look-elsewhere}{16}

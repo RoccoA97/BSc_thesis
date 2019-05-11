@@ -14,6 +14,8 @@
 \input{TeX/Z.tex}
 \input{TeX/Z_5D.tex}
 \input{TeX/W_CLIP.tex}
+\input{TeX/RESULTS.tex}
+\input{TeX/Conclusion.tex}
 
 \input{TeX/bibliography.tex}
 \end{document}

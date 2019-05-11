@@ -1,4 +1,9 @@
 \chapter{Development of the algorithm for NP research}
+\label{chap:Z_5D}
+
+
+
+
 
 In this chapter the foundations of the algorithm employed for data analysis will be carefully explained step by step. The good practice is to begin from the statistical fundation of the algorithm itself as it set on not trivial concepts. In the next step a network for the purpose shall be built beginning from its architecture and then choosing opportune activation functions, optimizer and weight initialization. Moreover, several crucial aspects that may cause difficulties in the work progression will be stated and faced in order to find the best solution or at least a compromise if there isn't. Some of those problems to be faced are:
 \begin{itemize}
