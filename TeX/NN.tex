@@ -6,9 +6,9 @@
 
 
 \section{Artificial Neural Networks}
-Nature has inspired many inventions, so it seems logical to look at the architecture of brain for inspiration on how to build an `intelligent machine'. This is the key idea which inspired Artificial Neural Networks (a.k.a. ANNs). In fact, an ANN is a computing system inspired by the biological neural networks which consitute animal brain. Therefore, an ANN is based on a set of connected units or nodes called artificial neurons for the comparison with biological neurons. Each connection, like the synapses in a biological brain, can transmit a signal from one artificial neuron to another. An artificial neuron that receives a signal can process it and then signal additional artificial neurons connected to it. For the sake of simplicity, from now on out we will denote ANN with Neural Networks, or more simply NNs.
+Nature has inspired many inventions, so it seems logical to look at the architecture of brain for inspiration on how to build an "intelligent machine". This is the key idea which inspired Artificial Neural Networks (a.k.a. ANNs). In fact, an ANN is a computing system inspired by the biological neural networks which consitute animal brain. Therefore, an ANN is based on a set of connected units or nodes called artificial neurons for the comparison with biological neurons. Each connection, like the synapses in a biological brain, can transmit a signal from one artificial neuron to another. An artificial neuron that receives a signal can process it and then signal additional artificial neurons connected to it. For the sake of simplicity, from now on out we will denote ANN with Neural Networks, or more simply NNs.
 
-In common NN implementations, neurons are arranged in consecutive layers, with the first and last ones called respectively input and output layers. Each layer can be fully connected with the subsequent layer, i.e. every single neuron of a layer is connected with all the neurons in the next layer. It is the case of a fully connected Neural Network. In other implementations, neurons can also be only partially connected in the meaning previously defined. For example, taking into account a network with 4 input neurons, 2 output neurons and a hidden layer with 8 neurons, the difference between the two types is highlighted by Figure \ref{fig:FCNN} and \ref{fig:NFCNN}.
+In common NN implementations, neurons are arranged in consecutive layers, with the first and last ones called respectively input and output layers. Each layer can be fully connected with the subsequent layer, i.e. every single neuron of a layer is connected with all the neurons in the next layer. It is the case of a fully connected NN. In other implementations, neurons can also be only partially connected in the meaning previously defined. For example, taking into account a network with 4 input neurons, 2 output neurons and a hidden layer with 8 neurons, the difference between the two types is highlighted by Figure \ref{fig:FCNN} and \ref{fig:NFCNN}.
 
 \vspace{5mm}
 \begin{minipage}[b]{0.45\linewidth}
@@ -28,23 +28,25 @@ In common NN implementations, neurons are arranged in consecutive layers, with t
 \end{minipage}
 \vspace{5mm}
 
-We will consider fully connected NNs to explain in a more technical manner their working principles. In particular, we will consider a network composed of a number of layers $L$. A Neural Network can be described mathematically by the composition of several function (nested units) associated to a certain layer:
-%
+We will consider fully connected NNs to explain in a more technical manner their working principles. In particular, we will consider a network composed of a number of layers that will be denoted with $L$. A NN can be described mathematically by the composition of several function (nested units) associated to a certain layer:
+
 \begin{equation}
     f_\mathrm{NN}(\vec{x}) = f \circ g \circ h \circ \dots \circ \vec{x} = f(g(h(\dots(\vec{x}))))
 \end{equation}
-%
+
+\noindent
 with $\vec{x}$ the input of the NN and $f_\mathrm{NN}$ its output. The units in this representation can be of two kinds:
 \begin{itemize}
     \item Linear transformations:
-    %
+    
     \begin{equation}
         h(\vec{x}) = \mathbf{w}^l\vec{x} + \vec{b}^l
     \end{equation}
-    %
+    
+    \noindent
     where:
     \begin{itemize}
-        \item[$\triangleright$] $\mathbf{w}^l$ is a matrix of free parameters, called weights, whose elements $[\mathbf{w}]_{i,j}^l$ are the connections values between the $j^\text{th}$ neuron in the $(l-1)^\text{th}$ layer and the $i^\text{th}$ neuron in the $l^\text{th}$ layer.
+        \item[$\triangleright$] $\mathbf{w}^l$ is a matrix of free parameters, called weights, whose elements $[\mathbf{w}]_{i,j}^l$ are the connection values between the $j^\text{th}$ neuron in the $(l-1)^\text{th}$ layer and the $i^\text{th}$ neuron in the $l^\text{th}$ layer.
         \item[$\triangleright$] $\vec{b}^l$ is a vector of free parameters, called biases, of the neurons in the $l^\text{th}$ layer.
     \end{itemize}
     
@@ -55,15 +57,15 @@ with $\vec{x}$ the input of the NN and $f_\mathrm{NN}$ its output. The units in 
     \end{equation}
 \end{itemize}
 
-It is possible to deduce through this formalism that a Neural Network is a way to parametrize a set of functions, whose elements are spanned by weights and biases. Given the number of layers $\mathrm{L}$ of the NN, this set will be denoted as $\mathcal{F}_\mathrm{L}$:
+It is possible to deduce through this formalism that a Neural Network is a way to parametrize a set of functions, whose elements are spanned by weights and biases. Given the number of layers $L$ of the NN, this set will be denoted as $\mathcal{F}_\mathrm{L}$:
 %
 \begin{equation}
     \mathcal{F}_\mathrm{L} = \{ f_\mathrm{NN}(x;\mathbf{w},\vec{b}), \ \forall \ \mathbf{w},\vec{b} \}
 \end{equation}
 %
-The question of interest now is how to find the parameters $\mathbf{w}$ and $\vec{b}$ that suit best to our purpose. It is possible to achieve this accomplishment through a process called training, which is one of the key ideas behind the philosophy of Neural Networks and Deep Learning. Hence we need to implement an algorithm capable of updating the free parameters of the net to male them suitable to describe a dataset $\mathcal{D}$ given to the input layer. Moreover, a good choice of the architecture of the NN, of the algorithm and of the weights and biases could generalize the results of the procedure to a bigger dataset $\Tilde{\mathcal{D}}$.
+The question of interest now is how to find the parameters $\mathbf{w}$ and $\vec{b}$ that suit best to our purpose. It is possible to achieve this accomplishment through a process called training, which is one of the key ideas behind the philosophy of Neural Networks and Deep Learning. Hence we need to implement an algorithm capable of updating the free parameters of the net to make them suitable to describe a dataset $\mathcal{D}$ given to the input layer. Moreover, a good choice of the architecture of the NN, of the algorithm and of the weights and biases could generalize the results of the procedure to a bigger dataset $\Tilde{\mathcal{D}}$.
 
-In the following sections a step by step procedure of the training process will be explained. Moreover, several tecniques will be listed, considering that there isn't a fixed scheme in the algorithm, but a certain choice can fit better to a certain problem than another one.
+In the following sections a step by step procedure of the training process will be explained. Moreover, several techniques will be listed, considering that there isn't a fixed scheme in the algorithm, but a certain combination of them can fit better to a certain problem than another one.
 
 
 
@@ -76,14 +78,14 @@ In practice applications, given a set of data $\mathcal{D}$ whose tendency and d
 
 \section{Choice of NN architecture and activation functions}
 % Oreilly p. 272
-The flexibility of NNs is also one of their main drawbacks. In fact, there are many hyperparameters to tweak. But what do we mean with the word hyperparameter? It was previously described that a NN can parametrize a wide set of functions with the right choice of weights and biases, which are the free parameters of the net. however, there are many other parameters we have to consider and tune if we want to answer our demands. They are going to be presented step by step in the implementation of the learning procedure.
+The flexibility of NNs is also one of their main drawbacks. In fact, there are many hyperparameters to tweak. But what do we mean with the word hyperparameter? It was previously described that a NN can parametrize a wide set of functions with the right choice of weights and biases, which are the free parameters of the net. However, there are many other parameters we have to consider and tune if we want to answer our demands. They are going to be presented step by step in the implementation of the learning procedure.
 
 The first thing we have to take into account in the development of a NN is its achitecture, i.e. the number of layers and the number of neurons for each layer. The architecture of a NN is the first of the hyperparameters of the net. After this step, the activation functions for every layer are to be selected among a wide variety of solutions.
 %Depending on the complexity of the problem we have to solve, we can choose a NN composed of several hidden layers. In general, the more the dataset to generalize is big and complex, the greater the number of layers requires will be. In fact, a NN with more layers is capable to describe a wider set of functions $\mathcal{F}_\mathrm{L}$.
 
 \subsection{Number of hidden layers}
 % Oreilly p. 273
-For many problems, it is possible to begin with a single hidden layer and get reasonable results. As a matter of facts, it can be proved that a NN just like the previous one can model even the most complex functions provided it has enough neurons. This was the reason for which many researchers thought for a long time that there was no need to investigate any deeper NNs. However deep networks (i.e. with more than one hidden layer) are much more powerful than shallow ones. They have a much higher parameter efficiency because they are capable of modelling complex functions using exponentially fewer neurons than shallow nets. Through this expedient the train process could be sped up for the fewer number of free parameters.
+For many problems, it is possible to begin with a single hidden layer and get reasonable results. As a matter of facts, it can be proved that a NN just like the previous one can model even the most complex functions provided it has enough neurons. This was the reason for which many researchers thought for a long time that there was no need to investigate any deeper NNs. However, deep networks (i.e. with more than one hidden layer) are much more powerful than shallow ones. They have a much higher parameter efficiency because they are capable of modelling complex functions using exponentially fewer neurons than shallow nets. Through this expedient the train process could be sped up for the fewer number of free parameters.
 
 Another important reason to prefer deep networks for more complex problems has a heuristic justification. In fact, this kind of NNs is more adaptable to the hierarchical structure of real-world data. Lower hidden layers model low-level features, intermediate hidden layers combine these low-level features to model intermediate-level features, and the highest hidden layers and the output layer combine these intermediate features to model high-level features. Moreover, not only does this hierarchical architecture help deep NNs converge faster to a good solution, it also improves their ability to generalize to new datasets.
 

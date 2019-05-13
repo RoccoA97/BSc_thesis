@@ -16,7 +16,7 @@
 \contentsline {subsection}{\numberline {2.5.1}An example of algorithm with fixed learning rate}{11}{subsection.2.5.1}% 
 \contentsline {subsection}{\numberline {2.5.2}An example of algorithm with adaptive learning rates}{11}{subsection.2.5.2}% 
 \contentsline {section}{\numberline {2.6}Advanced tecniques}{11}{section.2.6}% 
-\contentsline {subsection}{\numberline {2.6.1}Regularizers}{11}{subsection.2.6.1}% 
+\contentsline {subsection}{\numberline {2.6.1}Regularizers}{12}{subsection.2.6.1}% 
 \contentsline {subsection}{\numberline {2.6.2}Dropout}{12}{subsection.2.6.2}% 
 \contentsline {subsection}{\numberline {2.6.3}Parameter initialization strategies}{12}{subsection.2.6.3}% 
 \contentsline {chapter}{\numberline {3}CERN research for exotic particles through LHC collider}{13}{chapter.3}% 
