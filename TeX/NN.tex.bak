@@ -6,9 +6,18 @@
 
 
 \section{Artificial Neural Networks}
-Nature has inspired many inventions, so it seems logical to look at the architecture of brain for inspiration on how to build an "intelligent machine". This is the key idea which inspired Artificial Neural Networks (a.k.a. ANNs). In fact, an ANN is a computing system inspired by the biological neural networks which consitute animal brain. Therefore, an ANN is based on a set of connected units or nodes called artificial neurons for the comparison with biological neurons. Each connection, like the synapses in a biological brain, can transmit a signal from one artificial neuron to another. An artificial neuron that receives a signal can process it and then signal additional artificial neurons connected to it. For the sake of simplicity, from now on out we will denote ANN with Neural Networks, or more simply NNs.
+Nature has inspired many inventions, so it seems logical to look at the architecture of brain for inspiration on how to build an 'intelligent machine'. This is the key idea which inspired Artificial Neural Networks (a.k.a. ANNs). In fact, an ANN is a computing system inspired by the biological neural networks which consitute animal brain. Therefore, an ANN is based on a set of connected units or nodes called artificial neurons for the comparison with biological neurons. Each connection, like the synapses in a biological brain, can transmit a signal from one artificial neuron to another. An artificial neuron that receives a signal can process it and then signal additional artificial neurons connected to it.
 
-In common NN implementations, neurons are arranged in consecutive layers, with the first and last ones called respectively input and output layers. Each layer can be fully connected with the subsequent layer, i.e. every single neuron of a layer is connected with all the neurons in the next layer. It is the case of a fully connected NN. In other implementations, neurons can also be only partially connected in the meaning previously defined. For example, taking into account a network with 4 input neurons, 2 output neurons and a hidden layer with 8 neurons, the difference between the two types is highlighted by Figure \ref{fig:FCNN} and \ref{fig:NFCNN}.
+The simplest model which can be given for an artificial neuron is the so-called 'perceptron', developed in the 1950s and 1960s by the scientist Frank Rosenblatt, inspired by earlier work by Warren McCulloch and Walter Pitts \cite{nielsen}. A perceptron takes several binary inputs, $x_{1}, x_{2}, \dots$, and produces a single binary output. Rosenblatt proposed a simple rule to compute the output. He introduced weights, $w_{1},w_{2},\dots$, real numbers expressing the importance of the respective inputs to the output. The output of the neuron, 0 or 1, is determined by whether the weighted sum is less than or greater than some threshold value.
+
+\begin{figure}[H]
+	\centering
+	\input{Images/NN/perceptron.tex}
+	\captionof{figure}{Mathematical model of a perceptron.}
+	\label{fig:PERCEPTRON}
+\end{figure}
+
+In order to make the notation easier to understand, from now on out we will denote ANN with Neural Network, or more simply NN. In common NN implementations, neurons are arranged in consecutive layers, with the first and last ones called respectively input and output layers. Each layer can be fully connected with the subsequent layer, i.e. every single neuron of a layer is connected with all the neurons in the next layer. It is the case of a fully connected NN. In other implementations, neurons can also be only partially connected in the meaning previously defined. For example, taking into account a network with 4 input neurons, 2 output neurons and a hidden layer with 8 neurons, the difference between the two types is highlighted by Figure \ref{fig:FCNN} and \ref{fig:NFCNN}.
 
 \vspace{5mm}
 \begin{minipage}[b]{0.45\linewidth}
@@ -28,7 +37,7 @@ In common NN implementations, neurons are arranged in consecutive layers, with t
 \end{minipage}
 \vspace{5mm}
 
-We will consider fully connected NNs to explain in a more technical manner their working principles. In particular, we will consider a network composed of a number of layers that will be denoted with $L$. A NN can be described mathematically by the composition of several function (nested units) associated to a certain layer:
+We will consider fully connected NNs to explain in a more technical manner their working principles. In particular, we will consider a network composed of a number of layers that will be denoted with $L$. A NN can be described mathematically by the composition of several function, called nested units, associated to a certain layer, for example:
 
 \begin{equation}
     f_\mathrm{NN}(\vec{x}) = f \circ g \circ h \circ \dots \circ \vec{x} = f(g(h(\dots(\vec{x}))))
@@ -57,15 +66,15 @@ with $\vec{x}$ the input of the NN and $f_\mathrm{NN}$ its output. The units in 
     \end{equation}
 \end{itemize}
 
-It is possible to deduce through this formalism that a Neural Network is a way to parametrize a set of functions, whose elements are spanned by weights and biases. Given the number of layers $L$ of the NN, this set will be denoted as $\mathcal{F}_\mathrm{L}$:
-%
+It is possible to deduce through this formalism that a NN is a powerful way to parametrize a set of functions, whose elements are spanned by weights and biases. Given the number of layers $L$ of the NN, this set will be denoted as $\mathcal{F}_\mathrm{L}$:
+
 \begin{equation}
     \mathcal{F}_\mathrm{L} = \{ f_\mathrm{NN}(x;\mathbf{w},\vec{b}), \ \forall \ \mathbf{w},\vec{b} \}
 \end{equation}
-%
+
 The question of interest now is how to find the parameters $\mathbf{w}$ and $\vec{b}$ that suit best to our purpose. It is possible to achieve this accomplishment through a process called training, which is one of the key ideas behind the philosophy of Neural Networks and Deep Learning. Hence we need to implement an algorithm capable of updating the free parameters of the net to make them suitable to describe a dataset $\mathcal{D}$ given to the input layer. Moreover, a good choice of the architecture of the NN, of the algorithm and of the weights and biases could generalize the results of the procedure to a bigger dataset $\Tilde{\mathcal{D}}$.
 
-In the following sections a step by step procedure of the training process will be explained. Moreover, several techniques will be listed, considering that there isn't a fixed scheme in the algorithm, but a certain combination of them can fit better to a certain problem than another one.
+In the following sections a step by step procedure of the training process will be carefully explained. Moreover, several techniques will be listed, considering that there isn't a fixed scheme in the completion of the algorithm, but a certain combination of them can fit better to a certain problem than another one.
 
 
 
@@ -85,9 +94,9 @@ The first thing we have to take into account in the development of a NN is its a
 
 \subsection{Number of hidden layers}
 % Oreilly p. 273
-For many problems, it is possible to begin with a single hidden layer and get reasonable results. As a matter of facts, it can be proved that a NN just like the previous one can model even the most complex functions provided it has enough neurons. This was the reason for which many researchers thought for a long time that there was no need to investigate any deeper NNs. However, deep networks (i.e. with more than one hidden layer) are much more powerful than shallow ones. They have a much higher parameter efficiency because they are capable of modelling complex functions using exponentially fewer neurons than shallow nets. Through this expedient the train process could be sped up for the fewer number of free parameters.
+For many problems, it is possible to begin with a single hidden layer and get reasonable results. As a matter of facts, it can be proved that a NN just like the previous one can model even the most complex functions provided it has enough neurons. This was the reason for which many researchers thought for a long time that there was no need to investigate any deeper NNs. However, deep networks (i.e. with more than one hidden layer) are much more powerful than shallow ones. They have a much higher parameter efficiency because they are capable of modelling complex functions using exponentially fewer neurons than shallow nets \cite{oreilly}. Through this expedient the train process could be sped up for the fewer number of free parameters.
 
-Another important reason to prefer deep networks for more complex problems has a heuristic justification. In fact, this kind of NNs is more adaptable to the hierarchical structure of real-world data. Lower hidden layers model low-level features, intermediate hidden layers combine these low-level features to model intermediate-level features, and the highest hidden layers and the output layer combine these intermediate features to model high-level features. Moreover, not only does this hierarchical architecture help deep NNs converge faster to a good solution, it also improves their ability to generalize to new datasets.
+Another important reason to prefer deep networks for more complex problems has a heuristic justification. In fact, this kind of NNs is more adaptable to the hierarchical structure of real-world data. Lower hidden layers model low-level features, intermediate hidden layers combine these low-level features to model intermediate-level features, and the highest hidden layers and the output layer combine these intermediate features to model high-level features. Moreover, not only does this hierarchical architecture help deep NNs converge faster to a good solution, it also improves their ability to generalize to new datasets, which is one of the primary aims.
 
 In summary, for many problems it is possible to start with just one or two hidden layers and it will work just fine. For more complex problems, the strategy is to gradually raise the number of hidden layers until the model starts overfitting the training dataset.
 

@@ -7,16 +7,17 @@ import datetime
 import h5py
 
 
-INPUT_PATH_BKG = '/home/rocco/Downloads/Z_5D_DATA/Zmumu_lepFilter_13TeV/'
-INPUT_PATH_SIG = '/home/rocco/Downloads/Z_5D_DATA/Zprime_lepFilter_13TeV/'
+INPUT_PATH_BKG = './Z_5D_DATA/Zmumu_lepFilter_13TeV/'
+INPUT_PATH_SIG = './Z_5D_DATA/Zprime_lepFilter_13TeV/M300/'
 FILE_ID_BKG = 'Zmumu_13TeV_20PU_'
-FILE_ID_SIG = 'Zprime_13TeV_20PU_'
+FILE_ID_SIG = 'Zprime_lepFilter_300GeV_13TeV_'
 
 seed=datetime.datetime.now().microsecond+datetime.datetime.now().second+datetime.datetime.now().minute
 np.random.seed(seed)
 
 #random integer to select Zprime file between 0 and 9 (10 input files)
-index_sig = np.arange(10)
+index_sig = np.arange(300)
+index_sig = np.delete(index_sig,133,0)
 np.random.shuffle(index_sig)
 #random integer to select Zmumu file between 0 and 999 (1000 input files)
 index_bkg = np.arange(1000)

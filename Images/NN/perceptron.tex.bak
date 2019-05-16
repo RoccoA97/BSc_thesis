@@ -1,0 +1,44 @@
+\begin{tikzpicture}[shorten >=1pt,->,draw=black!50, node distance=\layersep, scale=0.5]
+    \tikzstyle{every pin edge}=[<-,shorten <=1pt]
+    \tikzstyle{neuron}=[circle,fill=black!25,minimum size=30pt,inner sep=0pt]
+    \tikzstyle{input neuron}=[neuron, fill=green!50];
+    \tikzstyle{output neuron}=[neuron, fill=red!50];
+    \tikzstyle{hidden neuron}=[neuron, fill=blue!50];
+    \tikzstyle{annot} = [text width=4em, text centered]
+    
+    \node[input neuron, draw=black!100, thick, scale=0.75] (I-1) at (-\layersep,0) {$x_{1}$};
+    \node[input neuron, draw=black!100, thick, scale=0.75] (I-2) at (-\layersep,-2.0) {$x_{2}$};
+    \node[scale=0.75] (I-i) at (-\layersep,-4.0) {$\vdots$};
+    \node[input neuron, draw=black!100, thick, scale=0.75] (I-n-1) at (-\layersep,-6.0) {$x_{n-1}$};
+    \node[input neuron, draw=black!100, thick, scale=0.75] (I-n) at (-\layersep,-8.0) {$x_{n}$};
+    
+    \node[input neuron, draw=black!100, thick, scale=0.75] (W-1) at (0.5*\layersep,0) {$w_{1}$};
+    \node[input neuron, draw=black!100, thick, scale=0.75] (W-2) at (0.5*\layersep,-2.0) {$w_{2}$};
+    \node[scale=0.75] (W-i) at (0.5*\layersep,-4.0) {$\vdots$};
+    \node[input neuron, draw=black!100, thick, scale=0.75] (W-n-1) at (0.5*\layersep,-6.0) {$w_{n-1}$};
+    \node[input neuron, draw=black!100, thick, scale=0.75] (W-n) at (0.5*\layersep,-8.0) {$w_{n}$};
+    
+    \node[output neuron, draw=black!100, thick, scale=0.75] (SUM) at (2.5*\layersep,-4.0) {$\sum$};
+    
+    \node[output neuron, draw=black!100, thick, scale=0.75, pin={[pin edge={->,black}]right:{$\displaystyle \text{output} =
+	\begin{cases}
+		0	&	\text{if } \sum_{i} x_{i} w_{i} \le \text{threshold}	\\
+		1	&	\text{if } \sum_{i} x_{i} w_{i} > \text{threshold}		\\
+	\end{cases}$}}] (STEP) at (4.5*\layersep,-4.0) {};  
+    \draw[-, black] (4.7*\layersep,-3.7) -- (4.5*\layersep,-3.7) -- (4.5*\layersep,-4.3) -- (4.3*\layersep,-4.3);
+    
+    \path[black] (I-1) edge (W-1);
+    \path[black] (I-2) edge (W-2);
+    \path[black] (I-n-1) edge (W-n-1);
+    \path[black] (I-n) edge (W-n);
+    
+    \path[black] (W-1) edge (SUM);
+    \path[black] (W-2) edge (SUM);
+    \path[black] (W-n-1) edge (SUM);
+    \path[black] (W-n) edge (SUM);
+    
+    \path[black] (SUM) edge (STEP);
+    
+    \node[annot,above of=I-1, node distance=1.0cm] (i1) {\scriptsize Inputs};
+    \node[annot,above of=W-1, node distance=1.0cm] (w1) {\scriptsize Weights};
+\end{tikzpicture}

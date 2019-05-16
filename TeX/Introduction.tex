@@ -7,7 +7,7 @@
 
 
 \section{High-Energy Particle Physics and Standard Model}
-Understanding the nature of the particles that constitute matter and radiation is one of the main concerns of science. Particle Physics, also known as High-Energy Physics (briefly, "hep"), is the branch of Physics that conducts this ambitious research and its development can be located near the end of $19^\mathrm{th}$ century. Since then numerous theoretical models have been built in order to predict the outcome of experiments, which can prove their correctness.
+Understanding the nature of the particles that constitute matter and radiation is one of the main concerns of science. Particle Physics, also known as High-Energy Physics (briefly, 'hep'), is the branch of Physics that conducts this ambitious research and its development can be located near the end of $19^\mathrm{th}$ century. Since then numerous theoretical models have been built in order to predict the outcome of experiments, which can prove their correctness.
 
 At the present, the model that better describes the observed phenomena in hep is the Standard Model, which will be identified with the acronym SM. Since it is the best basis for comparison with experimental results, it will be denoted as reference model in the following discussion. 
 
@@ -38,9 +38,9 @@ The most widely employed approach to the problem is to search for specific new p
 
 
 \subsection{Benefits of a model-independent approach}
-After having underlined the difficulties of a model-dependent approach, we can now introduce the strategy of a model-independent approach. But first, it is necessary to clarify the meaning of the expression "model-independent" since it is ill-defined in statistic when it is bound to the concept of hypotheisis test. In fact, testing one hypothesis requires an alternative hypothesis to compare with. What we have is basically a set of alternative hypothetical distributions depending on free parameters, also called alternative probability model in statistics. 
+After having underlined the difficulties of a model-dependent approach, we can now introduce the strategy of a model-independent approach. But first, it is necessary to clarify the meaning of the expression 'model-independent' since it is ill-defined in statistic when it is bound to the concept of hypotheisis test. In fact, testing one hypothesis requires an alternative hypothesis to compare with. What we have is basically a set of alternative hypothetical distributions depending on free parameters, also called alternative probability model in statistics. 
 
-In Physics a model is a set of physical laws that make us able to predict these distributions. So we define a certain approach "model-independent" when the alternative distributions don't follow from a physical model, but are selected with other criteria, such as flexibility. It means that the distributions can adapt to the true underlying data distribution for an appropriate choice of the free parameters.
+In Physics a model is a set of physical laws that make us able to predict these distributions. So we define a certain approach 'model-independent' when the alternative distributions don't follow from a physical model, but are selected with other criteria, such as flexibility. It means that the distributions can adapt to the true underlying data distribution for an appropriate choice of the free parameters.
 
 The main reason for which we demand a model-independent approach is the advantage of sensitivity to a large variety of new physics scenarios, including those that are not predicted by any of the models constructed until now.
 
@@ -52,6 +52,19 @@ The main reason for which we demand a model-independent approach is the advantag
 The application of ML techniques to Particle Physics is not the newest addition in the field. The algorithms of this branch are currently applied to aid event selection in the analysis of data given by detectors. In fact, most accelerator events do not produce particles of interest, so making effective measurements requires a filter, in which events producing particles of interest are separated from events producing other particles not involved in the processes we want to study.
 
 However, the current techniques used in hep fail to capture all of the available information, as proved by \cite{baldi}. The recent developments in deep learning theory can overcome these issues. (Deep) Neural networks provide powerful classifiers and can solve the curse of high dimensionality of data. Moreover, circuit complexity theory has proved that deep neural networks have the potential to compute in an unbiased way arbitrary complex functions in a very efficient way. Employing them to parametrize alternative distributions for model-independent new physics searches is thus a highly motivated attempt.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.9\textwidth]{Images/Introduction/barplot_blue_orange_SUSY2013.pdf}
+	\caption{Best exclusion limits for the masses of the mother particles, for RPC scenarios, for m(LSP) = $0~\si{GeV}$ (dark shades) and $m(\text{mother}) - m(\text{LSP}) = 200~\si{GeV}$ (light shades); for each topology, for all results. In this plot, the lowest mass range is $m(\text{mother})=0$, but results are available starting from a certain mass depending on the analyses and topologies. Branching ratios of one are assumed, values shown in plot are to be interpreted as upper bounds on the mass limits \cite{cms_results}.}
+	\label{fig:MODEL_DEPENDENT_1}
+\end{figure}
+\begin{figure}
+	\centering
+	\includegraphics[width=0.9\textwidth]{Images/Introduction/RPVbarplot_blue_orange_EPSHEP2013.pdf}
+	\caption{Best exclusion limits for the masses of the mother particles, for RPV scenarios, for each topology, for all results. In this plot, the lowest mass range is $m(\text{mother})=0~\si{GeV}$, but results are available starting from a certain mass depending on the analyses and topologies. Branching ratios of one are assumed, values shown in plot are to be interpreted as upper bounds on the mass limits \cite{cms_results}.}
+	\label{fig:MODEL_DEPENDENT_2}
+\end{figure}
 
 Several approaches with neural networks to the problem of new physics research have been developed so far, starting from the one given by \cite{baldi}. The approach employed in this thesis work is introduced by \cite{wulzer}. Technically speaking, we can exploit neural networks to find an anomalous behavior, relative to the reference model, of the entire data sample, with which we train the network. The process studied is the decay of the $Z$ boson into a pair of muon-antimuon, assuming for new physics events different kind of signals in order to test the efficiency of the approach.
 
