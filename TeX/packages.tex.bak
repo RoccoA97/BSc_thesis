@@ -34,6 +34,10 @@
 % SI units
 \usepackage{siunitx}
 
+% Standalone
+\usepackage[subpreambles=true]{standalone}
+\usepackage{import}
+
 % Tables
 \usepackage{tabularx}
 \usepackage{booktabs}

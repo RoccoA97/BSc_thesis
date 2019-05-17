@@ -11,10 +11,19 @@ Understanding the nature of the particles that constitute matter and radiation i
 
 At the present, the model that better describes the observed phenomena in hep is the Standard Model, which will be identified with the acronym SM. Since it is the best basis for comparison with experimental results, it will be denoted as reference model in the following discussion. 
 
+\begin{comment}
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.4\textwidth]{Images/Introduction/SM_particles.pdf}
 	\caption{Standard Model particles.}
+	\label{fig:SM_PARTICLES}
+\end{figure}
+\end{comment}
+
+\begin{figure}[H]
+	\centering
+	\import{Images/Introduction/}{SM_particles.tex}
+	\captionof{figure}{Standard Model particles.}
 	\label{fig:SM_PARTICLES}
 \end{figure}
 
@@ -74,6 +83,6 @@ The content of this thesis work is ordered as follows:
 \begin{itemize}
 	\item In Chapter \ref{chap:NN} the a general recap on deep learning theory and on neural network is given. Common practices in training procedure are explained too.
 	\item In Chapter \ref{chap:LHC} LHC collider is described along with CMS experiment. In particular, in Chapter \ref{chap:Z} a summary on the process analyzed can be found.
-	\item In Chapter \ref{chap:Z_5D} the algorithm employed for anomaly detections is explained and in Chapter \ref{chap:W_CLIP} a necessary tuning procedure is illustrated. Finally, the results are presented in \ref{chap:RESULTS}.
+	\item In Chapter \ref{chap:Z_5D} the algorithm employed for anomaly detections is explained and in Chapter \ref{chap:W_CLIP} a necessary tuning procedure is illustrated. Finally, the results are presented in Chapter \ref{chap:RESULTS}.
 	\item In the final Chapter \ref{chap:CONCLUSION} possible development of the algorithms are provided.
 \end{itemize}

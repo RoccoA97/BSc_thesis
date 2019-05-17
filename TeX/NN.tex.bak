@@ -479,7 +479,7 @@ Several initialization strategies have been developed in the research field of D
 
 \begin{itemize}
     \item \textbf{Xavier and He initialization}. \\
-    The connection weights must be initialized randomly ad described in Table \ref{tab:XAVIER_HE_INITIALIZATIONS}, where $n=n_\text{inputs}$ and $m=n_\text{outputs}$ are respectively the number of input and output connections for the layer whose weights are being initialized (also called fan-in and fan-out). The distribution used to initialization has to be chosen between a normal distribution with mean 0 and standard deviation $\sigma$ and a uniform distribution between $-r$ and $r$. He initialization is the name given to this kind of initialization with ReLU activations.
+    The connection weights must be initialized randomly as described in Table \ref{tab:XAVIER_HE_INITIALIZATIONS}, where $n=n_\text{inputs}$ and $m=n_\text{outputs}$ are respectively the number of input and output connections for the layer whose weights are being initialized (also called fan-in and fan-out). The distribution used for the initialization has to be chosen between a normal distribution with mean 0 and standard deviation $\sigma$ and a uniform distribution between $-r$ and $r$. He initialization is the name given to this kind of initialization with ReLU activations.
     
     \begin{table}[h]
         \centering

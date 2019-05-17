@@ -11,10 +11,19 @@ Understanding the nature of the particles that constitute matter and radiation i
 
 At the present, the model that better describes the observed phenomena in hep is the Standard Model, which will be identified with the acronym SM. Since it is the best basis for comparison with experimental results, it will be denoted as reference model in the following discussion. 
 
+\begin{comment}
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.4\textwidth]{Images/Introduction/SM_particles.pdf}
 	\caption{Standard Model particles.}
+	\label{fig:SM_PARTICLES}
+\end{figure}
+\end{comment}
+
+\begin{figure}[H]
+	\centering
+	\import{Images/Introduction/}{SM_particles.tex}
+	\captionof{figure}{Standard Model particles.}
 	\label{fig:SM_PARTICLES}
 \end{figure}
 
@@ -51,20 +60,18 @@ The main reason for which we demand a model-independent approach is the advantag
 \section{Machine Learning answer to the problem}
 The application of ML techniques to Particle Physics is not the newest addition in the field. The algorithms of this branch are currently applied to aid event selection in the analysis of data given by detectors. In fact, most accelerator events do not produce particles of interest, so making effective measurements requires a filter, in which events producing particles of interest are separated from events producing other particles not involved in the processes we want to study.
 
-However, the current techniques used in hep fail to capture all of the available information, as proved by \cite{baldi}. The recent developments in deep learning theory can overcome these issues. (Deep) Neural networks provide powerful classifiers and can solve the curse of high dimensionality of data. Moreover, circuit complexity theory has proved that deep neural networks have the potential to compute in an unbiased way arbitrary complex functions in a very efficient way. Employing them to parametrize alternative distributions for model-independent new physics searches is thus a highly motivated attempt.
-
 \begin{figure}
 	\centering
 	\includegraphics[width=0.9\textwidth]{Images/Introduction/barplot_blue_orange_SUSY2013.pdf}
 	\caption{Best exclusion limits for the masses of the mother particles, for RPC scenarios, for m(LSP) = $0~\si{GeV}$ (dark shades) and $m(\text{mother}) - m(\text{LSP}) = 200~\si{GeV}$ (light shades); for each topology, for all results. In this plot, the lowest mass range is $m(\text{mother})=0$, but results are available starting from a certain mass depending on the analyses and topologies. Branching ratios of one are assumed, values shown in plot are to be interpreted as upper bounds on the mass limits \cite{cms_results}.}
 	\label{fig:MODEL_DEPENDENT_1}
-\end{figure}
-\begin{figure}
-	\centering
+
 	\includegraphics[width=0.9\textwidth]{Images/Introduction/RPVbarplot_blue_orange_EPSHEP2013.pdf}
 	\caption{Best exclusion limits for the masses of the mother particles, for RPV scenarios, for each topology, for all results. In this plot, the lowest mass range is $m(\text{mother})=0~\si{GeV}$, but results are available starting from a certain mass depending on the analyses and topologies. Branching ratios of one are assumed, values shown in plot are to be interpreted as upper bounds on the mass limits \cite{cms_results}.}
 	\label{fig:MODEL_DEPENDENT_2}
 \end{figure}
+
+However, the current techniques used in hep fail to capture all of the available information, as proved by \cite{baldi}. The recent developments in deep learning theory can overcome these issues. (Deep) Neural networks provide powerful classifiers and can solve the curse of high dimensionality of data. Moreover, circuit complexity theory has proved that deep neural networks have the potential to compute in an unbiased way arbitrary complex functions in a very efficient way. Employing them to parametrize alternative distributions for model-independent new physics searches is thus a highly motivated attempt.
 
 Several approaches with neural networks to the problem of new physics research have been developed so far, starting from the one given by \cite{baldi}. The approach employed in this thesis work is introduced by \cite{wulzer}. Technically speaking, we can exploit neural networks to find an anomalous behavior, relative to the reference model, of the entire data sample, with which we train the network. The process studied is the decay of the $Z$ boson into a pair of muon-antimuon, assuming for new physics events different kind of signals in order to test the efficiency of the approach.
 
@@ -74,6 +81,6 @@ The content of this thesis work is ordered as follows:
 \begin{itemize}
 	\item In Chapter \ref{chap:NN} the a general recap on deep learning theory and on neural network is given. Common practices in training procedure are explained too.
 	\item In Chapter \ref{chap:LHC} LHC collider is described along with CMS experiment. In particular, in Chapter \ref{chap:Z} a summary on the process analyzed can be found.
-	\item In Chapter \ref{chap:Z_5D} the algorithm employed for anomaly detections is explained and in Chapter \ref{chap:W_CLIP} a necessary tuning procedure is illustrated. Finally, the results are presented in \ref{chap:RESULTS}.
+	\item In Chapter \ref{chap:Z_5D} the algorithm employed for anomaly detections is explained and in Chapter \ref{chap:W_CLIP} a necessary tuning procedure is illustrated. Finally, the results are presented in Chapter \ref{chap:RESULTS}.
 	\item In the final Chapter \ref{chap:CONCLUSION} possible development of the algorithms are provided.
 \end{itemize}
