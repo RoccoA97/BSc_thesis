@@ -15,7 +15,7 @@
 \contentsline {section}{\numberline {2.5}Updating free parameters: Optimizers}{11}{section.2.5}% 
 \contentsline {subsection}{\numberline {2.5.1}An example of algorithm with fixed learning rate}{11}{subsection.2.5.1}% 
 \contentsline {subsection}{\numberline {2.5.2}An example of algorithm with adaptive learning rates}{12}{subsection.2.5.2}% 
-\contentsline {section}{\numberline {2.6}Advanced tecniques}{12}{section.2.6}% 
+\contentsline {section}{\numberline {2.6}Other techniques}{12}{section.2.6}% 
 \contentsline {subsection}{\numberline {2.6.1}Regularizers}{12}{subsection.2.6.1}% 
 \contentsline {subsection}{\numberline {2.6.2}Dropout}{12}{subsection.2.6.2}% 
 \contentsline {subsection}{\numberline {2.6.3}Parameter initialization strategies}{13}{subsection.2.6.3}% 

@@ -14,7 +14,7 @@
 \BOOKMARK [1][-]{section.2.5}{Updating free parameters: Optimizers}{chapter.2}% 14
 \BOOKMARK [2][-]{subsection.2.5.1}{An example of algorithm with fixed learning rate}{section.2.5}% 15
 \BOOKMARK [2][-]{subsection.2.5.2}{An example of algorithm with adaptive learning rates}{section.2.5}% 16
-\BOOKMARK [1][-]{section.2.6}{Advanced tecniques}{chapter.2}% 17
+\BOOKMARK [1][-]{section.2.6}{Other techniques}{chapter.2}% 17
 \BOOKMARK [2][-]{subsection.2.6.1}{Regularizers}{section.2.6}% 18
 \BOOKMARK [2][-]{subsection.2.6.2}{Dropout}{section.2.6}% 19
 \BOOKMARK [2][-]{subsection.2.6.3}{Parameter initialization strategies}{section.2.6}% 20

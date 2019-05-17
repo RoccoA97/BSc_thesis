@@ -264,12 +264,11 @@ A selection of possible techniques that can be used for optimization is presente
 % Deep Learning Book p. 204-205
 When we use a feedforward neural network to accept an input $x$ and produce an output $\hat{y}$, information flows forward through the network. The input $x$ provides the initial information that then propagates up to the hidden units at each layer and finally produces $\hat{y}$. This is called forward propagation. 
 
-During training, forward propagation can continue onward until it produces a scalar loss $L(\mathbf{w},\vec{b}$. The backpropagation algorithm, often simply called backprop, allows the information from the loss to then flow backward through the network in order to compute the gradient of the loss respect to the free parameters $\mathbf{w}$ and $\vec{b}$. Numerically evaluating such an expression can be computationally expensive. The backpropagation algorithm does so using a simple and inexpensive procedure.
+During training, forward propagation can continue onward until it produces a scalar loss $L(\mathbf{w},\vec{b})$. The backpropagation algorithm, often simply called backprop, allows the information from the loss to then flow backward through the network in order to compute the gradient of the loss respect to the free parameters $\mathbf{w}$ and $\vec{b}$. Numerically evaluating such an expression can be computationally expensive. The backpropagation algorithm does so using a simple and inexpensive procedure.
 
-The fundamental equations of the algorithm are presented below.
-
+The fundamental equations of the algorithm are presented below with $\sigma$ indicating the activation function and $a$ its output\footnotemark. The proof of these equations is based on the chain rule applied to derivatives calculation and can be found in \cite{nielsen}.
 \begin{align}
-    \delta^L &= \nabla_a C \odot \sigma^{\prime}(z^L)   \\
+    \delta^L &= \nabla_a L \odot \sigma^{\prime}(z^L)   \\
     \delta^l &= [(\mathbf{w}^{l+1})^T \delta^{l+1}] \odot \sigma^{\prime}(z^L)    \\
     \frac{\partial C}{\partial b^{l}_{i}} &= \delta^{l}_{i}  \\
     \frac{\partial C}{\partial \mathbf{w}^{l}_{ik}} &= a^{l-1}_{k} \delta^{l}_{i}
@@ -279,15 +278,21 @@ The fundamental equations of the algorithm are presented below.
 where:
 
 \begin{align*}
-	a^{l} &= \sigma{\mathbf{w}^{l} a^{l-1} + \vec{b}^{l}}	\\
-	a^{0} &= \vec{x}
+	a^{l} &= \sigma(\mathbf{w}^{l} a^{l-1} + \vec{b}^{l})	\\
+	a^{0} &= x
 \end{align*}
 
-Translated in form of pseudo-code, the backpropagation algorithm appears like the one in the space below. It has to be specified that this algorithm is adapted for a fully connected network. In the case of a not-fully connected network the code becomes a bit more complex, but the concept behind is the same.
+\footnotetext{In the backprop equations, the symbol $\odot$ is the Hadamard product. Given two matrices $\mathbf{A}$ and $\mathbf{B}$ of the same dimension $m \times n$, $\mathbf{A} \odot \mathbf{B}$ is a matrix of the same shape with elements given by:
+\begin{equation*}
+	[\mathbf{A} \odot \mathbf{B}]_[ij] = [\mathbf{A}]_{ij} [\mathbf{B}]_{ij}
+\end{equation*}
+}
+
+The backpropagation algorithm is reported in form of pseudo-code in Algorithm \ref{alg:BACKWARD_COMPUTATION}. It has to be specified that this is adapted for a fully connected network. In the case of a not-fully connected network the code becomes a bit more complex, but the concept behind is the same.
 
 % Deep Learning Book p.205 (copiato e rimodellato)
 \begin{algorithm}[H]
-\caption{Forward propagation through a typical deep neural network and the computation of the cost function. The loss $L(\hat{y},y)$ depends on the output $\hat{y}$ and on the target $y$. The symbol $\theta$ will be used to indicate both weights and biases.}\label{FORWARD_PROPAGATION}
+\caption{Forward propagation through a typical deep neural network and the computation of the cost function. The loss $L(\hat{y},y)$ depends on the output $\hat{y}$ and on the target $y$. The symbol $\theta$ will be used to indicate both weights and biases.}\label{alg:FORWARD_PROPAGATION}
 \begin{algorithmic}[1]
 \Require Network depth, $l$
 \Require $\mathbf{w}^{(i)}$, $i \in \{1,\dots,l\}$, the weight matrices of the model
@@ -295,16 +300,16 @@ Translated in form of pseudo-code, the backpropagation algorithm appears like th
 \Require $x$, the input to the process
 \Require $y$, the target output
 
-\Procedure{Forward propagation}{$x$}%\Comment{The g.c.d. of a and b}
+\Procedure{Forward Propagation}{$x$}%\Comment{The g.c.d. of a and b}
 
-\State $h^{(0)} = x$
+\State $a^{(0)} = x$
 
 \For{$k=1,\dots,l$}
-\State $a^{(k)} = b^{(k)} + \mathbf{w}^{(k)} h^{(k)}$
-\State $h^{(k)} = f(a^{(k)})$
+\State $z^{(k)} = b^{(k)} + \mathbf{w}^{(k)} a^{(k-1)}$
+\State $a^{(k)} = \sigma(z^{(k)})$
 \EndFor
 
-\State $\hat{y} = h^{(l)}$
+\State $\hat{y} = a^{(l)}$
 
 \State \textbf{return} $\hat{y}$, $L(\hat{y},y)$
 \EndProcedure
@@ -314,7 +319,7 @@ Translated in form of pseudo-code, the backpropagation algorithm appears like th
 
 % Deep Learning Book p.206 (copiato e rimodellato)
 \begin{algorithm}[H]
-\caption{Backward computation for the deep neural network of Algorithm \ref{FORWARD_PROPAGATION}, which uses, in addition to the input $x$, a target $y$. This computation yields the gradients on the activations $a^{(k)}$ for each layer $k$, starting from the output layer and going backwards to the first hidden layer. From these gradients, which can be interpreted as an indication of how each layer's output should change to reduce error, one can obtain the gradient on the parameters of each layer.}\label{BACKWARD_COMPUTATION}
+\caption{Backward computation for the deep neural network of Algorithm \ref{alg:FORWARD_PROPAGATION}, which uses, in addition to the input $x$, a target $y$. This computation yields the gradients on the activations $a^{(k)}$ for each layer $k$, starting from the output layer and going backwards to the first hidden layer. From these gradients, which can be interpreted as an indication of how each layer's output should change to reduce error, one can obtain the gradient on the parameters of each layer.}\label{alg:BACKWARD_COMPUTATION}
 \begin{algorithmic}[1]
 \Procedure{Backward computation}{$x$} \Comment After the forward computation
 
@@ -338,28 +343,28 @@ Translated in form of pseudo-code, the backpropagation algorithm appears like th
 
 \section{Updating free parameters: Optimizers}
 \label{sec:OPTIMIZERS}
-Now that we have a solid method to compute the derivatives respect to free parameters of the loss function $L$, we can update weights and biases according to the derivatives. In fact, those quantities can be seen as a measure of how much the parameters are to be changed in order to get results that resemble the output. The basic idea is to change $\mathbf{w}$ and $\vec{b}$ of a quantity equals to the corrisponding derivative multiplied by $-\eta$, where $\eta$ is another hyperparameter called learning rate. It is in general a small number that represents the speed of the learning process. It is fixed at the beginning of the procedure for some algorithms, for others it is variable during the training process, starting from a predefined value.
+Now that we have a solid method to compute the derivatives respect to free parameters of the loss function $L$, we can update weights and biases according to the derivatives. In fact, those quantities can be seen as a measure of how much the parameters are to be changed in order to get results that resemble the output. The basic idea is to change $\mathbf{w}$ and $\vec{b}$ of a quantity equals to the corrisponding derivative multiplied by $-\eta$, where $\eta$ is another hyperparameter called 'learning rate'. It is in general a small number that represents the speed of the learning process. It is fixed at the beginning of the procedure for some algorithms, for others it is variable during the training process, starting from a predefined value.
 
 % OReilly p. 297
-We focus now on the algorithms that execute the updaing phase of the parameters. They are called optimizers, just like the title of the section suggests and also for them there is a wide variety of choices. Some of them are still under study because their generalization power has not be proven completely. This is the case of "adam" algorithm. We'll start to explain one the simplest, the Stochastic Gradient Descent (SGD), and then we'll introduce the so called fast optimizers. training a very large deep neural network can be painfully slow, but this kind of optimizers, along with some other techniques, gives a huge boost to the computation.
+We focus now on the algorithms that execute the updaing phase of the parameters. They are called optimizers, just like the title of the Section suggests and also for them there is a wide variety of choices. Some of them are still under study because their generalization power has not be proven completely. This is the case of '\textsc{AdaM}' algorithm. We'll start to explain one the simplest, the Stochastic Gradient Descent (SGD), and then we'll introduce the so called fast optimizers. Training a very large deep neural network can be painfully slow, but this kind of optimizers, along with some other techniques, gives a huge boost to the computation.
 
 \subsection{An example of algorithm with fixed learning rate}
 % Deep Learning Book p.286 (copiato e rimodellato)
 \begin{algorithm}[H]
-\caption{Stochastic Gradient Descent (SGD) update at training iteration $k$}\label{SGD}
+\caption{Stochastic Gradient Descent (SGD) update at training iteration $k$.}\label{alg:SGD}
 \begin{algorithmic}[1]
 \Require Learning rate $\eta_{k}$
-\Require Initial parameter $\theta$
+\Require Initial parameters $\bm{\theta}$
 
 \Procedure{SGD}{$\{x^{(i)}\}_{i=1,\dots,n}$} \Comment Take as input a dataset of $n$ elements
 
 \While{stopping criterion not met}
 \State Sample a minibatch $\{x^{(1)},\dots,x^{(m)}\}$ from the training set with corresponding targets $y^{(i)}$.
-\State $\hat{g} \gets + \frac{1}{m} \nabla_{\mathbf{\theta}} \sum_{i} L(f(x^{(i)};\mathbf{\theta}), y^{(i)})$ \Comment{Compute gradient estimate}
-\State $\mathbf{\theta} \gets \mathbf{\theta} - \eta \hat{g}$
+\State $\hat{g} \gets + \frac{1}{m} \nabla_{\bm{\theta}} \sum_{i} L(f(x^{(i)};\bm{\theta}), y^{(i)})$ \Comment{Compute gradient estimate}
+\State $\bm{\theta} \gets \bm{\theta} - \eta \hat{g}$
 \EndWhile
 
-\State \textbf{return} $\mathbf{\theta}$
+\State \textbf{return} $\bm{\theta}$
 \EndProcedure
 \end{algorithmic}
 \end{algorithm}
@@ -370,7 +375,7 @@ We focus now on the algorithms that execute the updaing phase of the parameters.
 \begin{comment}
                     % Deep Learning Book p.300 (copiato e rimodellato)
                     \begin{algorithm}[H]
-                    \caption{RMSProp algorithm}\label{RMSPROP}
+                    \caption{RMSProp algorithm}\label{alg:RMSPROP}
                     \begin{algorithmic}[1]
                     \Require Global learning rate $\eta$, decay rate $\rho$
                     \Require Initial parameter $\theta$
@@ -398,12 +403,12 @@ We focus now on the algorithms that execute the updaing phase of the parameters.
 
 % Deep Learning Book p.301 (copiato e rimodellato)
 \begin{algorithm}[H]
-\caption{Adam algorithm}\label{ADAM}
+\caption{Adam algorithm.}\label{alg:ADAM}
 \begin{algorithmic}[1]
 \Require Step size $\epsilon$ (suggested default: $0.001$)
 \Require Exponential decay rates for moment estimates, $\rho_1$,$\rho_2$ $\in [0,1)$ (suggested defaults: $0.9$ and $0.999$ respectively)
 \Require Small constant $\delta$, usually $10^{-8}$, used to stabilize division by small numbers
-\Require Initial parameter $\theta$
+\Require Initial parameters $\bm{\theta}$
 \Require Minibatch dimension $m$
 
 \Procedure{Adam}{$\{x^{(i)}\}_{i=1,\dots,n}$} \Comment Take as input a dataset of $n$ elements
@@ -413,17 +418,17 @@ We focus now on the algorithms that execute the updaing phase of the parameters.
 
 \While{stopping criterion not met}
 \State Sample a minibatch $\{x^{(1)},\dots,x^{(m)}\}$ from the training set with corresponding targets $y^{(i)}$.
-\State $\hat{g} \gets + \frac{1}{m} \nabla_{\mathbf{\theta}} \sum_{i} L(f(x^{(i)};\mathbf{\theta}), y^{(i)})$ \Comment{Compute gradient estimate}
+\State $\hat{g} \gets + \frac{1}{m} \nabla_{\bm{\theta}} \sum_{i} L(f(x^{(i)};\mathbf{\theta}), y^{(i)})$ \Comment{Compute gradient estimate}
 \State $t \gets t+1$
 \State $s \gets \rho_1 s + (1-\rho_1) g$    \Comment Update biased $1^\text{st}$ moment estimate
 \State $s \gets \rho_2 r + (1-\rho_2) g \odot g$    \Comment Update biased $2^\text{nd}$ moment estimate
 \State $\hat{s} \gets \frac{s}{1 - \rho^t_1}$   \Comment Correct bias in $1^\text{st}$ moment
 \State $\hat{r} \gets \frac{r}{1 - \rho^t_2}$   \Comment Correct bias in $2^\text{nd}$ moment
-\State $\Delta \theta = - \epsilon \frac{\hat{s}}{\sqrt{\hat{r}} + \delta}$ \Comment Compute parameter update
-\State $\mathbf{\theta} \gets \mathbf{\theta} + \Delta \mathbf{\theta}$
+\State $\Delta \bm{\theta} = - \epsilon \frac{\hat{s}}{\sqrt{\hat{r}} + \delta}$ \Comment Compute parameter update
+\State $\bm{\theta} \gets \bm{\theta} + \Delta \bm{\theta}$
 \EndWhile
 
-\State \textbf{return} $\mathbf{\theta}$
+\State \textbf{return} $\bm{\theta}$
 \EndProcedure
 \end{algorithmic}
 \end{algorithm}
@@ -432,25 +437,36 @@ We focus now on the algorithms that execute the updaing phase of the parameters.
 
 
 
-\section{Advanced tecniques}
+\section{Other techniques}
 It is possible to improve performances of a Neural Network through some other techniques. In particular, those techniques become necessary when the model we want the net to learn is pretty much complex and so the architecture of the net too.
 
 
 
 \subsection{Regularizers}
 % Deep Learning Book p.106-107
-Regularization is one of the central concerns of the field of machine learning, rivaled in its importance only by optimization. Regularization is any modification we make to a learning algorithm that is intended to reduce its generalization error but not its training error. In practice, the most common way to regularize a model that learns a function $f(x;\theta)$ is adding a penalty called regularizer to the cost function. An example employed when weight decay is applied to the parametes is the following one:
+Regularization is one of the central concerns of the field of machine learning, rivaled in its importance only by optimization. Regularization is any modification we make to a learning algorithm that is intended to reduce its generalization error but not its training error\footnotemark. In practice, the most common way to regularize a model that learns a function $f(x;\bm{\theta})$ is adding a penalty called regularizer to the cost function. An example employed when weight decay is applied to the parametes is the following one:
 \begin{equation}
     \Omega(\mathbf{w}) = \mathbf{w}^\mathrm{T} \mathbf{w}
 \end{equation}
 
+\footnotetext{These two types of error are defined as:\\
+\textbf{Generalization error}: it is a measure of how accurately an algorithm is able to predict outcome values for previously unseen data.\\
+\textbf{Training error}: it is the error that we get when we run the trained model back on the training data.
+}
 
 
 \subsection{Dropout}
 % OReilly p.309
-The most popular regularizatioon technique for deep neural networks is arguably dropout. It was proposed by [ADD REFERENCE] in 2012 and further detailed in [ADD OTHER REFERENCE]; it has proven tobe successful.
+The most popular regularizatioon technique for deep neural networks is arguably dropout. It was proposed by [ADD REFERENCE] in 2012 and further detailed in [ADD OTHER REFERENCE]; it has proven to be successful.
 
-It is a very simple algorithm: at every training step, every neuron (including the input neurons but excluding the output neurons) has a probability $p$ of being temporarily "dropped out", meaning it will be entirely ingnored during this training step, but it may be active during the next step. The hyperparameter $p$ is called the dropout rate and it is typically set to 50\%. After training, neurons don't get dropped anymore.
+It is a very simple algorithm: at every training step, every neuron (including the input neurons but excluding the output neurons) has a probability $p$ of being temporarily 'dropped out', meaning it will be entirely ingnored during this training step, but it may be active during the next step. The hyperparameter $p$ is called 'dropout rate' and it is typically set to 50\%. After training, neurons don't get dropped anymore.
+
+\begin{figure}[H]
+	\centering
+	\input{Images/NN/dropout.tex}
+	\captionof{figure}{Example of dropout in NNs.}
+	\label{fig:DROPOUT}
+\end{figure}
 
 A possible explanation of the effectiveness of dropout could be given. Neurons trained with dropout can't co-adapt with their neughbouring neuron. They have to be useful as possible on their own. They can't rely excessively on just a few input neurons and so they must pay attention to each of their input neurons. They end up being less sensitive to slight changes in the inputs. In the end, we get a more robust network that generalizes better.
 
@@ -463,7 +479,7 @@ Several initialization strategies have been developed in the research field of D
 
 \begin{itemize}
     \item \textbf{Xavier and He initialization}. \\
-    The connection weights must be initialized randomly ad described in Table \ref{tab:XAVIER_HE_INITIALIZATIONS}, where $n=n_\text{inputs}$ and $m=n_\text{outputs}$ are respectively the number of input and output connections for the layer whose weights are being initialized (also called fan-in and fan-out). The distribution used to initialization has to be chosen between a normal distribution with mean 0 and standard deviation $\sigma$ and a uniform distribution between $-r$ and $r$. He initialization is the name given to this kind of initialization with ReLU activations.
+    The connection weights must be initialized randomly as described in Table \ref{tab:XAVIER_HE_INITIALIZATIONS}, where $n=n_\text{inputs}$ and $m=n_\text{outputs}$ are respectively the number of input and output connections for the layer whose weights are being initialized (also called fan-in and fan-out). The distribution used for the initialization has to be chosen between a normal distribution with mean 0 and standard deviation $\sigma$ and a uniform distribution between $-r$ and $r$. He initialization is the name given to this kind of initialization with ReLU activations.
     
     \begin{table}[h]
         \centering
