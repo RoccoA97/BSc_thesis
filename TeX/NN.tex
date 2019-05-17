@@ -17,6 +17,8 @@ The simplest model which can be given for an artificial neuron is the so-called 
 	\label{fig:PERCEPTRON}
 \end{figure}
 
+However, this kind of neuron is not suitable to accomplish the complex tasks that Deep Learning tries to solve nowadays. It is only the starting point of the rapid evolution that this field has been experiencing. In the following section, more refined types of artificial neurons, which are exploited at the present, are discussed. What matters now is how these units can be combined to assemble a Neural Network.
+
 In order to make the notation easier to understand, from now on out we will denote ANN with Neural Network, or more simply NN. In common NN implementations, neurons are arranged in consecutive layers, with the first and last ones called respectively input and output layers. Each layer can be fully connected with the subsequent layer, i.e. every single neuron of a layer is connected with all the neurons in the next layer. It is the case of a fully connected NN. In other implementations, neurons can also be only partially connected in the meaning previously defined. For example, taking into account a network with 4 input neurons, 2 output neurons and a hidden layer with 8 neurons, the difference between the two types is highlighted by Figure \ref{fig:FCNN} and \ref{fig:NFCNN}.
 
 \vspace{5mm}
@@ -37,7 +39,7 @@ In order to make the notation easier to understand, from now on out we will deno
 \end{minipage}
 \vspace{5mm}
 
-We will consider fully connected NNs to explain in a more technical manner their working principles. In particular, we will consider a network composed of a number of layers that will be denoted with $L$. A NN can be described mathematically by the composition of several function, called nested units, associated to a certain layer, for example:
+We will consider fully connected NNs to explain in a more technical manner their working principles. In particular, we will consider a network composed of a number of layers that will be denoted with $L$. A NN can be described mathematically by the composition of several functions, called nested units, associated to a certain layer, for example:
 
 \begin{equation}
     f_\mathrm{NN}(\vec{x}) = f \circ g \circ h \circ \dots \circ \vec{x} = f(g(h(\dots(\vec{x}))))
@@ -66,13 +68,13 @@ with $\vec{x}$ the input of the NN and $f_\mathrm{NN}$ its output. The units in 
     \end{equation}
 \end{itemize}
 
-It is possible to deduce through this formalism that a NN is a powerful way to parametrize a set of functions, whose elements are spanned by weights and biases. Given the number of layers $L$ of the NN, this set will be denoted as $\mathcal{F}_\mathrm{L}$:
+It is possible to deduce through this formalism that a NN is a powerful way to parametrize a set of functions, whose elements are spanned by weights and biases. Given the number of layers $L$ of the NN, this set will be denoted as $\mathcal{F}_{L}$:
 
 \begin{equation}
-    \mathcal{F}_\mathrm{L} = \{ f_\mathrm{NN}(x;\mathbf{w},\vec{b}), \ \forall \ \mathbf{w},\vec{b} \}
+    \mathcal{F}_{L} = \{ f_\mathrm{NN}(x;\mathbf{w},\vec{b}), \ \forall \ \mathbf{w},\vec{b} \}
 \end{equation}
 
-The question of interest now is how to find the parameters $\mathbf{w}$ and $\vec{b}$ that suit best to our purpose. It is possible to achieve this accomplishment through a process called training, which is one of the key ideas behind the philosophy of Neural Networks and Deep Learning. Hence we need to implement an algorithm capable of updating the free parameters of the net to make them suitable to describe a dataset $\mathcal{D}$ given to the input layer. Moreover, a good choice of the architecture of the NN, of the algorithm and of the weights and biases could generalize the results of the procedure to a bigger dataset $\Tilde{\mathcal{D}}$.
+The question of interest now is how to find the parameters $\mathbf{w}$ and $\vec{b}$ that best suit to our purpose. It is possible to achieve this accomplishment through a process called 'training', which is one of the key ideas behind the philosophy of Neural Networks and Deep Learning. Hence we need to implement an algorithm capable of updating the free parameters of the net to make them suitable to describe a dataset $\mathcal{D}$ given to the input layer. Moreover, a good choice of the architecture of the NN, of the algorithm and of the weights and biases could generalize the results of the procedure to a bigger dataset $\Tilde{\mathcal{D}}$.
 
 In the following sections a step by step procedure of the training process will be carefully explained. Moreover, several techniques will be listed, considering that there isn't a fixed scheme in the completion of the algorithm, but a certain combination of them can fit better to a certain problem than another one.
 
@@ -94,9 +96,9 @@ The first thing we have to take into account in the development of a NN is its a
 
 \subsection{Number of hidden layers}
 % Oreilly p. 273
-For many problems, it is possible to begin with a single hidden layer and get reasonable results. As a matter of facts, it can be proved that a NN just like the previous one can model even the most complex functions provided it has enough neurons. This was the reason for which many researchers thought for a long time that there was no need to investigate any deeper NNs. However, deep networks (i.e. with more than one hidden layer) are much more powerful than shallow ones. They have a much higher parameter efficiency because they are capable of modelling complex functions using exponentially fewer neurons than shallow nets \cite{oreilly}. Through this expedient the train process could be sped up for the fewer number of free parameters.
+For many problems, it is possible to begin with a single hidden layer and get reasonable results. As a matter of facts, it can be proved that a NN just like the previous one can model even the most complex functions provided it has enough neurons \cite{hanin}. This was the reason for which many researchers thought for a long time that there was no need to investigate any deeper NNs. However, deep networks (i.e. with more than one hidden layer) are much more powerful than shallow ones. They have a much higher parameter efficiency because they are capable of modelling complex functions using exponentially fewer neurons than shallow nets \cite{oreilly}. Through this expedient the train process could be sped up for the fewer number of free parameters.
 
-Another important reason to prefer deep networks for more complex problems has a heuristic justification. In fact, this kind of NNs is more adaptable to the hierarchical structure of real-world data. Lower hidden layers model low-level features, intermediate hidden layers combine these low-level features to model intermediate-level features, and the highest hidden layers and the output layer combine these intermediate features to model high-level features. Moreover, not only does this hierarchical architecture help deep NNs converge faster to a good solution, it also improves their ability to generalize to new datasets, which is one of the primary aims.
+Another important reason to prefer deep networks for more complex problems has a heuristic justification. In fact, this kind of NNs is more adaptable to the hierarchical structure of real-world data. Lower hidden layers model low-level features, intermediate hidden layers combine these low-level features to model intermediate-level features, and the highest hidden layers and the output layer combines these intermediate features to model high-level features. Moreover, not only does this hierarchical architecture help deep NNs converge faster to a good solution, it also improves their ability to generalize to new datasets, which is one of the primary aims.
 
 In summary, for many problems it is possible to start with just one or two hidden layers and it will work just fine. For more complex problems, the strategy is to gradually raise the number of hidden layers until the model starts overfitting the training dataset.
 
@@ -106,7 +108,7 @@ In summary, for many problems it is possible to start with just one or two hidde
 % Oreilly p. 274
 Obviously the number of neurons in the input and output layers is determined by the type of input and output required by the problem. For the hidden layers, a common practice is to size them to form a funnel, with fewer and fewer neurons at each layer. This possible architecture is motivated by the fact that many low-level features can combine into far fewer high-level features. However, this practice is not as common now and it is a valid solution to use the same size for all hidden layers. The advantage of the last practice is that there is only one hyperparameter to tune for the number of neurons per layer, instead of one hyperparameter per layer. Just like for the number of layers, we can try to increase the number of neurons gradually until the network starts overfitting the data.
 
-In general, it is more productive to increase the number of layers than the number of neurons per layer. Finding the perfect amount of neurons is quite difficult. A simpler approach is to pick a model with more layers and neurons than we actually need and then stop the training process earlier in order to prevent it from overfitting. It is worth to employ also some regularization techniques that will be presented in the following sections.
+In general, it is more productive to increase the number of layers than the number of neurons per layer. Finding the perfect amount of neurons is quite difficult. A simpler approach is to pick a model with more layers and neurons than we actually need and then stop the training process earlier in order to prevent it from overfitting. It is worth to employ also some regularization techniques that will be presented further.
 
 
 % Another approach is to add more neurons in a single layer and reducing the number of hidden layers. There isn't a systematic approach, but in general the more the NN is complex, the greater the training time required to learn from the dataset will be. Moreover, a more complex NN needs a number of data quite large while sometimes we have at our disposal a limited number of samples.
@@ -166,7 +168,7 @@ The sigmoid function has a well-defined nonzero derivative everywhere, allowing 
 \begin{flalign}
     a(x) = \tanh{x} &&
 \end{flalign}
-Just like the sigmoid function it is S-shaped, continuous and differentiable, but the difference is that the output value ranges from -1 to 1 (instead of 0 to 1), which tends to make each layer's output more or less normalized at the beginning of training. This often help to speed up convergence.
+Just like the sigmoid function it is S-shaped, continuous and differentiable, but the difference is that the output value ranges from -1 to 1 (instead of 0 to 1), which tends to make each layer's output more or less normalized at the beginning of training. This often helps to speed up convergence.
 \end{minipage}
 
 
@@ -207,11 +209,11 @@ It is continuous but not differentiable at $x=0$. However, in practice it works 
 
 \section{Loss functions}
 % Deep Learning Book p. 79
-Another key concept of the training algorithm is evaluating if the network is working right. For this purpose, we have to quantify how much network predictions are wrong and we can do it by choosing a 'loss function', or also called 'cost function' or 'objective function'. There is a wide variety also for this kind of functions, but they are more related to the problem to solve than the activations. Choosing a wrong loss means getting worse results for our model. Sometimes a loss function is built from scratch to solve a single problem, so it is built ad hoc for a purpose.
+Another key concept of the training algorithm is evaluating if the network is working right. For this purpose, we have to quantify how much network predictions are wrong and we can do it by choosing a 'loss function', or also called 'cost function' or 'objective function'. There is a wide variety also for this kind of functions, but they are more related to the problem to solve than the activations. Choosing a wrong loss means getting worse results for our model. Sometimes a loss function is built from scratch to solve a single problem, so it is built ad hoc for a specific purpose.
 
-In general, most deep learning algorithms involve optimization if some sort. Optimization referes to the task of either minimizing or maximizing a function $f(x)$ by altering $x$. A more common practice is to phrase the problem in terms of minimizing $f(x)$. Maximization is equivalent to minimization processes if we consider the function $-f(x)$.
+In general, most Deep Learning algorithms involve optimization in some sort. Optimization referes to the task of either minimizing or maximizing a function $f(x)$ by altering $x$. A more common practice is to phrase the problem in terms of minimizing $f(x)$. Maximization is equivalent to minimization processes if we consider the function $-f(x)$.
 
-A selection of possible techniques that can be used for optimization is presented in section 2.5. In the space below some of the most common loss functions are given along with the terms of use.
+A selection of possible techniques that can be used for optimization is presented in Section \ref{sec:OPTIMIZERS}. In the space below some of the most common loss functions are given along with the terms of use.
 
 
 % https://towardsdatascience.com/common-loss-functions-in-machine-learning-46af0ffc4d23
@@ -221,14 +223,14 @@ A selection of possible techniques that can be used for optimization is presente
     \begin{equation}
         L_{\mathrm{MSE}} = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y_i})^2
     \end{equation}
-    It is only concerned with the average magnitude of error irrespective of their direction. However, due to squaring, predictions which are far away from actual values are penalized heavily in comparison to less deviated predictions. Plus MSE has nice mathematical properties which makes it easier to calculate gradients.
+    It is only concerned with the average magnitude of error irrespective of its direction. However, due to squaring, predictions which are far away from actual values are penalized heavily in comparison to less deviated predictions. Plus MSE has nice mathematical properties which makes it easier to calculate gradients.
     
     \item[$\triangleright$] \textbf{Mean Absolute Error (MAE or L1 Loss)}:\\
     Mean absolute error is measured as the average of sum of absolute differences between predictions $y_i$ and actual observations $\hat{y_i}$.
     \begin{equation}
         L_{\mathrm{MAE}} = \frac{1}{n} \sum_{i=1}^{n} \abs{y_i - \hat{y_i}}^2
     \end{equation}
-    Like MSE, this as well measures the magnitude of error without considering their direction. Unlike MSE, MAE needs more complicated tools such as linear programming to compute the gradients. Plus MAE is more robust to outliers since it does not make use of square.
+    Like MSE, this as well measures the magnitude of error without considering its direction. Unlike MSE, MAE needs more complicated tools such as linear programming to compute the gradients. Plus MAE is more robust to outliers since it does not make use of square.
     
     % https://ml-cheatsheet.readthedocs.io/en/latest/loss_functions.html
     % Deep Learning Book p. 73, 129
@@ -240,7 +242,7 @@ A selection of possible techniques that can be used for optimization is presente
     Terminology:\\
     $M = \text{Number of classes}$\\
     $y = \text{Binary indicator (0 or 1) if class label $i$ is the correct classification for observation $o$}$\\
-    $p = \text{predicted probability observation $o$ is of class $i$}$\\
+    $p = \text{Predicted probability observation $o$ is of class $i$}$\\
     So, when the label $y_{o,i}$ is equal to 1, the other terms of the sum disappear. An important aspect of this is that Cross Entropy Loss penalizes heavily the predictions that are confident but wrong.
     
     % Deep Learning Book p. 72
@@ -265,12 +267,21 @@ When we use a feedforward neural network to accept an input $x$ and produce an o
 During training, forward propagation can continue onward until it produces a scalar loss $L(\mathbf{w},\vec{b}$. The backpropagation algorithm, often simply called backprop, allows the information from the loss to then flow backward through the network in order to compute the gradient of the loss respect to the free parameters $\mathbf{w}$ and $\vec{b}$. Numerically evaluating such an expression can be computationally expensive. The backpropagation algorithm does so using a simple and inexpensive procedure.
 
 The fundamental equations of the algorithm are presented below.
+
 \begin{align}
     \delta^L &= \nabla_a C \odot \sigma^{\prime}(z^L)   \\
     \delta^l &= [(\mathbf{w}^{l+1})^T \delta^{l+1}] \odot \sigma^{\prime}(z^L)    \\
     \frac{\partial C}{\partial b^{l}_{i}} &= \delta^{l}_{i}  \\
     \frac{\partial C}{\partial \mathbf{w}^{l}_{ik}} &= a^{l-1}_{k} \delta^{l}_{i}
 \end{align}
+
+\noindent
+where:
+
+\begin{align*}
+	a^{l} &= \sigma{\mathbf{w}^{l} a^{l-1} + \vec{b}^{l}}	\\
+	a^{0} &= \vec{x}
+\end{align*}
 
 Translated in form of pseudo-code, the backpropagation algorithm appears like the one in the space below. It has to be specified that this algorithm is adapted for a fully connected network. In the case of a not-fully connected network the code becomes a bit more complex, but the concept behind is the same.
 
@@ -326,6 +337,7 @@ Translated in form of pseudo-code, the backpropagation algorithm appears like th
 
 
 \section{Updating free parameters: Optimizers}
+\label{sec:OPTIMIZERS}
 Now that we have a solid method to compute the derivatives respect to free parameters of the loss function $L$, we can update weights and biases according to the derivatives. In fact, those quantities can be seen as a measure of how much the parameters are to be changed in order to get results that resemble the output. The basic idea is to change $\mathbf{w}$ and $\vec{b}$ of a quantity equals to the corrisponding derivative multiplied by $-\eta$, where $\eta$ is another hyperparameter called learning rate. It is in general a small number that represents the speed of the learning process. It is fixed at the beginning of the procedure for some algorithms, for others it is variable during the training process, starting from a predefined value.
 
 % OReilly p. 297

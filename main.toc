@@ -9,9 +9,9 @@
 \contentsline {section}{\numberline {2.2}Choice of NN architecture and activation functions}{7}{section.2.2}% 
 \contentsline {subsection}{\numberline {2.2.1}Number of hidden layers}{7}{subsection.2.2.1}% 
 \contentsline {subsection}{\numberline {2.2.2}Number of neurons per hidden layer}{7}{subsection.2.2.2}% 
-\contentsline {subsection}{\numberline {2.2.3}Activation functions}{7}{subsection.2.2.3}% 
+\contentsline {subsection}{\numberline {2.2.3}Activation functions}{8}{subsection.2.2.3}% 
 \contentsline {section}{\numberline {2.3}Loss functions}{8}{section.2.3}% 
-\contentsline {section}{\numberline {2.4}Backpropagation algorithm}{9}{section.2.4}% 
+\contentsline {section}{\numberline {2.4}Backpropagation algorithm}{10}{section.2.4}% 
 \contentsline {section}{\numberline {2.5}Updating free parameters: Optimizers}{11}{section.2.5}% 
 \contentsline {subsection}{\numberline {2.5.1}An example of algorithm with fixed learning rate}{11}{subsection.2.5.1}% 
 \contentsline {subsection}{\numberline {2.5.2}An example of algorithm with adaptive learning rates}{12}{subsection.2.5.2}% 
