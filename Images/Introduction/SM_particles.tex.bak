@@ -33,9 +33,9 @@
     \draw[\ifstrempty{#2}{dashed}{black}] (0.1,0) -- (0.9,0)
         arc (90:0:1mm) -- (1.0,-0.9) arc (0:-90:1mm) -- (0.1,-1.0)
         arc (-90:-180:1mm) -- (0,-0.1) arc(180:90:1mm) -- cycle;
-    \ifstrempty{#7}{}{\node at(0.825,-0.175) [rotate=-45,scale=0.2] {#7};}
-    \ifstrempty{#6}{}{\node at(0.9,-0.1)  [nosep,scale=0.25] {#6};}
-    \ifstrempty{#5}{}{\node at(0.9,-0.9)  [nosep,scale=0.25] {#5};}
+    \ifstrempty{#7}{}{\node at(0.8,-0.2) [rotate=-45,scale=0.35] {#7};}
+    \ifstrempty{#6}{}{\node at(0.9,-0.1)  [nosep,scale=0.30] {#6};}
+    \ifstrempty{#5}{}{\node at(0.9,-0.9)  [nosep,scale=0.35] {#5};}
     \ifstrempty{#4}{}{\node at(0.1,-0.1)  [nosep,anchor=west,scale=0.35]{#4};}
     \ifstrempty{#3}{}{\node at(0.1,-0.85) [nosep,anchor=west,scale=0.45] {#3};}
     \ifstrempty{#2}{}{\node at(0.1,-0.5)  [nosep,anchor=west,scale=1.5] {#2};}

@@ -23,7 +23,7 @@ At the present, the model that better describes the observed phenomena in hep is
 \begin{figure}[H]
 	\centering
 	\import{Images/Introduction/}{SM_particles.tex}
-	\captionof{figure}{Standard Model particles.}
+	\captionof{figure}{Standard Model of Physics.}
 	\label{fig:SM_PARTICLES}
 \end{figure}
 

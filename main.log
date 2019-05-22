@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.5.2)  17 MAY 2019 20:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.5.2)  20 MAY 2019 00:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1238,19 +1238,35 @@ LaTeX Info: Redefining \bm on input line 207.
 (c:/texlive/2019/texmf-dist/tex/latex/relsize/relsize.sty
 Package: relsize 2013/03/29 ver 4.1
 )
-(c:/texlive/2019/texmf-dist/tex/latex/geometry/geometry.sty
+(c:/texlive/2019/texmf-dist/tex/latex/tikz-3dplot/tikz-3dplot.sty
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+brarycalc.code.tex
+File: tikzlibrarycalc.code.tex 2019/02/02 v3.1.1 (3.1.1)
+)
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+brary3d.code.tex
+File: tikzlibrary3d.code.tex 2019/02/02 v3.1.1 (3.1.1)
+)
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+braryarrows.code.tex
+File: tikzlibraryarrows.code.tex 2019/02/02 v3.1.1 (3.1.1)
+
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.code.tex
+File: pgflibraryarrows.code.tex 2019/02/02 v3.1.1 (3.1.1)
+\arrowsize=\dimen329
+))) (c:/texlive/2019/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2018/04/16 v5.8 Page Geometry
 \Gm@cnth=\count350
 \Gm@cntv=\count351
 \c@Gm@tempcnt=\count352
-\Gm@bindingoffset=\dimen329
-\Gm@wd@mp=\dimen330
-\Gm@odd@mp=\dimen331
-\Gm@even@mp=\dimen332
-\Gm@layoutwidth=\dimen333
-\Gm@layoutheight=\dimen334
-\Gm@layouthoffset=\dimen335
-\Gm@layoutvoffset=\dimen336
+\Gm@bindingoffset=\dimen330
+\Gm@wd@mp=\dimen331
+\Gm@odd@mp=\dimen332
+\Gm@even@mp=\dimen333
+\Gm@layoutwidth=\dimen334
+\Gm@layoutheight=\dimen335
+\Gm@layouthoffset=\dimen336
+\Gm@layoutvoffset=\dimen337
 \Gm@dimlist=\toks57
 )
 (c:/texlive/2019/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
@@ -1274,12 +1290,12 @@ Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
 \ttl@box=\box76
 \beforetitleunit=\skip82
 \aftertitleunit=\skip83
-\ttl@plus=\dimen337
-\ttl@minus=\dimen338
+\ttl@plus=\dimen338
+\ttl@minus=\dimen339
 \ttl@toksa=\toks58
-\titlewidth=\dimen339
-\titlewidthlast=\dimen340
-\titlewidthfirst=\dimen341
+\titlewidth=\dimen340
+\titlewidthlast=\dimen341
+\titlewidthfirst=\dimen342
 )
 (c:/texlive/2019/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
@@ -1354,13 +1370,13 @@ LaTeX Info: Redefining \nameref on input line 7.
 (c:/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count355
-\scratchdimen=\dimen342
+\scratchdimen=\dimen343
 \scratchbox=\box80
 \nofMPsegments=\count356
 \nofMParguments=\count357
 \everyMPshowfont=\toks60
 \MPscratchCnt=\count358
-\MPscratchDim=\dimen343
+\MPscratchDim=\dimen344
 \MPnumerator=\count359
 \makeMPintoPDFobject=\count360
 \everyMPtoPDFconversion=\toks61
@@ -1393,10 +1409,6 @@ Dictionary: translator-basic-dictionary, Language: English
 File: siunitx-abbreviations.cfg 2017/11/26 v2.7k siunitx: Abbreviated units
 )
 (./main.sta
-(c:/texlive/2019/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
-brarycalc.code.tex
-File: tikzlibrarycalc.code.tex 2019/02/02 v3.1.1 (3.1.1)
-)
 (c:/texlive/2019/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
 brarypositioning.code.tex
 File: tikzlibrarypositioning.code.tex 2019/02/02 v3.1.1 (3.1.1)
@@ -1604,27 +1616,27 @@ Package relsize Warning: Font size 24.88792pt is too large.
 
 ]
 Chapter 3.
-[15]
-<Images/LHC/cms.png, id=605, 9741.39375pt x 6829.515pt>
+[15] (./Images/LHC/LHC_collider.tex)
+<Images/LHC/cms.png, id=610, 9741.39375pt x 6829.515pt>
 File: Images/LHC/cms.png Graphic file (type png)
 <use Images/LHC/cms.png>
-Package pdftex.def Info: Images/LHC/cms.png  used on input line 46.
+Package pdftex.def Info: Images/LHC/cms.png  used on input line 57.
 (pdftex.def)             Requested size: 483.69687pt x 339.09892pt.
- [16 <./Images/LHC/cms.png>]
-<Images/LHC/cms_transverse_section.png, id=613, 853.1875pt x 438.63875pt>
+ [16]
+<Images/LHC/cms_transverse_section.png, id=619, 853.1875pt x 438.63875pt>
 File: Images/LHC/cms_transverse_section.png Graphic file (type png)
 <use Images/LHC/cms_transverse_section.png>
 Package pdftex.def Info: Images/LHC/cms_transverse_section.png  used on input l
-ine 71.
+ine 82.
 (pdftex.def)             Requested size: 483.69687pt x 248.68137pt.
- [17 <./Images/LHC/cms_transverse_section.png>]
-<Python/LHC/resonance.pdf, id=620, 722.7pt x 289.08pt>
+ [17 <./Images/LHC/cms.png>] [18 <./Images/LHC/cms_transverse_section.png>]
+<Python/LHC/resonance.pdf, id=635, 722.7pt x 289.08pt>
 File: Python/LHC/resonance.pdf Graphic file (type pdf)
 <use Python/LHC/resonance.pdf>
-Package pdftex.def Info: Python/LHC/resonance.pdf  used on input line 108.
+Package pdftex.def Info: Python/LHC/resonance.pdf  used on input line 119.
 (pdftex.def)             Requested size: 386.95897pt x 154.78198pt.
-[18 <./Python/LHC/resonance.pdf>] Excluding 'comment' comment.) (./TeX/Z.tex
-[19] [20
+ Excluding 'comment' comment.)
+(./TeX/Z.tex [19 <./Python/LHC/resonance.pdf>] [20
 
 ]
 Chapter 4.
@@ -1669,17 +1681,17 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 26.
 
 [21] [22]
-<Python/Z/data.pdf, id=699, 1445.4pt x 722.7pt>
+<Python/Z/data.pdf, id=710, 1445.4pt x 722.7pt>
 File: Python/Z/data.pdf Graphic file (type pdf)
 <use Python/Z/data.pdf>
 Package pdftex.def Info: Python/Z/data.pdf  used on input line 106.
 (pdftex.def)             Requested size: 483.69687pt x 241.84409pt.
-<Python/Z/features.pdf, id=700, 1445.4pt x 722.7pt>
+<Python/Z/features.pdf, id=711, 1445.4pt x 722.7pt>
 File: Python/Z/features.pdf Graphic file (type pdf)
 <use Python/Z/features.pdf>
 Package pdftex.def Info: Python/Z/features.pdf  used on input line 114.
 (pdftex.def)             Requested size: 483.69687pt x 241.84409pt.
-<Python/Z/sig_plus_bkg.pdf, id=701, 1445.4pt x 722.7pt>
+<Python/Z/sig_plus_bkg.pdf, id=712, 1445.4pt x 722.7pt>
 File: Python/Z/sig_plus_bkg.pdf Graphic file (type pdf)
 <use Python/Z/sig_plus_bkg.pdf>
 Package pdftex.def Info: Python/Z/sig_plus_bkg.pdf  used on input line 122.
@@ -1726,7 +1738,7 @@ Chapter 6.
 File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
 ) [33]
 <Python/W_CLIP/ref100000_bkg20000_sig0/data_ref100000_bkg20000_sig0_wclip2-15.p
-df, id=914, 1156.32pt x 867.24pt>
+df, id=925, 1156.32pt x 867.24pt>
 File: Python/W_CLIP/ref100000_bkg20000_sig0/data_ref100000_bkg20000_sig0_wclip2
 -15.pdf Graphic file (type pdf)
 <use Python/W_CLIP/ref100000_bkg20000_sig0/data_ref100000_bkg20000_sig0_wclip2-
@@ -1735,7 +1747,7 @@ Package pdftex.def Info: Python/W_CLIP/ref100000_bkg20000_sig0/data_ref100000_b
 kg20000_sig0_wclip2-15.pdf  used on input line 63.
 (pdftex.def)             Requested size: 435.32422pt x 326.48457pt.
 <Python/W_CLIP/ref200000_bkg20000_sig0/data_ref200000_bkg20000_sig0_wclip2-4.pd
-f, id=915, 1156.32pt x 867.24pt>
+f, id=926, 1156.32pt x 867.24pt>
 File: Python/W_CLIP/ref200000_bkg20000_sig0/data_ref200000_bkg20000_sig0_wclip2
 -4.pdf Graphic file (type pdf)
 <use Python/W_CLIP/ref200000_bkg20000_sig0/data_ref200000_bkg20000_sig0_wclip2-
@@ -1746,7 +1758,7 @@ kg20000_sig0_wclip2-4.pdf  used on input line 70.
  [34 <./Python/W_CLIP/ref100000_bkg20000_sig0/data_ref100000_bkg20000_sig0_wcli
 p2-15.pdf>]
 <Python/W_CLIP/ref300000_bkg20000_sig0/data_ref300000_bkg20000_sig0_wclip2-3.pd
-f, id=961, 1156.32pt x 867.24pt>
+f, id=972, 1156.32pt x 867.24pt>
 File: Python/W_CLIP/ref300000_bkg20000_sig0/data_ref300000_bkg20000_sig0_wclip2
 -3.pdf Graphic file (type pdf)
 <use Python/W_CLIP/ref300000_bkg20000_sig0/data_ref300000_bkg20000_sig0_wclip2-
@@ -1755,7 +1767,7 @@ Package pdftex.def Info: Python/W_CLIP/ref300000_bkg20000_sig0/data_ref300000_b
 kg20000_sig0_wclip2-3.pdf  used on input line 77.
 (pdftex.def)             Requested size: 435.32422pt x 326.48457pt.
 <Python/W_CLIP/ref500000_bkg20000_sig0/data_ref500000_bkg20000_sig0_wclip2-55.p
-df, id=962, 1156.32pt x 867.24pt>
+df, id=973, 1156.32pt x 867.24pt>
 File: Python/W_CLIP/ref500000_bkg20000_sig0/data_ref500000_bkg20000_sig0_wclip2
 -55.pdf Graphic file (type pdf)
 <use Python/W_CLIP/ref500000_bkg20000_sig0/data_ref500000_bkg20000_sig0_wclip2-
@@ -1805,22 +1817,21 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 21.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 21.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: FCF743E83B4F2A57DCE175C86738687A;3471.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 21.
  ) 
 Here is how much of TeX's memory you used:
- 48811 strings out of 492623
- 1061731 string characters out of 6133291
- 1355101 words of memory out of 5000000
- 51653 multiletter control sequences out of 15000+600000
+ 49731 strings out of 492623
+ 1082720 string characters out of 6133291
+ 1372663 words of memory out of 5000000
+ 52555 multiletter control sequences out of 15000+600000
  588397 words of font info for 188 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  74i,27n,122p,2205b,1968s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{Hfootnote.3} has been referenced but does not exi
+pdfTeX warning (dest): name{Hfootnote.4} has been referenced but does not exi
 st, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.3} has been referenced but does not exist
+, replaced by a fixed one
 
 pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist
 , replaced by a fixed one
@@ -1872,10 +1883,10 @@ dist/fonts/type1/public/cm-super/sfsl1095.pfb><c:/texlive/2019/texmf-dist/fonts
 lic/cm-super/sftt1000.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-sup
 er/sftt1095.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfxc120
 0.pfb>
-Output written on main.pdf (46 pages, 4181200 bytes).
+Output written on main.pdf (46 pages, 4186103 bytes).
 PDF statistics:
- 1315 PDF objects out of 1440 (max. 8388607)
- 1060 compressed objects within 11 object streams
- 208 named destinations out of 1000 (max. 500000)
+ 1323 PDF objects out of 1440 (max. 8388607)
+ 1067 compressed objects within 11 object streams
+ 210 named destinations out of 1000 (max. 500000)
  750 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -11,19 +11,30 @@ LHC is actually the world's largest and most powerful particle accelerator. Its 
 
 
 
+
+
+
 \section{An insight into LHC structure}
 % https://home.cern/science/accelerators/large-hadron-collider
 % https://home.cern/science/experiments/how-detector-works
 The LHC consists of a ring 27-kilometers long of superconducting magnets with a number of accelerating structures to boost the energy of the particles along the way. Inside the accelerator, two high-energy particle beams travel at relativistic speed, close to the speed of light $c$. Before they are made to collide, they both are accelerated to a energy of the order of TeV. The two beams travel in opposite directions in separate beam pipes, which are fundamentally two tubes kept at ultrahigh vacuum. They are guided around the accelerator ring by a strong magnetic field mainteined by superconducting electromagnets, built from coils of special electric cable that operates in a superconductive state. It is of primary importance to conduct electricity with the lowest resistence, therefore loss of energy, possibile. Such technique requires cooling the magnets to a temperature close to $0~\si{K}$, which is even colder than the outer space. In order to get those temperatures, much of the accelerator is connected to a distribution system of liquid helium and the cooling phase takes a long time.
 
-Thousands of magnets of different varieties and sizes are exploited to direct the beams around the accelerator. In total, there are:
+Thousands of magnets of different varieties and sizes are exploited to direct the beams around the accelerator. In total, there are\footnotemark:
 \begin{itemize}
 	\item 1232 dipole magnets whose length is 15 metres and their purpose is bending the beams.
 	\item 392 quadrupole magnets, each 5-7 metres long, which focus the beams, thanks to their properties of magnetic lens.
 \end{itemize}
-Just prior to collision, another type of magnet is used to "squeeze" the particles closer together to increase the chances of collisions. In fact, the particles can be imagined as very tiny objects, so it is clear that the task of making them collide must be thought with such precision.
+\footnotetext{These technical details are taken from the official website of CERN \cite{cern}.}
+Just prior to collision, another type of magnet is used to 'squeeze' the particles closer together to increase the chances of collisions. In fact, the particles can be imagined as very tiny objects, so it is clear that the task of making them collide must be thought with such precision.
 
-The beams inside LHC are made to collide at four locations around the accelerator ring, corrisponding to the positions of four particle detectors: CMS, ATLAS, ALICE and LHCb. All the controls for the accelerator, its services and technical infrastructure are housed at the CERN Control Centre.
+The beams inside LHC are made to collide at four locations around the accelerator ring, corrisponding to the positions of four particle detectors: CMS, ATLAS, ALICE and LHCb. Their placement along the collider is showed in Figure \ref{fig:LHC_COLLIDER}. All the controls for the accelerator, its services and technical infrastructure are housed at the CERN Control Centre.
+
+\begin{figure}[t]
+	\centering
+	\import{Images/LHC/}{LHC_collider.tex}
+	\captionof{figure}{Schematization of LHC collider.}
+	\label{fig:LHC_COLLIDER}
+\end{figure}
 
 
 
@@ -32,7 +43,7 @@ The beams inside LHC are made to collide at four locations around the accelerato
 \section{CMS experiment}
 % https://home.cern/science/experiments/cms
 % https://cms.cern/detector
-The acronym CMS means Compact Muon Solenoid and it is a general-purpose detector amongst one of the four mentioned before. It has a broad physics programme ranging from studying the Standard Model, namely SM, to searching for extra dimensions and particles that could make up dark matter, whose existence belongs to physics beyond the SM. CMS also stands for one of the largest international scientific collaborations in history, involving 4300 particle physicists, engineers, technicians, students and support staff from 182 institutes in 42 countries (by February 2014).
+The acronym CMS means Compact Muon Solenoid and it is a general-purpose detector amongst one of the four mentioned before. It has a broad physics programme ranging from studying the Standard Model, namely SM, to searching for extra dimensions and particles that could make up dark matter, whose existence belongs to physics beyond the SM. CMS also stands for one of the largest international scientific collaborations in history, involving over 4000 particle physicists, engineers, technicians, students and support staff from around 200 institutes and universities from more than 40 countries.
 
 It is built around a huge solenoid magnet. This takes the form of a cylindrical coil of superconducting cable that generates a field of 4 Tesla. The importance of this value can be better understood thinking that it is 100000 times the magnetic field of Earth. The field is confined by a steel "yoke" that forms the bulk of the detector, whose weight is about 14000 tons. It was built in 15 sections, which were reassembled in situ. The detector gets its name from the fact that:
 \begin{itemize}
@@ -41,10 +52,10 @@ It is built around a huge solenoid magnet. This takes the form of a cylindrical 
 	\item It has the most powerful solenoid magnet ever made.
 \end{itemize}
 
-\begin{figure}[H]
+\begin{figure}[t]
 	\begin{center}
 		\includegraphics[width=1.0\textwidth]{Images/LHC/cms.png}
-		\caption{CMS detector section.}
+		\caption{CMS detector section \cite{cms}.}
 		\label{fig:CMS_SECTION}
 	\end{center}
 \end{figure}
@@ -66,7 +77,7 @@ The detector is shaped like a cylindrical onion, with several concentric layers 
 	The final particles that CMS observe directly are the muons. They are not stopped by any calorimeter, so there are other special detectors interleaved with the return yoke of the solenoid. It is possible to measure each muon's momentum both inside the superconducting coil (by the tracking devices) and outside of it (by the muon chambers).
 \end{itemize}
 
-\begin{figure}[H]
+\begin{figure}[t]
 	\begin{center}
 		\includegraphics[width=1.0\textwidth]{Images/LHC/cms_transverse_section.png}
 		\caption{CMS detector transverse section.}
@@ -87,7 +98,7 @@ Resonant phenomena are ubiquitous in physics at both the macroscopic and microsc
 
 In Classical Physics, a resonance is a phenomenon that occurs when the frequency at which a periodical force is applied is equal or nearly equal to one of the natural frequencies of the system on which it acts. The visible effect of the resonance is that the system oscillates to a larger amplitude respect to the one when a force is applied with a different frequency.
 
-Let's analyze this phenomenon in the case of an oscillating system with an external force that drives the oscillation. The second order differential equation that describes the system is the following one:
+The first thing to do is to analyze this phenomenon in the case of an oscillating system with an external force that drives the oscillation. The second order differential equation that describes the system is the following one:
 \begin{equation}
 	\devN{x}{\theta}{2} + 2 \gamma \omega_{0} \dev{x}{\theta} + \omega_{0}^2 x = \frac{F_0}{m} \sin{\Omega t} = \Gamma \sin{\Omega t}
 \end{equation}
@@ -111,7 +122,7 @@ The relation for the amplitude of the solution in the stationary state shows the
 	\end{center}
 \end{figure}
 
-In subnuclear physics, the extremely unstable hadrons can be observed as 'resonances' in two different ways. The first approach is searching for very unstable particles by measuring as a function of energy the cross-section of processes of the following type:
+In subnuclear physics, the extremely unstable hadrons can be observed as 'resonances' in two different ways \cite{bettini}. The first approach is searching for very unstable particles by measuring as a function of energy the cross-section of processes of the following type:
 \begin{equation}
 	a + b \rightarrow c + d + \dots
 \end{equation}

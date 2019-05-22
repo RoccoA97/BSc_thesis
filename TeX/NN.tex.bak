@@ -321,7 +321,7 @@ The backpropagation algorithm is reported in form of pseudo-code in Algorithm \r
 \begin{algorithm}[H]
 \caption{Backward computation for the deep neural network of Algorithm \ref{alg:FORWARD_PROPAGATION}, which uses, in addition to the input $x$, a target $y$. This computation yields the gradients on the activations $a^{(k)}$ for each layer $k$, starting from the output layer and going backwards to the first hidden layer. From these gradients, which can be interpreted as an indication of how each layer's output should change to reduce error, one can obtain the gradient on the parameters of each layer.}\label{alg:BACKWARD_COMPUTATION}
 \begin{algorithmic}[1]
-\Procedure{Backward computation}{$x$} \Comment After the forward computation
+\Procedure{Backward Computation}{$x$} \Comment After the forward computation
 
 \State $g \gets \nabla_{\hat{y}}L = \nabla_{\hat{y}}L(\hat{y},y)$\Comment Compute the gradient on the output layer
 
