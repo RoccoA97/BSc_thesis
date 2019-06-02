@@ -15,7 +15,8 @@ This is the prevision in the hypothesis of SM, where the $Z$ boson is commonly r
 \end{equation}
 The new physics process can by studied by searching for resonant phenomena, for example bumps in the distributions of a set of observables in a zone where only background is expected to be present. However, this is not the only case possible in the wide variety of new physics scenarios. In fact, the existence of a new particle could not lead to a resonant peak in the distribution of the high level features, but to a different shape in the same distributions. For example, there could be a different slope in the exponential falling distribution in the SM hypothesis.
 
-Neural Networks can be employed in both cases, maybe with different performances. The purpose of this thesis work will focus on the new physics scenario of resonant phenomena. The study of the other cases is left to future work.
+Neural Networks can be employed in both cases, maybe with different performances. The purpose of this thesis work will focus on the new physics scenario of resonant phenomena.
+%The study of the other cases is left to future work.
 
 In the following discussion the $Z^{0}$ boson will be generally described along with its properties and the features analyzed for the purpose of this work will be presented.
 
@@ -95,9 +96,9 @@ where:
 
 
 \section{The dataset analyzed}
-The dataset employed in this thesis work is a set of simulated data. The events are generated with the aid of the framework \textsc{MadGraph5} assuming collisions of protons at $8~\si{TeV}$. The detector response is taken into account by \textsc{Delphes}, as well as showering and hadronization by \textsc{Pythia}.
+The dataset employed in this thesis work is a set of simulated data. The events are generated with the aid of the framework \textsc{MadGraph5} assuming collisions of protons at $13~\si{TeV}$. The detector response is taken into account by \textsc{Delphes}, showering and hadronization by \textsc{Pythia}.
 
-The dataset parametrizing the reference distribution was simulated according to SM predictions. The dataset with signal events are simulated assuming there is a resonant new physics phenomenon, visible in a new peak in the invariant mass distribution.
+The dataset parametrizing the reference distribution is simulated according to SM predictions. The dataset with signal events is simulated assuming there is a resonant new physics phenomenon, visible in a new peak in the invariant mass distribution.
 
 Histograms of the five momenta and of the HLFs are presented in the following plots. Only-reference, only-signal and signal+background data combinations are showed in different plots, in order to see more clearly the differences.
 

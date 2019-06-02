@@ -9,7 +9,7 @@
 \section{High-Energy Particle Physics and Standard Model}
 Understanding the nature of the particles that constitute matter and radiation is one of the main concerns of science. Particle Physics, also known as High-Energy Physics (briefly, 'hep'), is the branch of Physics that conducts this ambitious research and its development can be located near the end of $19^\mathrm{th}$ century. Since then numerous theoretical models have been built in order to predict the outcome of experiments, which can prove their correctness.
 
-At the present, the model that better describes the observed phenomena in hep is the Standard Model, which will be identified with the acronym SM. Since it is the best basis for comparison with experimental results, it will be denoted as reference model in the following discussion. 
+At the present, the model that better describes the observed phenomena in hep is the Standard Model, which will be identified with the acronym SM. Since it is the best basis for comparison with experimental results, it will be denoted as 'reference model' in the following discussion.
 
 \begin{comment}
 \begin{figure}[H]
@@ -42,7 +42,7 @@ Future experiments will be able to explore never observed before phenomena, or t
 \subsection{Researches for new physics}
 Searching for new physics concretely means searching for discrepancies between observed data and the reference model. This task can be phrased in a more technical way. What we are able to do is taking repeated measurements of a multi-dimensional random variable $x$, experimentally speaking. Then, we can build a Probability Density Function (PDF) using experimental data and test the reference model distribution against the actual data. The first difficulty encountered by seeking this approach is that the true underlying data distribution will be quite similar to the reference one. It means that, if data contain new physics effects, they will be localized in a low-probability region where only a small fraction of event is present, or they will be spread in a large region of the $x$ space.
 
-The most widely employed approach to the problem is to search for specific new physics models. It has the advantage to be physically informative, even if the compatibility of the data with the reference model is confirmed. But there is a critical disadvantage: a statistical test which is designed to be sensitive to one specific hypothesis is typically insensitive to data departures of a different nature from the one expected. So, even if new physics is present in the data, it would not be discovered because it doesn't belong to the class of hypothetical models we are searching for.
+The most widely employed approach to the problem is to search for specific new physics models. It has the advantage to be physically informative, even if the compatibility of the data with the reference model is confirmed. But there is a critical disadvantage: a statistical test which is designed to be sensitive to one specific hypothesis is typically insensitive to data departures of a different nature from the one expected. So, even if new physics is present in the data, it would not be discovered because it doesn't belong to the class of hypothetical models we are searching for. In Figure \ref{fig:MODEL_DEPENDENT_1} and \ref{fig:MODEL_DEPENDENT_2} there are many examples of excluded models in order to show how difficult is searching for new physics with this approach.
 
 
 
@@ -71,7 +71,7 @@ The application of ML techniques to Particle Physics is not the newest addition 
 	\label{fig:MODEL_DEPENDENT_2}
 \end{figure}
 
-However, the current techniques used in hep fail to capture all of the available information, as proved by \cite{baldi}. The recent developments in deep learning theory can overcome these issues. (Deep) Neural networks provide powerful classifiers and can solve the curse of high dimensionality of data. Moreover, circuit complexity theory has proved that deep neural networks have the potential to compute in an unbiased way arbitrary complex functions in a very efficient way. Employing them to parametrize alternative distributions for model-independent new physics searches is thus a highly motivated attempt.
+However, the current techniques used in hep fail to capture all of the available information, as proved by \cite{baldi}. The recent developments in deep learning theory can overcome these issues. (Deep) Neural networks provide powerful classifiers and can also solve the curse of high dimensionality of data. Moreover, circuit complexity theory has proved that deep neural networks have the potential to compute in an unbiased way arbitrary complex functions in a very efficient way. Employing them to parametrize alternative distributions for model-independent new physics searches is thus a highly motivated attempt.
 
 Several approaches with neural networks to the problem of new physics research have been developed so far, starting from the one given by \cite{baldi}. The approach employed in this thesis work is introduced by \cite{wulzer}. Technically speaking, we can exploit neural networks to find an anomalous behavior, relative to the reference model, of the entire data sample, with which we train the network. The process studied is the decay of the $Z$ boson into a pair of muon-antimuon, assuming for new physics events different kind of signals in order to test the efficiency of the approach.
 
@@ -79,7 +79,7 @@ Several approaches with neural networks to the problem of new physics research h
 \noindent
 The content of this thesis work is ordered as follows:
 \begin{itemize}
-	\item In Chapter \ref{chap:NN} the a general recap on deep learning theory and on neural network is given. Common practices in training procedure are explained too.
+	\item In Chapter \ref{chap:NN} a general recap on deep learning theory and on neural network is given. Common practices in training procedure are explained too.
 	\item In Chapter \ref{chap:LHC} LHC collider is described along with CMS experiment. In particular, in Chapter \ref{chap:Z} a summary on the process analyzed can be found.
 	\item In Chapter \ref{chap:Z_5D} the algorithm employed for anomaly detections is explained and in Chapter \ref{chap:W_CLIP} a necessary tuning procedure is illustrated. Finally, the results are presented in Chapter \ref{chap:RESULTS}.
 	\item In the final Chapter \ref{chap:CONCLUSION} possible development of the algorithms are provided.

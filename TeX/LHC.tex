@@ -5,7 +5,7 @@
 
 
 
-Searching for exotic particles never observed before implies a need for an enormous amount of energy in the processes involved in their creation. In fact, if we want to study something never obseved before at the scales of energy normally reached, it is highly unlikely we will find something new and interesting. This is the reason for which the Large Hadron Collider, namely LHC, was designed and built.
+Searching for exotic particles never observed before implies a need for an enormous amount of energy in the processes involved in their creation. In fact, if we want to study something never obseved before at the scales of energy normally reached, it is highly unlikely we will find something new and interesting. This is the reason for which the Large Hadron Collider, briefly LHC, was designed and built.
 
 LHC is actually the world's largest and most powerful particle accelerator. Its project was conceived in 1976 when the European particle physics community began to discuss building a Large Electron Positron (LEP) collider at CERN, and it was realized between 1998 and 2008. It required a collaboration of over 10000 scientists and hundreds of universities and laboratories, as well as more than 100 countries. It first started up on 10 September 2008, and remains the latest addition to CERN’s accelerator complex.
 
@@ -43,9 +43,9 @@ The beams inside LHC are made to collide at four locations around the accelerato
 \section{CMS experiment}
 % https://home.cern/science/experiments/cms
 % https://cms.cern/detector
-The acronym CMS means Compact Muon Solenoid and it is a general-purpose detector amongst one of the four mentioned before. It has a broad physics programme ranging from studying the Standard Model, namely SM, to searching for extra dimensions and particles that could make up dark matter, whose existence belongs to physics beyond the SM. CMS also stands for one of the largest international scientific collaborations in history, involving over 4000 particle physicists, engineers, technicians, students and support staff from around 200 institutes and universities from more than 40 countries.
+The acronym CMS means Compact Muon Solenoid and it is a general-purpose detector amongst one of the four mentioned before. It has a broad physics programme ranging from studying the Standard Model to searching for extra dimensions and particles that could make up dark matter, whose existence belongs to physics beyond the SM. CMS also stands for one of the largest international scientific collaborations in history, involving over 4000 particle physicists, engineers, technicians, students and support staff from around 200 institutes and universities from more than 40 countries.
 
-It is built around a huge solenoid magnet. This takes the form of a cylindrical coil of superconducting cable that generates a field of 4 Tesla. The importance of this value can be better understood thinking that it is 100000 times the magnetic field of Earth. The field is confined by a steel "yoke" that forms the bulk of the detector, whose weight is about 14000 tons. It was built in 15 sections, which were reassembled in situ. The detector gets its name from the fact that:
+It is built around a huge solenoid magnet. This takes the form of a cylindrical coil of superconducting cable that generates a field of 4 Tesla. The importance of this value can be better understood thinking that it is 100000 times the magnetic field of Earth. The field is confined by a steel 'yoke' that forms the bulk of the detector, whose weight is about 14000 tons. It was built in 15 sections, which were reassembled in situ. The detector gets its name from the fact that:
 \begin{itemize}
 	\item It is 15 metres high and 21 metres long, so it is quite compact for all the detector material it contains.
 	\item It is designed to detect particles known as muons (and indicated with $\mu$) very accurately.
@@ -94,7 +94,7 @@ As stated before, every layer can give informations about an intermediate state.
 
 
 \section{From data to discoveries: resonance formation study}
-Resonant phenomena are ubiquitous in physics at both the macroscopic and microscopic levels. Resonances have an extremely important role in hadron spectroscopy.
+Resonant phenomena are ubiquitous in Physics at both the macroscopic and microscopic levels. Resonances have an extremely important role in hadron spectroscopy.
 
 In Classical Physics, a resonance is a phenomenon that occurs when the frequency at which a periodical force is applied is equal or nearly equal to one of the natural frequencies of the system on which it acts. The visible effect of the resonance is that the system oscillates to a larger amplitude respect to the one when a force is applied with a different frequency.
 
@@ -112,21 +112,28 @@ where:
 	\delta &= \arctan{\left( \frac{2 \gamma \omega_{0} \Omega}{\omega_{0}^2 - \Omega^2} \right)}
 \end{align}
 
-The relation for the amplitude of the solution in the stationary state shows there is a maximum value for $B$, which is reached for a particular value of the angular frequency of the drive. It means that the system becomes resonant for a certain value of $\Omega$ and the transfert of energy from the drive to the system is maximized. The plots for different values of the parameters $\omega_{0}$ and $\gamma$ are presented below along with the corresponding plot for the phase shift $\delta$.
+The relation for the amplitude of the solution in the stationary state shows there is a maximum value for $B$, which is reached for a particular value of the angular frequency of the drive. It means that the system becomes resonant for a certain value of $\Omega$ and the transfert of energy from the drive to the system is maximized. The plots for different values of the parameter $\gamma$ are presented below along with the corresponding plot for the phase shift $\delta$.
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=0.8\textwidth]{Python/LHC/resonance.pdf}
+		\includegraphics[width=1.0\textwidth]{Python/LHC/resonance.pdf}
 		\caption{Resonance plot.}
 		\label{fig:RESONANCE_PLOT}
 	\end{center}
 \end{figure}
 
-In subnuclear physics, the extremely unstable hadrons can be observed as 'resonances' in two different ways \cite{bettini}. The first approach is searching for very unstable particles by measuring as a function of energy the cross-section of processes of the following type:
+Coming back to the field of subnuclear physics, the extremely unstable hadrons can be observed as 'resonances' in two different ways \cite{bettini}. The first approach is searching for very unstable particles by measuring as a function of energy the cross-section of processes of the following type:
 \begin{equation}
 	a + b \rightarrow c + d + \dots
 \end{equation}
 In a quantum scattering process the relevant functions of energy are the scattering amplitude and the cross section, which is the measured observable. Near a resonance, the distribution of $\sigma$ will remark the shape of the resonant peak in Figure \ref{fig:RESONANCE_PLOT}.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\textwidth]{Images/LHC/cross_section_resonance.PNG}
+	\caption{Schematic of a resonance formation study in the cross section.}
+	\label{fig:CROSS_SECTION_RESONANCE}
+\end{figure}
 
 The second approach, corresponding to a specific class of experiments, is based on resonance production. To better explain the method, let's suppose we are studying the following process:
 \begin{equation}
@@ -141,6 +148,17 @@ In these cases, the mass of $c+d$, called $M_{cd}$, is expected to be equal to t
 	M_{cd} = \sqrt{(\mathcal{E}_{c} + \mathcal{E}_{d})^2 - (\vec{p}_{c} + \vec{p}_{d})^2}
 \end{equation}
 The resonance appears as a peak on a smooth background in the $M_{cd}$ distribution.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\textwidth]{Images/LHC/invariant_mass_resonance.PNG}
+	\caption{Schematic of a resonance formation study in the invariant mass.}
+	\label{fig:INVARIANT_MASS_RESONANCE}
+\end{figure}
+
+
+
+
 
 
 \begin{comment}

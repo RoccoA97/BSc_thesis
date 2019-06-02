@@ -292,7 +292,7 @@ The backpropagation algorithm is reported in form of pseudo-code in Algorithm \r
 
 % Deep Learning Book p.205 (copiato e rimodellato)
 \begin{algorithm}[H]
-\caption{Forward propagation through a typical deep neural network and the computation of the cost function. The loss $L(\hat{y},y)$ depends on the output $\hat{y}$ and on the target $y$. The symbol $\theta$ will be used to indicate both weights and biases.}\label{alg:FORWARD_PROPAGATION}
+\caption{Forward propagation through a typical deep neural network and the computation of the cost function. The loss $L(\hat{y},y)$ depends on the output $\hat{y}$ and on the target $y$. The symbol $\bm{\theta}$ will be used to indicate both weights and biases.}\label{alg:FORWARD_PROPAGATION}
 \begin{algorithmic}[1]
 \Require Network depth, $l$
 \Require $\mathbf{w}^{(i)}$, $i \in \{1,\dots,l\}$, the weight matrices of the model
@@ -457,7 +457,7 @@ Regularization is one of the central concerns of the field of machine learning, 
 
 \subsection{Dropout}
 % OReilly p.309
-The most popular regularizatioon technique for deep neural networks is arguably dropout. It was proposed by [ADD REFERENCE] in 2012 and further detailed in [ADD OTHER REFERENCE]; it has proven to be successful.
+The most popular regularizatioon technique for deep neural networks is arguably dropout. It was proposed by \cite{hinton} in 2012 and further detailed in \cite{srivastava}. It has proven to be successful.
 
 It is a very simple algorithm: at every training step, every neuron (including the input neurons but excluding the output neurons) has a probability $p$ of being temporarily 'dropped out', meaning it will be entirely ingnored during this training step, but it may be active during the next step. The hyperparameter $p$ is called 'dropout rate' and it is typically set to 50\%. After training, neurons don't get dropped anymore.
 
