@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.5.2)  3 JUN 2019 00:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.5.2)  10 JUN 2019 00:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1729,43 +1729,127 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 1.
 
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 27.
+Package tikz-feynman Warning: The key you tried to use '/graph drawing/node dis
+tance' requires LuaTeX. It will be ignored. on input line 15.
+
+
+Package tikz-feynman Warning: The key you tried to use '/graph drawing/level di
+stance' requires LuaTeX. It will be ignored. on input line 15.
+
+
+Package tikz-feynman Warning: The key you tried to use '/graph drawing/sibling 
+distance' requires LuaTeX. It will be ignored. on input line 15.
+
+
+Package tikz-feynman Warning: The key you tried to use '/graph drawing/node dis
+tance' requires LuaTeX. It will be ignored. on input line 23.
+
+
+Package tikz-feynman Warning: The key you tried to use '/graph drawing/level di
+stance' requires LuaTeX. It will be ignored. on input line 23.
+
+
+Package tikz-feynman Warning: The key you tried to use '/graph drawing/sibling 
+distance' requires LuaTeX. It will be ignored. on input line 23.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 30.
+See the caption package documentation for explanation.
+
+
+Package tikz-feynman Warning: The key you tried to use '/graph drawing/node dis
+tance' requires LuaTeX. It will be ignored. on input line 40.
+
+
+Package tikz-feynman Warning: The key you tried to use '/graph drawing/level di
+stance' requires LuaTeX. It will be ignored. on input line 40.
+
+
+Package tikz-feynman Warning: The key you tried to use '/graph drawing/sibling 
+distance' requires LuaTeX. It will be ignored. on input line 40.
+
+
+Package tikz-feynman Warning: The key you tried to use '/graph drawing/node dis
+tance' requires LuaTeX. It will be ignored. on input line 48.
+
+
+Package tikz-feynman Warning: The key you tried to use '/graph drawing/level di
+stance' requires LuaTeX. It will be ignored. on input line 48.
+
+
+Package tikz-feynman Warning: The key you tried to use '/graph drawing/sibling 
+distance' requires LuaTeX. It will be ignored. on input line 48.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 55.
+See the caption package documentation for explanation.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 27.
+(hyperref)                removing `math shift' on input line 70.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 27.
+(hyperref)                removing `superscript' on input line 70.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 70.
 
 [21
 
-] [22]
-<Python/Z/data.pdf, id=717, 1445.4pt x 722.7pt>
+]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 97.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\mu' on input line 97.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `superscript' on input line 97.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\mu' on input line 97.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `superscript' on input line 97.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 97.
+
+[22]
+<Python/Z/data.pdf, id=723, 1445.4pt x 722.7pt>
 File: Python/Z/data.pdf Graphic file (type pdf)
 <use Python/Z/data.pdf>
-Package pdftex.def Info: Python/Z/data.pdf  used on input line 107.
+Package pdftex.def Info: Python/Z/data.pdf  used on input line 152.
 (pdftex.def)             Requested size: 483.69687pt x 241.84409pt.
-<Python/Z/features.pdf, id=718, 1445.4pt x 722.7pt>
+<Python/Z/features.pdf, id=724, 1445.4pt x 722.7pt>
 File: Python/Z/features.pdf Graphic file (type pdf)
 <use Python/Z/features.pdf>
-Package pdftex.def Info: Python/Z/features.pdf  used on input line 115.
+Package pdftex.def Info: Python/Z/features.pdf  used on input line 160.
 (pdftex.def)             Requested size: 483.69687pt x 241.84409pt.
-<Python/Z/sig_plus_bkg.pdf, id=719, 1445.4pt x 722.7pt>
-File: Python/Z/sig_plus_bkg.pdf Graphic file (type pdf)
-<use Python/Z/sig_plus_bkg.pdf>
-Package pdftex.def Info: Python/Z/sig_plus_bkg.pdf  used on input line 123.
-(pdftex.def)             Requested size: 483.69687pt x 241.84409pt.
-) (./TeX/Z_5D.tex
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [23 <./Python/Z/data.pdf> <./Python/Z/features.pdf
+ [23 <./Python/Z/data.pdf>]
+<Python/Z/sig_plus_bkg.pdf, id=777, 1445.4pt x 722.7pt>
+File: Python/Z/sig_plus_bkg.pdf Graphic file (type pdf)
+<use Python/Z/sig_plus_bkg.pdf>
+Package pdftex.def Info: Python/Z/sig_plus_bkg.pdf  used on input line 168.
+(pdftex.def)             Requested size: 483.69687pt x 241.84409pt.
+) (./TeX/Z_5D.tex [24 <./Python/Z/features.pdf> <./Python/Z/sig_plus_bkg.pdf
 
-pdfTeX warning: pdflatex.exe (file ./Python/Z/features.pdf): PDF inclusion: mul
-tiple pdfs with page group included in a single page
->] [24 <./Python/Z/sig_plus_bkg.pdf>]
+pdfTeX warning: pdflatex.exe (file ./Python/Z/sig_plus_bkg.pdf): PDF inclusion:
+ multiple pdfs with page group included in a single page
+>]
 Chapter 5.
 [25
 
@@ -1800,7 +1884,7 @@ Chapter 6.
 File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
 ) [33]
 <Python/W_CLIP/ref100000_bkg20000_sig0/data_ref100000_bkg20000_sig0_wclip2-15.p
-df, id=935, 1156.32pt x 867.24pt>
+df, id=946, 1156.32pt x 867.24pt>
 File: Python/W_CLIP/ref100000_bkg20000_sig0/data_ref100000_bkg20000_sig0_wclip2
 -15.pdf Graphic file (type pdf)
 <use Python/W_CLIP/ref100000_bkg20000_sig0/data_ref100000_bkg20000_sig0_wclip2-
@@ -1809,7 +1893,7 @@ Package pdftex.def Info: Python/W_CLIP/ref100000_bkg20000_sig0/data_ref100000_b
 kg20000_sig0_wclip2-15.pdf  used on input line 63.
 (pdftex.def)             Requested size: 435.32422pt x 326.48457pt.
 <Python/W_CLIP/ref200000_bkg20000_sig0/data_ref200000_bkg20000_sig0_wclip2-4.pd
-f, id=936, 1156.32pt x 867.24pt>
+f, id=947, 1156.32pt x 867.24pt>
 File: Python/W_CLIP/ref200000_bkg20000_sig0/data_ref200000_bkg20000_sig0_wclip2
 -4.pdf Graphic file (type pdf)
 <use Python/W_CLIP/ref200000_bkg20000_sig0/data_ref200000_bkg20000_sig0_wclip2-
@@ -1820,7 +1904,7 @@ kg20000_sig0_wclip2-4.pdf  used on input line 70.
  [34 <./Python/W_CLIP/ref100000_bkg20000_sig0/data_ref100000_bkg20000_sig0_wcli
 p2-15.pdf>]
 <Python/W_CLIP/ref300000_bkg20000_sig0/data_ref300000_bkg20000_sig0_wclip2-3.pd
-f, id=982, 1156.32pt x 867.24pt>
+f, id=993, 1156.32pt x 867.24pt>
 File: Python/W_CLIP/ref300000_bkg20000_sig0/data_ref300000_bkg20000_sig0_wclip2
 -3.pdf Graphic file (type pdf)
 <use Python/W_CLIP/ref300000_bkg20000_sig0/data_ref300000_bkg20000_sig0_wclip2-
@@ -1829,7 +1913,7 @@ Package pdftex.def Info: Python/W_CLIP/ref300000_bkg20000_sig0/data_ref300000_b
 kg20000_sig0_wclip2-3.pdf  used on input line 77.
 (pdftex.def)             Requested size: 435.32422pt x 326.48457pt.
 <Python/W_CLIP/ref500000_bkg20000_sig0/data_ref500000_bkg20000_sig0_wclip2-55.p
-df, id=983, 1156.32pt x 867.24pt>
+df, id=994, 1156.32pt x 867.24pt>
 File: Python/W_CLIP/ref500000_bkg20000_sig0/data_ref500000_bkg20000_sig0_wclip2
 -55.pdf Graphic file (type pdf)
 <use Python/W_CLIP/ref500000_bkg20000_sig0/data_ref500000_bkg20000_sig0_wclip2-
@@ -1878,19 +1962,22 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 21.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 21.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 21.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: FCF743E83B4F2A57DCE175C86738687A;3471.
+(rerunfilecheck)             Checksum: 397711A71385BD4CA4D4FABD21FE7917;3463.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 21.
  ) 
 Here is how much of TeX's memory you used:
- 51824 strings out of 492623
- 1144349 string characters out of 6133291
+ 51985 strings out of 492623
+ 1147811 string characters out of 6133291
  1463849 words of memory out of 5000000
- 54600 multiletter control sequences out of 15000+600000
+ 54760 multiletter control sequences out of 15000+600000
  588397 words of font info for 188 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  74i,27n,122p,2205b,1971s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{Hfootnote.4} has been referenced but does not exi
+pdfTeX warning (dest): name{Hfootnote.5} has been referenced but does not exi
 st, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.4} has been referenced but does not exist
+, replaced by a fixed one
 
 pdfTeX warning (dest): name{Hfootnote.3} has been referenced but does not exist
 , replaced by a fixed one
@@ -1945,10 +2032,10 @@ dist/fonts/type1/public/cm-super/sfsl1095.pfb><c:/texlive/2019/texmf-dist/fonts
 lic/cm-super/sftt1000.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-sup
 er/sftt1095.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfxc120
 0.pfb>
-Output written on main.pdf (46 pages, 4207033 bytes).
+Output written on main.pdf (46 pages, 4209999 bytes).
 PDF statistics:
- 1336 PDF objects out of 1440 (max. 8388607)
- 1076 compressed objects within 11 object streams
- 214 named destinations out of 1000 (max. 500000)
+ 1346 PDF objects out of 1440 (max. 8388607)
+ 1086 compressed objects within 11 object streams
+ 215 named destinations out of 1000 (max. 500000)
  760 words of extra memory for PDF output out of 10000 (max. 10000000)
 

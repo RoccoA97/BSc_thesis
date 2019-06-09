@@ -5,9 +5,9 @@
 
 
 
-In this chapter the foundations of the algorithm employed for data analysis will be carefully explained step by step. A good practice is to begin from the statistical foundation of the algorithm itself as it is set on not trivial concepts. In the next step a network shall be built for the purpose beginning from its architecture and then choosing opportune activation functions, optimizer and weight initialization. Moreover, several crucial aspects that may cause difficulties in the work progression will be stated and faced in order to find the best solution or at least a compromise if there isn't. Some of the problems that shall be faced are:
+In this Chapter the foundations of the algorithm employed for data analysis will be carefully explained step by step. A good practice is to begin from the statistical foundation of the algorithm itself as it is set on not trivial concepts. In the next step a network shall be built for the purpose beginning from its architecture and then choosing opportune activation functions, optimizer and weight initialization. Moreover, several crucial aspects that may cause difficulties in the work progression will be highlighted and faced in order to find the best solution or at least a compromise if there isn't. Some of the problems that shall be faced are:
 \begin{itemize}
-	\item The search for the degrees of freedom of the network employed.
+	\item The search for the number of degrees of freedom of the network employed.
 	\item The look-elsewhere effect.
 	\item The limitation of the phase-space of the free parameters of the net, which translates in the clipping of the weights.
 \end{itemize}
@@ -17,7 +17,7 @@ In this chapter the foundations of the algorithm employed for data analysis will
 
 
 \section{Statistical foundations}
-The entire construction of the statistical foundations of the procedure is accurately described in \cite{wulzer}. Here we recap the main steps to the construction of a hypotesis test and so of a variable with discriminating power. 
+The entire construction of the statistical foundations of the procedure is accurately described in \cite{wulzer} for a monodimensional case. Here we recap the main steps to the construction of a hypotesis test and so of a variable with discriminating power.
 
 
 
@@ -129,16 +129,16 @@ The scheme of the algorithm is the following:
 
 
 \section{Computing resources}
-Suppose one wants to sample 200 values of $t$ in the reference hypotesis. Moreover, suppose the execution of a single process for a single value of takes about 1 day. Doing this task on a single machine is computationally very expensive. Assuming this machine could run 10 processes at the same time without swapping, it would take 20 days to get the desired results. Considering the entire procedure has to be repeated for different conditions and for several number of events in the reference sample, it is totally inconceivable to do everything on a single machine.
+Suppose one wants to sample 200 values of $t$ in the reference hypotesis. Moreover, suppose that the execution of a single process to obtain single value of $t$ takes about 1 day. It is clear that doing this task on a single machine is computationally very expensive. Assuming this machine could run 10 processes at the same time without swapping, it would take 20 days to get the desired results. Considering the entire procedure has to be repeated for different conditions and for several numbers of events in the reference sample, it is totally inconceivable to do everything on a single machine.
 
-Another aspect has to been taken into account. Writing the code that executes the algorithms described above could be quite tricky and unavoidable mistakes in the phase of implementation don't agree with the long execution time.
+Another aspect has to been taken into account. Writing the code that executes the algorithms described above could be quite tricky and unavoidable mistakes in the phase of implementation don't agree with the long execution time if we want to check the results for every change.
 
 In this section a solution for each of these difficulties encountered is presented.
 
 
 
 \subsection{\textsc{TensorFlow} back-end and \textsc{Keras} API}
-The programming language chosen for the work is \textsc{Python 3}. Its simplicity and power were crucial in the selection. Moreover, there exist very powerful tools that address machine learning problems which can make the code easier to write and understand.
+The programming language chosen for the work is \textsc{Python 3}. Its simplicity and power were crucial in the selection. Moreover, there exists very powerful tools that address machine learning problems which can make the code easier to write and understand.
 
 The API employed for the task is \textsc{Keras}, which is an open source library specialized for automatic learning tasks. It was used as front-end, while \textsc{TensorFlow} was used as back-end. This one is the most common machine learning library up to now and it provides tools not only for deep learning problems, but for every machine learning problem conceivable. For more information, see \cite{python}, \cite{keras} and \cite{tensorflow}.
 

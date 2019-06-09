@@ -5,9 +5,9 @@
 
 
 
-In this chapter the foundations of the algorithm employed for data analysis will be carefully explained step by step. A good practice is to begin from the statistical foundation of the algorithm itself as it is set on not trivial concepts. In the next step a network shall be built for the purpose beginning from its architecture and then choosing opportune activation functions, optimizer and weight initialization. Moreover, several crucial aspects that may cause difficulties in the work progression will be stated and faced in order to find the best solution or at least a compromise if there isn't. Some of the problems that shall be faced are:
+In this Chapter the foundations of the algorithm employed for data analysis will be carefully explained step by step. A good practice is to begin from the statistical foundation of the algorithm itself as it is set on not trivial concepts. In the next step a network shall be built for the purpose beginning from its architecture and then choosing opportune activation functions, optimizer and weight initialization. Moreover, several crucial aspects that may cause difficulties in the work progression will be highlighted and faced in order to find the best solution or at least a compromise if there isn't. Some of the problems that shall be faced are:
 \begin{itemize}
-	\item The search for the degrees of freedom of the network employed.
+	\item The search for the number of degrees of freedom of the network employed.
 	\item The look-elsewhere effect.
 	\item The limitation of the phase-space of the free parameters of the net, which translates in the clipping of the weights.
 \end{itemize}
@@ -17,7 +17,7 @@ In this chapter the foundations of the algorithm employed for data analysis will
 
 
 \section{Statistical foundations}
-The entire construction of the statistical foundations of the procedure is accurately described in \cite{wulzer}. Here we recap the main steps to the construction of a hypotesis test and so of a variable with discriminating power. 
+The entire construction of the statistical foundations of the procedure is accurately described in \cite{wulzer} for a monodimensional case. Here we recap the main steps to the construction of a hypotesis test and so of a variable with discriminating power.
 
 
 

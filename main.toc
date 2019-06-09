@@ -25,8 +25,8 @@
 \contentsline {section}{\numberline {3.3}From data to discoveries: resonance formation study}{18}{section.3.3}% 
 \contentsline {chapter}{\numberline {4}$Z \rightarrow \mu ^{+}\mu ^{-}$ decaying process}{21}{chapter.4}% 
 \contentsline {section}{\numberline {4.1}The $Z^{0}$ boson}{21}{section.4.1}% 
-\contentsline {section}{\numberline {4.2}High Level Features for the analysis of the decay}{22}{section.4.2}% 
-\contentsline {section}{\numberline {4.3}The dataset analyzed}{22}{section.4.3}% 
+\contentsline {section}{\numberline {4.2}High Level Features for $\mu ^{+}\mu ^{-}$ decay analysis}{22}{section.4.2}% 
+\contentsline {section}{\numberline {4.3}The dataset analyzed}{23}{section.4.3}% 
 \contentsline {chapter}{\numberline {5}Development of the algorithm for NP research}{25}{chapter.5}% 
 \contentsline {section}{\numberline {5.1}Statistical foundations}{25}{section.5.1}% 
 \contentsline {subsection}{\numberline {5.1.1}Construction of a test statistic}{25}{subsection.5.1.1}% 
