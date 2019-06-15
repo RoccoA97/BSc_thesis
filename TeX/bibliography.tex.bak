@@ -9,6 +9,11 @@
 \\Raffaele Tito D'Agnolo, Andrea Wulzer, June 8, 2018
 \\\url{https://arxiv.org/abs/1806.02350}
 
+\bibitem{cowan}
+\textit{Asymptotic formulae for likelihood-based tests of new physics}
+\\Glen Cowan, Kyle Cranmer, Eilam Gross, Ofer Vitells, July 20, 2013
+\\\url{https://arxiv.org/pdf/1007.1727.pdf}
+
 \bibitem{cms_results}
 Summaries of CMS cross section measurements.
 \\\url{https://twiki.cern.ch/twiki/bin/view/CMSPublic/PhysicsResultsCombined}

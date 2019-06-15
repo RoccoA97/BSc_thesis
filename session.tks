@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TexmakerSession quickmode="3">
-    <document bookmark1="0" hasfocus="false" line="0" bookmark2="0" file="C:/Users/Ardino Pierfrancesco/Desktop/Tesi Triennale LaTeX/TeX/Z_5D.tex" master="false" bookmark3="0"/>
-    <document bookmark1="0" hasfocus="false" line="10" bookmark2="0" file="C:/Users/Ardino Pierfrancesco/Desktop/Tesi Triennale LaTeX/TeX/bibliography.tex" master="false" bookmark3="0"/>
-    <document bookmark1="0" hasfocus="false" line="21" bookmark2="0" file="C:/Users/Ardino Pierfrancesco/Desktop/Tesi Triennale LaTeX/main.tex" master="true" bookmark3="0"/>
-    <document bookmark1="0" hasfocus="false" line="0" bookmark2="0" file="C:/Users/Ardino Pierfrancesco/Desktop/Tesi Triennale LaTeX/TeX/Z.tex" master="false" bookmark3="0"/>
-    <document bookmark1="0" hasfocus="false" line="0" bookmark2="0" file="C:/Users/Ardino Pierfrancesco/Desktop/Tesi Triennale LaTeX/TeX/newcommands.tex" master="false" bookmark3="0"/>
-    <document bookmark1="0" hasfocus="false" line="12" bookmark2="0" file="C:/Users/Ardino Pierfrancesco/Desktop/Tesi Triennale LaTeX/TeX/LHC.tex" master="false" bookmark3="0"/>
-    <document bookmark1="0" hasfocus="false" line="0" bookmark2="0" file="C:/Users/Ardino Pierfrancesco/Desktop/Tesi Triennale LaTeX/TeX/Frontespizio_Laurea.tex" master="false" bookmark3="0"/>
-    <document bookmark1="0" hasfocus="false" line="50" bookmark2="0" file="C:/Users/Ardino Pierfrancesco/Desktop/Tesi Triennale LaTeX/TeX/packages.tex" master="false" bookmark3="0"/>
-    <document bookmark1="0" hasfocus="false" line="0" bookmark2="0" file="C:/Users/Ardino Pierfrancesco/Desktop/Tesi Triennale LaTeX/TeX/NN.tex" master="false" bookmark3="0"/>
-    <document bookmark1="0" hasfocus="false" line="0" bookmark2="0" file="C:/Users/Ardino Pierfrancesco/Desktop/Tesi Triennale LaTeX/TeX/settings.tex" master="false" bookmark3="0"/>
-    <document bookmark1="0" hasfocus="false" line="0" bookmark2="0" file="C:/Users/Ardino Pierfrancesco/Desktop/Tesi Triennale LaTeX/TeX/W_CLIP.tex" master="false" bookmark3="0"/>
-    <document bookmark1="0" hasfocus="false" line="0" bookmark2="0" file="C:/Users/Ardino Pierfrancesco/Desktop/Tesi Triennale LaTeX/TeX/Conclusion.tex" master="false" bookmark3="0"/>
-    <document bookmark1="0" hasfocus="false" line="24" bookmark2="0" file="C:/Users/Ardino Pierfrancesco/Desktop/Tesi Triennale LaTeX/TeX/Introduction.tex" master="false" bookmark3="0"/>
-    <document bookmark1="0" hasfocus="false" line="0" bookmark2="0" file="C:/Users/Ardino Pierfrancesco/Desktop/Tesi Triennale LaTeX/TeX/abstract.tex" master="false" bookmark3="0"/>
-    <document bookmark1="0" hasfocus="false" line="0" bookmark2="0" file="C:/Users/Ardino Pierfrancesco/Desktop/Tesi Triennale LaTeX/TeX/RESULTS.tex" master="false" bookmark3="0"/>
-    <document bookmark1="0" hasfocus="false" line="0" bookmark2="0" file="C:/Users/Ardino Pierfrancesco/Desktop/Tesi Triennale LaTeX/Images/Introduction/SM_particles.tex" master="false" bookmark3="0"/>
-    <document bookmark1="0" hasfocus="true" line="0" bookmark2="0" file="C:/Users/Ardino Pierfrancesco/Desktop/Tesi Triennale LaTeX/Images/LHC/LHC_collider.tex" master="false" bookmark3="0"/>
+    <document file="C:/Users/Ardino Pierfrancesco/Desktop/Tesi Triennale LaTeX/TeX/Conclusion.tex" hasfocus="false" master="false" bookmark1="0" bookmark2="0" bookmark3="0" line="0"/>
+    <document file="C:/Users/Ardino Pierfrancesco/Desktop/Tesi Triennale LaTeX/TeX/NN.tex" hasfocus="false" master="false" bookmark1="0" bookmark2="0" bookmark3="0" line="23"/>
+    <document file="C:/Users/Ardino Pierfrancesco/Desktop/Tesi Triennale LaTeX/TeX/LHC.tex" hasfocus="false" master="false" bookmark1="0" bookmark2="0" bookmark3="0" line="132"/>
+    <document file="C:/Users/Ardino Pierfrancesco/Desktop/Tesi Triennale LaTeX/TeX/bibliography.tex" hasfocus="false" master="false" bookmark1="0" bookmark2="0" bookmark3="0" line="12"/>
+    <document file="C:/Users/Ardino Pierfrancesco/Desktop/Tesi Triennale LaTeX/TeX/packages.tex" hasfocus="false" master="false" bookmark1="0" bookmark2="0" bookmark3="0" line="51"/>
+    <document file="C:/Users/Ardino Pierfrancesco/Desktop/Tesi Triennale LaTeX/TeX/W_CLIP.tex" hasfocus="false" master="false" bookmark1="0" bookmark2="0" bookmark3="0" line="0"/>
+    <document file="C:/Users/Ardino Pierfrancesco/Desktop/Tesi Triennale LaTeX/TeX/Z.tex" hasfocus="true" master="false" bookmark1="0" bookmark2="0" bookmark3="0" line="151"/>
+    <document file="C:/Users/Ardino Pierfrancesco/Desktop/Tesi Triennale LaTeX/TeX/Z_5D.tex" hasfocus="false" master="false" bookmark1="0" bookmark2="0" bookmark3="0" line="207"/>
+    <document file="C:/Users/Ardino Pierfrancesco/Desktop/Tesi Triennale LaTeX/TeX/Frontespizio_Laurea.tex" hasfocus="false" master="false" bookmark1="0" bookmark2="0" bookmark3="0" line="0"/>
+    <document file="C:/Users/Ardino Pierfrancesco/Desktop/Tesi Triennale LaTeX/main.tex" hasfocus="false" master="true" bookmark1="0" bookmark2="0" bookmark3="0" line="21"/>
+    <document file="C:/Users/Ardino Pierfrancesco/Desktop/Tesi Triennale LaTeX/TeX/newcommands.tex" hasfocus="false" master="false" bookmark1="0" bookmark2="0" bookmark3="0" line="18"/>
+    <document file="C:/Users/Ardino Pierfrancesco/Desktop/Tesi Triennale LaTeX/TeX/settings.tex" hasfocus="false" master="false" bookmark1="0" bookmark2="0" bookmark3="0" line="0"/>
+    <document file="C:/Users/Ardino Pierfrancesco/Desktop/Tesi Triennale LaTeX/TeX/RESULTS.tex" hasfocus="false" master="false" bookmark1="0" bookmark2="0" bookmark3="0" line="0"/>
+    <document file="C:/Users/Ardino Pierfrancesco/Desktop/Tesi Triennale LaTeX/TeX/abstract.tex" hasfocus="false" master="false" bookmark1="0" bookmark2="0" bookmark3="0" line="0"/>
+    <document file="C:/Users/Ardino Pierfrancesco/Desktop/Tesi Triennale LaTeX/Images/LHC/LHC_collider.tex" hasfocus="false" master="false" bookmark1="0" bookmark2="0" bookmark3="0" line="4"/>
+    <document file="C:/Users/Ardino Pierfrancesco/Desktop/Tesi Triennale LaTeX/TeX/Introduction.tex" hasfocus="false" master="false" bookmark1="0" bookmark2="0" bookmark3="0" line="83"/>
 </TexmakerSession>

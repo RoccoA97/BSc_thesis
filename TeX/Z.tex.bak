@@ -109,6 +109,7 @@ To better study the decaying process, it is preferred to combine the low level f
 			$\eta_{1}$		&	Pseudorapidity 1				\\
 			$\eta_{2}$		&	Pseudorapidity 2				\\
 			$\Delta \phi$	&	Difference of azimuthal angles	\\
+			$M_{Z}$			&	Invariant mass					\\
 			\bottomrule
 		\end{tabular}
 		\caption{High Level Features legend.}
@@ -116,14 +117,15 @@ To better study the decaying process, it is preferred to combine the low level f
 	\end{center}
 \end{table}
 
-The relations employed to obtain the values for HLFs are reported in the Equations \ref{eqn:P_T_1}-\ref{eqn:DELTA_PHI}. The intermediate steps to get the results are reported as well for completeness. Note that although the polar angle $\theta$ is a HLF too, the pseudorapidiy is a more common variable and so its usage is preferred in High-Energy physics.
+The relations employed to obtain the values for HLFs are reported in the Equations \ref{eqn:P_T_1}-\ref{eqn:INV_MASS}. The intermediate steps to get the results are reported as well for completeness. Note that although the polar angle $\theta$ is a HLF too, the pseudorapidiy is a more common variable and so its usage is preferred in High-Energy physics.
 
 \begin{align}
 	p_{T,1} &= p_{1,x}	\label{eqn:P_T_1}	\\
 	p_{T,2} &= \sqrt{ p_{2,x}^2 + p_{2,y}^2 }	\label{eqn:P_T_2}	\\
 	\eta_{1} &= \arctanh{ \frac{p_{1,z}}{p_{1}} }	\label{eqn:PR_1}	\\
 	\eta_{2} &= \arctanh{ \frac{p_{2,z}}{p_{2}} }	\label{eqn:PR_2}	\\
-	\Delta \phi &= \phi_{2} - \phi_{1}	\label{eqn:DELTA_PHI}
+	\Delta \phi &= \phi_{2} - \phi_{1}	\label{eqn:DELTA_PHI}	\\
+	M_{Z}^{2} &= 2 p_{T,1} p_{T,2} [ \cosh{(\eta_{1} - \eta_{2})} - \cos{\Delta \phi} ]	\label{eqn:INV_MASS}
 \end{align}
 
 \noindent
@@ -140,33 +142,49 @@ where:
 
 
 
-\section{The dataset analyzed}
-The dataset employed for the analysis is a set of simulated data. The events are generated through the framework \textsc{MadGraph5}, assuming collisions of protons at $13~\si{TeV}$. The detector response is also taken into account by \textsc{Delphes}, showering and hadronization by \textsc{Pythia}. More informations on these softwares and on their usage can be found in \cite{madgraph}.
+\section{The datasets analyzed}
+In order to build an analysis strategy and perform a test of its performances, two benchmark datasets were simulated and for each of them another dataset containing signal events beyond SM was generated. This phase was accomplished through the aid of the framework \textsc{MadGraph5}, assuming pp collisions at $\sqrt{s} = 13~\si{TeV}$. The detector response was also taken into account by \textsc{Delphes}, showering and hadronization by \textsc{Pythia}. More informations on these softwares and on their usage can be found in \cite{madgraph}.
 
-The dataset parametrizing the reference distribution is simulated according to SM predictions. The expectation is a peak at $M_{Z} = 91~\si{GeV}$ in the invariant mass distribution and a power law descent at higher values of $M_{Z}$. The dataset with signal events is simulated assuming there is a resonant new physics phenomenon, visible in a new peak at $M_{Z} = 300~\si{GeV}$.
+A brief description of the two models studied is given:
+\begin{itemize}
+	\item The first dataset, denoted with \textbf{Zmumu-Zprime}, is characterized by:
+	\begin{itemize}
+		\item[$\triangleright$] a "reference" subset following a model with a Breit-Wigner invariant mass distribution, so with a resonant peak at $M_{Z} = 91~\si{GeV}$, due to the $Z$ boson;
+		\item[$\triangleright$] a "signal" subset whose invariant mass distribution exhibit a resonant peak at $M_{Z} = 300~\si{GeV}$.
+	\end{itemize}
+	
+	\item The second dataset, denoted with \textbf{EFT\_YW06}, is characterized by:
+	\begin{itemize}
+		\item[$\triangleright$] a "reference" subset following a model with a power-law descending invariant mass distribution with a resonant peak at $M_{Z} = 91~\si{GeV}$, due to the $Z$ boson.
+		\item[$\triangleright$] a "signal" subset whose invariant mass distribution is equal to the reference one, except for a different slope in the power-law descent.
+	\end{itemize}
+	The tag given to this dataset indicates an Effective Field Theory where the Yukawa coefficient was set to 0 for both signal and reference subsets and Wilson coefficient was set to 0 for reference and to $10^{-6}$ for signal subset.
+\end{itemize}
 
-Histograms of the five momenta and of the HLFs are presented in the following plots. Only-reference, only-signal and signal+background data combinations are showed in different plots, in order to see more clearly the differences.
+For every case presented, the HLFs were extrapolated by the five independent momentum components. The results are showed in following plots, in Figure \ref{fig:Z_PRIME_FEATURES_DISTRIBUTIONS} for \textbf{Zmumu-Zprime} and in Figure \ref{fig:EFT_YW06_FEATURES_DISTRIBUTIONS}.
 
-\begin{figure}[H]
+% **************************************************************
+\begin{comment}
+\begin{figure}
 	\begin{center}
 		\includegraphics[width=1.0\textwidth]{Python/Z/data.pdf}
 		\caption{Data distribution.}
 		\label{fig:DATA_DISTRIBUTIONS}
 	\end{center}
 \end{figure}
+\end{comment}
+% **************************************************************
 
-\begin{figure}[H]
-	\begin{center}
-		\includegraphics[width=1.0\textwidth]{Python/Z/features.pdf}
-		\caption{Features and invariant mass distributions.}
-		\label{fig:FEATURES_DISTRIBUTIONS}
-	\end{center}
+\begin{figure}
+	\centering
+	\includegraphics[width=1.0\textwidth]{Python/Z/features_Zmumu_Zprime.pdf}
+	\caption{Features and invariant mass distributions for \textbf{Zmumu-Zprime}.}
+	\label{fig:Z_PRIME_FEATURES_DISTRIBUTIONS}
 \end{figure}
 
-\begin{figure}[H]
-	\begin{center}
-		\includegraphics[width=1.0\textwidth]{Python/Z/sig_plus_bkg.pdf}
-		\caption{Features and invariant mass distributions with signal+background in the same dataset.}
-		\label{fig:SIG_PLUS_BKG_DISTRIBUTIONS}
-	\end{center}
+\begin{figure}
+	\centering
+	\includegraphics[width=1.0\textwidth]{Python/Z/features_EFT_YW06.pdf}
+	\caption{Features and invariant mass distributions for \textbf{EFT\_YW06}.}
+	\label{fig:EFT_YW06_FEATURES_DISTRIBUTIONS}
 \end{figure}
