@@ -25,16 +25,18 @@ def __plot_t_distribution__(t, chi2_test, p_val):
     x = np.linspace(chi2.ppf(0.001,dof), chi2.ppf(0.999,dof), 1000)
     plt.plot(x, chi2.pdf(x,dof), 'r-', lw=2, alpha=0.6, label='$\chi^2$ '+str(dof)+' dof')
 
-    textstr = "Number of toys:\n%d\nmedian Bkg only:\n%2f\n$\chi^2$:\n%2f\n$\chi^2$ test $p$-value:\n%2f" %(t.shape[0],
+    textstr = "Number of toys:\n%d\nMedian Bkg only:\n%2f\n$\chi^2$:\n%2f\n$\chi^2$ test $p$-value:\n%2f" %(t.shape[0],
                                                                                 round(np.median(np.array(t)),2),
                                                                                 round(chi2_test,2),
-                                                                                round(p_val, 8))
+                                                                                round(p_val, 3))
     plt.annotate(textstr, xy=(0.73, 0.40), xycoords='axes fraction',
          #verticalalignment='top',horizontalalignment='right',
          fontsize=fontsize)#, bbox=props)
 
     plt.xlabel('t',fontsize=fontsize)
     plt.ylabel('Density',fontsize=fontsize)
+    plt.xlim(40, 160)
+    plt.ylim(0.0, 0.040)
     plt.title('Distribution of t',fontsize=fontsize)
     plt.legend(fontsize=fontsize)
 

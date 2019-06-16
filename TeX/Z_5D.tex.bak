@@ -138,7 +138,7 @@ The trained neural network, denoted with its output $f(x;\hat{\mathbf{w}})$, is 
 \section{The algorithm}
 The network architecture chosen for the task has the following characteristics:
 \begin{itemize}
-	\item 3 fully-connected layers, with the first and the second ones with five neurons each and the last one with only one output neuron. Therefore the input is multidimensional since the input is the set of HLFs for every event.
+	\item 3 fully-connected layers, with the first and the second ones with five neurons each and the last one with only one output neuron. Therefore the input is multidimensional since the input is the set of HLFs (except for the invariant mass $M_{Z}$) for every event.
 	\item The activation functions chosen are sigmoids for the first and second layer, while a linear activation is employed for the last layer.
 \end{itemize}
 
@@ -169,7 +169,7 @@ In this section a solution for each of these difficulties encountered is present
 \subsection{\textsc{TensorFlow} back-end and \textsc{Keras} API}
 The programming language chosen for the work is \textsc{Python 3}. Its simplicity and power were crucial in the selection. Moreover, there exists very powerful tools that address machine learning problems and which can make the code easier to write and understand.
 
-The API employed for the task is \textsc{Keras}, which is an open source library specialized for automatic learning tasks. It was used as front-end, while \textsc{TensorFlow} was used as back-end. This one is the most common machine learning library up to now and it provides tools not only for deep learning problems, but for every machine learning problem conceivable. For more information, see \cite{python}, \cite{keras} and \cite{tensorflow}.
+The API employed for the task is \textsc{Keras}, which is an open source library specialized for automatic learning tasks. It was used with \textsc{TensorFlow} as back-end. The ladder is the most common machine learning library up to now and it provides tools not only for deep learning problems, but for every machine learning problem conceivable. For more information, see \cite{python}, \cite{keras} and \cite{tensorflow}.
 
 A bunch of code to build the network and to train it is reported below to give an idea of its clarity. In the following example the architecture of the net is (5,5,1) and the code is reported in a simplificated version.
 
@@ -199,9 +199,9 @@ model.fit(x_train,
 \subsection{LSF and clustering}
 In order to speed up the sampling of $t$ distribution, the algorithm was parallelized on a cluster of machines. This is to be intended that different processes were executed simultaneously on different machines and not that a single process was executed on more machines.
 
-The machines used for the task are Tier-2, sited in Legnaro and Padua. The processes sent to them are called \texttt{bjobs} and the sending procedure is done by LSF, which stands for Load Sharing Facilities. Every bjob must be sent by a script, launched through \texttt{bsub} command. Before doing this, a non-trivial configuration procedure of the machine through which the jobs were dispatched has to be done. To make this procedure easier, the access to this machine was done through cloudveneto. A virtual machine instance was created and connected to the lsf sender. It was then personalized to run a python script with these functionalities:
+The machines used for the task are sited in Legnaro and Padua. The processes sent to them are called \texttt{bjobs} and the sending procedure is done by LSF, which stands for Load Sharing Facilities. Every bjob must be sent by a script, launched through \texttt{bsub} command. Before doing this, a configuration procedure of the machine, through which the jobs were dispatched, has to be done. To make this procedure easier, the access to this machine was done through cloudveneto. A virtual machine instance was created and connected to the lsf sender. It was then personalized to run a python script with these functionalities:
 \begin{itemize}
-	\item It configures the environment variables of the machines in order to let the necessary packages accessible by the system. This phase was accomplished by the execution of another script accessible on cvmfs (CERN Virtual Machine File System). More information on this tool are provided in \cite{cvmfs}.
+	\item It configures the environment variables of the machines in order to let the necessary packages accessible by the system. This phase was accomplished by the execution of another script accessible on cvmfs (CERN Virtual Machine File System). More informations on this tool are provided in \cite{cvmfs}.
 	\item It creates the script that sends the job via LSF to the machines. This phase is executed a number of times equal to the number of toy samples, therefore equal to the number of $t$ values we want.
 \end{itemize}
 
@@ -254,7 +254,7 @@ Since the complexity scales up linearly with the number of events in the referen
 \section{Degrees of freedom of the network}
 Trying to understand the exact number of the degrees of freedom of a neural network is not a trivial task. This number must reflect the wideness of the space of functions the network can span. A more complex network will obviously be characterized by a larger number of dof.
 
-A possible approach to determine the number of dof starts from the free parameters of the network. If there are $n$ weights parameters and $m$ biases, the number of dof $\nu$ can be estimated by:
+A possible approach to determine the number of dof starts from the free parameters of the network. If there are $n$ weight parameters and $m$ biases, the number of dof $\nu$ can be estimated by:
 \begin{equation}
 	\nu = n + m
 \end{equation}
@@ -268,7 +268,7 @@ Therefore, given the network architecture, the number of layers, neurons and the
     \label{fig:DOF}
 \end{figure}
 
-Every neuron in the middle layers is connected with five neurons of the following layer, including also sigmoid layers. The neurons in the last sigmoid layer are connected with only one neuron, which is the unique one of the output layer. Considering that for every neuron except the ones in the input layer there is a bias parameter, the total number of $n$, $m$ and $\nu$ previously defined is:
+Every neuron in the middle layers is connected to five neurons of the following layer, including also sigmoid layers. The neurons in the last sigmoid layer are connected with only one neuron, which is the unique one of the output layer. Considering that for every neuron except the ones in the input layer there is a bias parameter, the total number of $n$, $m$ and $\nu$ previously defined is:
 \begin{equation}
 	\begin{array}{l}
 	n = 80\\
@@ -288,7 +288,7 @@ When data analysis is completed, suppose we find a significant bump at some part
 
 The $5\sigma$ rule was conceived with exactly this particular effect in mind. This threshold means extremely rare occurrence (just to have an idea, three out of ten million), so even including the look-elsewhere effect, it is still something to take quite seriously.
 
-Employing neural network in the procedure exposed in this work introduces this effect because new physics signals are searched ranging in the entire dataset. This is the main limiting factor of the technique. However, this problem can't be avoided in any attempt to search for new physics model-independently. Thus it is not a limitation of the method itself.
+Employing neural network in the procedure exposed in this work introduces this effect because new physics signals are searched ranging in the entire dataset. This is the main limiting factor of the technique. However, this problem can't be avoided in any attempt to search for new physics model-independently. Thus it is not a limitation of the method itself. Moreover, it is important to remark that the entire construction done in this work aims to test the performance of a method and so how it can be enhanced.
 
 
 
@@ -297,8 +297,11 @@ Employing neural network in the procedure exposed in this work introduces this e
 \section{Weight clipping}
 The algorithm necessarily requires some sort of regularization because the loss function, i.e. the cross entropy, is unbounded from below. It means that it approces negative infinity if the output of the network $f$ diverges at some value of $x \in \mathcal{D}$. The highly negative values of the minimized loss function become a high positive value of $t$. This problematic situation occurs only when the divergence in $f$ is sharply localized, such that $f(x)$ stays finite for all $x \in \mathcal{R}$.
 
-These dangerous configurations are avoided by enforcing an upper bound, namely a "weight clipping" parameter $W$, on the absolute value of each weight. However, the choice of this parameter is of critical importance and it must be tuned correctly if we want to get reasonable results. In fact, it is known from theoretical arguments that the distribution of $t$ in the reference hypotesis will asympthotically follow a $\chi^2$ distribution with a number of dof equals to the number of free parameters. If we set a too low weight clipping, the sampled distribution will be shifted to the left of the expected distribution. On the contrary, if we set a too high weight clipping, there will be a right shift. An example of the two cases is showed in Figure [DA INSERIRE].
+These dangerous configurations are avoided by enforcing an upper bound, namely a "weight clipping" parameter $W$, on the absolute value of each weight. However, the choice of this parameter is of critical importance and it must be tuned correctly if we want to get reasonable results. In fact, it is known from theoretical arguments that the distribution of $t$ in the reference hypotesis will asympthotically follow a $\chi^2$ distribution with a number of dof equals to the number of free parameters. If we set a too low weight clipping, the sampled distribution will be shifted to the left of the expected distribution. On the contrary, if we set a too high weight clipping, there will be a right shift. An example of the two cases is showed in Figure \ref{fig:WRONG_WCLIP}.
 
-[INSERIRE IMMAGINE]
-
-[INSERIRE CODICE D'ESEMPIO PER IL CLIPPING]
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1.0\textwidth]{Python/W_CLIP/wrong_wclip_2-2_3-0.pdf}
+	\caption{Results for wrong choices of $W$ with \textbf{Zmumu-Zprime} dataset. On the left side there are the results for $N_\mathrm{ref}=200\si{k}$, $N_\mathrm{bkg}=20\si{k}$, $N_\mathrm{sig}=0$, $W=2.2$. On the right side there are the results for $N_\mathrm{ref}=1000\si{k}$, $N_\mathrm{bkg}=20\si{k}$, $N_\mathrm{sig}=0$, $W=3.0$.}
+	\label{fig:WRONG_WCLIP}
+\end{figure}

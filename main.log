@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.5.2)  16 JUN 2019 02:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.5.2)  16 JUN 2019 12:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1862,7 +1862,14 @@ File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
-) [31] [32]) (./TeX/W_CLIP.tex [33] [34
+) [31] [32]
+<Python/W_CLIP/wrong_wclip_2-2_3-0.pdf, id=917, 939.51pt x 650.43pt>
+File: Python/W_CLIP/wrong_wclip_2-2_3-0.pdf Graphic file (type pdf)
+<use Python/W_CLIP/wrong_wclip_2-2_3-0.pdf>
+Package pdftex.def Info: Python/W_CLIP/wrong_wclip_2-2_3-0.pdf  used on input l
+ine 304.
+(pdftex.def)             Requested size: 483.69687pt x 334.86105pt.
+) (./TeX/W_CLIP.tex [33 <./Python/W_CLIP/wrong_wclip_2-2_3-0.pdf>] [34
 
 ]
 Chapter 6.
@@ -1870,7 +1877,7 @@ Chapter 6.
 File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
 ) [35]
 <Python/W_CLIP/ref100000_bkg20000_sig0/data_ref100000_bkg20000_sig0_wclip2-15.p
-df, id=932, 939.51pt x 650.43pt>
+df, id=959, 939.51pt x 650.43pt>
 File: Python/W_CLIP/ref100000_bkg20000_sig0/data_ref100000_bkg20000_sig0_wclip2
 -15.pdf Graphic file (type pdf)
 <use Python/W_CLIP/ref100000_bkg20000_sig0/data_ref100000_bkg20000_sig0_wclip2-
@@ -1879,7 +1886,7 @@ Package pdftex.def Info: Python/W_CLIP/ref100000_bkg20000_sig0/data_ref100000_b
 kg20000_sig0_wclip2-15.pdf  used on input line 63.
 (pdftex.def)             Requested size: 483.69687pt x 334.86105pt.
 <Python/W_CLIP/ref200000_bkg20000_sig0/data_ref200000_bkg20000_sig0_wclip2-4.pd
-f, id=933, 939.51pt x 650.43pt>
+f, id=960, 939.51pt x 650.43pt>
 File: Python/W_CLIP/ref200000_bkg20000_sig0/data_ref200000_bkg20000_sig0_wclip2
 -4.pdf Graphic file (type pdf)
 <use Python/W_CLIP/ref200000_bkg20000_sig0/data_ref200000_bkg20000_sig0_wclip2-
@@ -1888,7 +1895,7 @@ Package pdftex.def Info: Python/W_CLIP/ref200000_bkg20000_sig0/data_ref200000_b
 kg20000_sig0_wclip2-4.pdf  used on input line 70.
 (pdftex.def)             Requested size: 483.69687pt x 334.86105pt.
 <Python/W_CLIP/ref300000_bkg20000_sig0/data_ref300000_bkg20000_sig0_wclip2-45.p
-df, id=934, 939.51pt x 650.43pt>
+df, id=961, 939.51pt x 650.43pt>
 File: Python/W_CLIP/ref300000_bkg20000_sig0/data_ref300000_bkg20000_sig0_wclip2
 -45.pdf Graphic file (type pdf)
 <use Python/W_CLIP/ref300000_bkg20000_sig0/data_ref300000_bkg20000_sig0_wclip2-
@@ -1899,7 +1906,7 @@ kg20000_sig0_wclip2-45.pdf  used on input line 77.
  [36 <./Python/W_CLIP/ref100000_bkg20000_sig0/data_ref100000_bkg20000_sig0_wcli
 p2-15.pdf>]
 <Python/W_CLIP/ref500000_bkg20000_sig0/data_ref500000_bkg20000_sig0_wclip2-55.p
-df, id=966, 939.51pt x 650.43pt>
+df, id=991, 939.51pt x 650.43pt>
 File: Python/W_CLIP/ref500000_bkg20000_sig0/data_ref500000_bkg20000_sig0_wclip2
 -55.pdf Graphic file (type pdf)
 <use Python/W_CLIP/ref500000_bkg20000_sig0/data_ref500000_bkg20000_sig0_wclip2-
@@ -1908,7 +1915,7 @@ Package pdftex.def Info: Python/W_CLIP/ref500000_bkg20000_sig0/data_ref500000_b
 kg20000_sig0_wclip2-55.pdf  used on input line 84.
 (pdftex.def)             Requested size: 483.69687pt x 334.86105pt.
 <Python/W_CLIP/ref1000000_bkg20000_sig0/data_ref1000000_bkg20000_sig0_wclip2-7.
-pdf, id=967, 939.51pt x 650.43pt>
+pdf, id=992, 939.51pt x 650.43pt>
 File: Python/W_CLIP/ref1000000_bkg20000_sig0/data_ref1000000_bkg20000_sig0_wcli
 p2-7.pdf Graphic file (type pdf)
 <use Python/W_CLIP/ref1000000_bkg20000_sig0/data_ref1000000_bkg20000_sig0_wclip
@@ -1964,10 +1971,10 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 21.
  ) 
 Here is how much of TeX's memory you used:
- 52000 strings out of 492623
- 1148404 string characters out of 6133291
- 1463850 words of memory out of 5000000
- 54766 multiletter control sequences out of 15000+600000
+ 52008 strings out of 492623
+ 1148666 string characters out of 6133291
+ 1463851 words of memory out of 5000000
+ 54771 multiletter control sequences out of 15000+600000
  589128 words of font info for 189 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  74i,27n,122p,2205b,1971s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2033,10 +2040,10 @@ dist/fonts/type1/public/cm-super/sfrm1095.pfb><c:/texlive/2019/texmf-dist/fonts
 lic/cm-super/sftt1000.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-sup
 er/sftt1095.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfxc120
 0.pfb>
-Output written on main.pdf (48 pages, 4195279 bytes).
+Output written on main.pdf (48 pages, 4207695 bytes).
 PDF statistics:
- 1314 PDF objects out of 1440 (max. 8388607)
- 1045 compressed objects within 11 object streams
- 222 named destinations out of 1000 (max. 500000)
- 760 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1340 PDF objects out of 1440 (max. 8388607)
+ 1068 compressed objects within 11 object streams
+ 223 named destinations out of 1000 (max. 500000)
+ 765 words of extra memory for PDF output out of 10000 (max. 10000000)
 
