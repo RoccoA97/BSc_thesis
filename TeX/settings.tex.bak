@@ -28,3 +28,9 @@
 
 \counterwithout{footnote}{chapter}
 
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[RE]{\small\leftmark}
+\fancyhead[LE]{\small\textbf{\thepage}}
+\fancyhead[LO]{\small\rightmark}
+\fancyhead[RO]{\small\textbf{\thepage}}
