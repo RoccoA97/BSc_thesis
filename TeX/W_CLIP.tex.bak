@@ -5,7 +5,7 @@
 
 
 
-In the final part of the previous chapter the procedure of weight clipping was introduced and explained. In this one a systematic approch for weight clipping parameter tuning is developed. The procedure is then tested with several cases, where the difference is in the size of reference sample. It is important to highlight that in this procedure no signal event is given to the network because we are trying to search the optimal $W$ for which the ditribution of $t$ converges after training to a $\chi^2$ ditribution with 96 dofs.
+In the final part of the previous Chapter the procedure of weight clipping was introduced and explained. In this one a systematic approch for weight clipping parameter tuning is developed. The procedure is then tested with several cases, where the difference is in the size of reference sample. It is important to highlight that in this procedure no signal event is given to the network because we are trying to search the optimal $W$ for which the distribution of $t$ converges after training to a $\chi^2$ distribution with 96 dofs.
 
 Beside searching the optimal weight clipping for each case, another aim is to find a trend for $W$ in order to avoid a tuning when data samples of new sizes are given to the net. The cases studied for the test are listed below in Table \ref{tab:W_CLIP_TEST_SIZES}.
 

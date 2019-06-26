@@ -43,4 +43,6 @@
 \contentsline {section}{\numberline {6.1}A criterion for optimal weight clipping}{35}{section.6.1}% 
 \contentsline {section}{\numberline {6.2}Results for optimal weight clipping search}{36}{section.6.2}% 
 \contentsline {chapter}{\numberline {7}Training with signal events and results}{39}{chapter.7}% 
-\contentsline {chapter}{\numberline {8}Conclusion and future developments}{41}{chapter.8}% 
+\contentsline {section}{\numberline {7.1}Ideal significance computation}{39}{section.7.1}% 
+\contentsline {section}{\numberline {7.2}Training results: $t_\mathrm {obs}$ distribution and observed significance}{40}{section.7.2}% 
+\contentsline {chapter}{\numberline {8}Conclusion and future developments}{43}{chapter.8}% 

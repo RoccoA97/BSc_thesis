@@ -101,7 +101,7 @@ plt.legend()
 
 plt.subplot(3,2,6)
 plt.title('$M_{Z}$ distribution')
-plt.xlabel('$M_{Z}$ [Gev/c$^2$]')
+plt.xlabel('$M_{Z}$ [GeV/c$^2$]')
 plt.ylabel('Density')
 plt.yscale('log')
 plt.hist(test_All_Bkg[:,5], bins=mass_bins, range=(0,500), histtype='step', linewidth=2, density=True, label='Background')

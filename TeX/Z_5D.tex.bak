@@ -92,7 +92,7 @@ According to the Neyman-Pearson lemma, $t_\mathrm{id}$ is the optimal discrimina
 	2 \log{\left[
 	\frac{\mathcal{L}_{\NP}}{\mathcal{L}_{\R}}
 	\right]}
-	}
+	}	\label{eqn:ID_SIG}
 \end{equation}
 
 This test statistic is denoted as 'ideal' because it is the most suited one to discover data departures from the reference model. However, it is not useful but as a benchmark because we can use it only when the true data distribution is known a priori. In our case we are testing the efficiency of a ML-approach and therefore the true distribution is known.
