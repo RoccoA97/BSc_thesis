@@ -29,7 +29,7 @@ def __plot_t_distribution__(t, chi2_test, p_val):
     textstr = "Number of toys:\n%d\nMedian Bkg only:\n%2f\n$\chi^2$:\n%2f" %(t.shape[0],
                                                                             round(np.median(np.array(t)),2),
                                                                             round(chi2_test,2))
-    plt.annotate(textstr, xy=(0.73, 0.50), xycoords='axes fraction',
+    plt.annotate(textstr, xy=(0.73, 0.45), xycoords='axes fraction',
          #verticalalignment='top',horizontalalignment='right',
          fontsize=fontsize)#, bbox=props)
 
@@ -106,7 +106,7 @@ def __analysis_plot__(FILE_NAME_1, FILE_NAME_2):
     x_2 = epochs_2 / 1000
 
 
-    fig=plt.figure(figsize=(13, 9))
+    fig=plt.figure(figsize=(13, 8))
 
     plt.subplot(2,2,1)
     __plot_t_distribution__(t_1, chi2_values_1[-1], p_values_1[-1])

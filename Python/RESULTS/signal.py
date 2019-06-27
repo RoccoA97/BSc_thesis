@@ -34,10 +34,10 @@ def __plot_t_distribution__(t):
     pp_mean = 1 - p_mean
     sigma_mean = np.sqrt(2) * erfinv(1-pp_mean)
 
-    textstr = "Number of toys:\n%d\nMedian Bkg only:\n%2.2f\nMedian significance:\n%2.2f$\sigma$" %(t.shape[0],
+    textstr = "Number of toys:\n%d\nMedian Bkg only:\n%2.2f\nMedian significance:\n%2.3f$\sigma$" %(t.shape[0],
                                                                                 round(np.median(np.array(t)),2),
-                                                                                round(sigma_med,2))
-    plt.annotate(textstr, xy=(0.68, 0.50), xycoords='axes fraction',
+                                                                                round(sigma_med,3))
+    plt.annotate(textstr, xy=(0.68, 0.45), xycoords='axes fraction',
          #verticalalignment='top',horizontalalignment='right',
          fontsize=fontsize)#, bbox=props)
 
@@ -52,7 +52,7 @@ def __plot_percentiles__(x, percentiles, quantiles, ymax1=300):
     plt.ylabel('t',fontsize=fontsize)
     plt.title('Percentile plot',fontsize=fontsize)
     plt.xlim(0, 350)
-    plt.ylim(0, ymax1)
+    plt.ylim(0, percentiles[-1,4]+15)
 
     legend=[]
 
@@ -86,7 +86,7 @@ def __analysis_plot__(FILE_NAME, OUTPUT_DIR_NAME):
     f.close()
 
 
-    fig=plt.figure(figsize=(13, 4.5))
+    fig=plt.figure(figsize=(13, 4))
 
     plt.subplot(1,2,1)
     __plot_t_distribution__(t)

@@ -25,11 +25,11 @@ def __plot_t_distribution__(t, chi2_test, p_val):
     x = np.linspace(chi2.ppf(0.001,dof), chi2.ppf(0.999,dof), 1000)
     plt.plot(x, chi2.pdf(x,dof), 'r-', lw=2, alpha=0.6, label='$\chi^2$ '+str(dof)+' dof')
 
-    textstr = "Number of toys:\n%d\nMedian Bkg only:\n%2f\n$\chi^2$:\n%2f\n$\chi^2$ test $p$-value:\n%2f" %(t.shape[0],
+    textstr = "Number of toys:\n%d\nMedian Bkg only:\n%2.2f\n$\chi^2$:\n%2.2f\n$\chi^2$ test $p$-value:\n%1.3f" %(t.shape[0],
                                                                                 round(np.median(np.array(t)),2),
                                                                                 round(chi2_test,2),
                                                                                 round(p_val, 3))
-    plt.annotate(textstr, xy=(0.73, 0.40), xycoords='axes fraction',
+    plt.annotate(textstr, xy=(0.73, 0.35), xycoords='axes fraction',
          #verticalalignment='top',horizontalalignment='right',
          fontsize=fontsize)#, bbox=props)
 
@@ -118,7 +118,7 @@ def __analysis_plot__(FILE_NAME, OUTPUT_DIR_NAME):
     f.close()
 
 
-    fig=plt.figure(figsize=(13, 9))
+    fig=plt.figure(figsize=(13, 8.5))
 
     plt.subplot(2,2,1)
     __plot_t_distribution__(t, chi2_values[-1], p_values[-1])

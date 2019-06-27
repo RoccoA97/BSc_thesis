@@ -8,7 +8,7 @@ from scipy.stats import chi2, chisquare
 from scipy.special import erfinv
 
 
-toys = [5, 9, 19, 20, ]
+toys = [5, 9, 19, 20]
 verbose = 1
 
 print(len(toys))
@@ -70,13 +70,15 @@ for i in range(len(toys)):
     fig=plt.figure(figsize=(18, 4.5))
     plt.subplot(1,3,1)
     print(type(predictions[i][5][predictions[i][2]==1]))
+    print(predictions[i][5][predictions[i][2]==1].shape)
     x = predictions[i][5][predictions[i][2]==1][:,0]
     y = predictions[i][0][predictions[i][2]==1][:,0]
     print(type(x))
     print(x.shape)
+    print(y.shape)
     plt.xlabel('$M_Z$')
     plt.ylabel('$f(M_Z)$')
-    plt.hist2d(x,y, bins=100, range=[[0, 350], [-0.25, 2.5]], norm=colors.PowerNorm(0.1))
+    plt.hist2d(x,y, bins=100, range=[[0, 350], [-0.25, 2.5]], norm=colors.PowerNorm(0.05))
     #plt.plot(predictions[i][5][predictions[i][2]==1],predictions[i][0][predictions[i][2]==1],'.')
     #plt.xlim(0,350)
 

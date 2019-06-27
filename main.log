@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.5.2)  26 JUN 2019 16:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.5.2)  28 JUN 2019 00:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1532,7 +1532,7 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 7.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 (./TeX/Frontespizio_Laurea.tex
-<Images/UNIPD.png, id=220, 943.525pt x 949.5475pt>
+<Images/UNIPD.png, id=224, 943.525pt x 949.5475pt>
 File: Images/UNIPD.png Graphic file (type png)
 <use Images/UNIPD.png>
 Package pdftex.def Info: Images/UNIPD.png  used on input line 7.
@@ -1542,12 +1542,22 @@ Package pdftex.def Info: Images/UNIPD.png  used on input line 7.
 
 
 {c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./Images/UNIPD.
-png>] [2])
-(./main.toc
+png>]
+(c:/texlive/2019/texmf-dist/tex/latex/ucs/data/uni-0.def
+File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
+)
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+Make it at least 13.59999pt.
+We now make it that large for the rest of the document.
+This may cause the page layout to be inconsistent, however.
+
+[2]) (./main.toc
 LaTeX Font Info:    Try loading font information for U+eus on input line 34.
  (c:/texlive/2019/texmf-dist/tex/latex/amsfonts/ueus.fd
 File: ueus.fd 2013/01/14 v3.01 Euler Script
-) [3
+)
+[3
 
 
 
@@ -1555,14 +1565,13 @@ File: ueus.fd 2013/01/14 v3.01 Euler Script
 \tf@toc=\write7
 \openout7 = `main.toc'.
 
-
-(./TeX/Introduction.tex [4]
+ (./TeX/Introduction.tex [4]
 Chapter 1.
 Excluding 'comment' comment. (./Images/Introduction/SM_particles.tex) [1
 
 
 ]
-<Images/Introduction/barplot_blue_orange_SUSY2013.pdf, id=392, 569.12625pt x 38
+<Images/Introduction/barplot_blue_orange_SUSY2013.pdf, id=397, 569.12625pt x 38
 5.44pt>
 File: Images/Introduction/barplot_blue_orange_SUSY2013.pdf Graphic file (type p
 df)
@@ -1570,7 +1579,7 @@ df)
 Package pdftex.def Info: Images/Introduction/barplot_blue_orange_SUSY2013.pdf  
 used on input line 65.
 (pdftex.def)             Requested size: 435.32422pt x 294.83711pt.
-<Images/Introduction/RPVbarplot_blue_orange_EPSHEP2013.pdf, id=395, 569.12625pt
+<Images/Introduction/RPVbarplot_blue_orange_EPSHEP2013.pdf, id=400, 569.12625pt
  x 385.44pt>
 File: Images/Introduction/RPVbarplot_blue_orange_EPSHEP2013.pdf Graphic file (t
 ype pdf)
@@ -1666,32 +1675,32 @@ Package relsize Warning: Font size 24.88792pt is too large.
 ]
 Chapter 3.
 [15] (./Images/LHC/LHC_collider.tex)
-<Images/LHC/cms.png, id=625, 9741.39375pt x 6829.515pt>
+<Images/LHC/cms.png, id=630, 9741.39375pt x 6829.515pt>
 File: Images/LHC/cms.png Graphic file (type png)
 <use Images/LHC/cms.png>
 Package pdftex.def Info: Images/LHC/cms.png  used on input line 57.
 (pdftex.def)             Requested size: 483.69687pt x 339.09892pt.
  [16]
-<Images/LHC/cms_transverse_section.png, id=634, 853.1875pt x 438.63875pt>
+<Images/LHC/cms_transverse_section.png, id=639, 853.1875pt x 438.63875pt>
 File: Images/LHC/cms_transverse_section.png Graphic file (type png)
 <use Images/LHC/cms_transverse_section.png>
 Package pdftex.def Info: Images/LHC/cms_transverse_section.png  used on input l
 ine 82.
 (pdftex.def)             Requested size: 483.69687pt x 248.68137pt.
  [17 <./Images/LHC/cms.png>] [18 <./Images/LHC/cms_transverse_section.png>]
-<Python/LHC/resonance.pdf, id=650, 867.24pt x 361.35pt>
+<Python/LHC/resonance.pdf, id=655, 867.24pt x 361.35pt>
 File: Python/LHC/resonance.pdf Graphic file (type pdf)
 <use Python/LHC/resonance.pdf>
 Package pdftex.def Info: Python/LHC/resonance.pdf  used on input line 119.
 (pdftex.def)             Requested size: 483.69687pt x 201.5441pt.
-<Images/LHC/cross_section_resonance.PNG, id=653, 328.97906pt x 73.77562pt>
+<Images/LHC/cross_section_resonance.PNG, id=658, 328.97906pt x 73.77562pt>
 File: Images/LHC/cross_section_resonance.PNG Graphic file (type png)
 <use Images/LHC/cross_section_resonance.PNG>
 Package pdftex.def Info: Images/LHC/cross_section_resonance.PNG  used on input 
 line 133.
 (pdftex.def)             Requested size: 338.58632pt x 75.93117pt.
  [19 <./Python/LHC/resonance.pdf> <./Images/LHC/cross_section_resonance.PNG>]
-<Images/LHC/invariant_mass_resonance.PNG, id=694, 392.21532pt x 88.83188pt>
+<Images/LHC/invariant_mass_resonance.PNG, id=699, 392.21532pt x 88.83188pt>
 File: Images/LHC/invariant_mass_resonance.PNG Graphic file (type png)
 <use Images/LHC/invariant_mass_resonance.PNG>
 Package pdftex.def Info: Images/LHC/invariant_mass_resonance.PNG  used on input
@@ -1826,13 +1835,13 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 97.
 
 [22] Excluding 'comment' comment.
-<Python/Z/features_Zmumu_Zprime.pdf, id=736, 939.51pt x 1300.86pt>
+<Python/Z/features_Zmumu_Zprime.pdf, id=740, 939.51pt x 1300.86pt>
 File: Python/Z/features_Zmumu_Zprime.pdf Graphic file (type pdf)
 <use Python/Z/features_Zmumu_Zprime.pdf>
 Package pdftex.def Info: Python/Z/features_Zmumu_Zprime.pdf  used on input line
  180.
 (pdftex.def)             Requested size: 483.69687pt x 669.72212pt.
-<Python/Z/features_EFT_YW06.pdf, id=737, 939.51pt x 1300.86pt>
+<Python/Z/features_EFT_YW06.pdf, id=741, 939.51pt x 1300.86pt>
 File: Python/Z/features_EFT_YW06.pdf Graphic file (type pdf)
 <use Python/Z/features_EFT_YW06.pdf>
 Package pdftex.def Info: Python/Z/features_EFT_YW06.pdf  used on input line 187
@@ -1863,92 +1872,161 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 ) [31] [32]
-<Python/W_CLIP/wrong_wclip_2-2_3-0.pdf, id=927, 939.51pt x 650.43pt>
+<Python/W_CLIP/wrong_wclip_2-2_3-0.pdf, id=931, 939.51pt x 578.16pt>
 File: Python/W_CLIP/wrong_wclip_2-2_3-0.pdf Graphic file (type pdf)
 <use Python/W_CLIP/wrong_wclip_2-2_3-0.pdf>
 Package pdftex.def Info: Python/W_CLIP/wrong_wclip_2-2_3-0.pdf  used on input l
 ine 304.
-(pdftex.def)             Requested size: 483.69687pt x 334.86105pt.
+(pdftex.def)             Requested size: 483.69687pt x 297.65427pt.
 ) (./TeX/W_CLIP.tex [33 <./Python/W_CLIP/wrong_wclip_2-2_3-0.pdf>] [34
 
 ]
 Chapter 6.
-(c:/texlive/2019/texmf-dist/tex/latex/ucs/data/uni-0.def
-File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
-) [35]
+[35]
 <Python/W_CLIP/ref100000_bkg20000_sig0/data_ref100000_bkg20000_sig0_wclip2-15.p
-df, id=969, 939.51pt x 650.43pt>
+df, id=974, 939.51pt x 614.295pt>
 File: Python/W_CLIP/ref100000_bkg20000_sig0/data_ref100000_bkg20000_sig0_wclip2
 -15.pdf Graphic file (type pdf)
 <use Python/W_CLIP/ref100000_bkg20000_sig0/data_ref100000_bkg20000_sig0_wclip2-
 15.pdf>
 Package pdftex.def Info: Python/W_CLIP/ref100000_bkg20000_sig0/data_ref100000_b
-kg20000_sig0_wclip2-15.pdf  used on input line 63.
-(pdftex.def)             Requested size: 483.69687pt x 334.86105pt.
+kg20000_sig0_wclip2-15.pdf  used on input line 68.
+(pdftex.def)             Requested size: 483.69687pt x 316.25766pt.
 <Python/W_CLIP/ref200000_bkg20000_sig0/data_ref200000_bkg20000_sig0_wclip2-4.pd
-f, id=970, 939.51pt x 650.43pt>
+f, id=975, 939.51pt x 614.295pt>
 File: Python/W_CLIP/ref200000_bkg20000_sig0/data_ref200000_bkg20000_sig0_wclip2
 -4.pdf Graphic file (type pdf)
 <use Python/W_CLIP/ref200000_bkg20000_sig0/data_ref200000_bkg20000_sig0_wclip2-
 4.pdf>
 Package pdftex.def Info: Python/W_CLIP/ref200000_bkg20000_sig0/data_ref200000_b
-kg20000_sig0_wclip2-4.pdf  used on input line 70.
-(pdftex.def)             Requested size: 483.69687pt x 334.86105pt.
+kg20000_sig0_wclip2-4.pdf  used on input line 75.
+(pdftex.def)             Requested size: 483.69687pt x 316.25766pt.
 <Python/W_CLIP/ref300000_bkg20000_sig0/data_ref300000_bkg20000_sig0_wclip2-45.p
-df, id=971, 939.51pt x 650.43pt>
+df, id=976, 939.51pt x 614.295pt>
 File: Python/W_CLIP/ref300000_bkg20000_sig0/data_ref300000_bkg20000_sig0_wclip2
 -45.pdf Graphic file (type pdf)
 <use Python/W_CLIP/ref300000_bkg20000_sig0/data_ref300000_bkg20000_sig0_wclip2-
 45.pdf>
 Package pdftex.def Info: Python/W_CLIP/ref300000_bkg20000_sig0/data_ref300000_b
-kg20000_sig0_wclip2-45.pdf  used on input line 77.
-(pdftex.def)             Requested size: 483.69687pt x 334.86105pt.
+kg20000_sig0_wclip2-45.pdf  used on input line 82.
+(pdftex.def)             Requested size: 483.69687pt x 316.25766pt.
  [36 <./Python/W_CLIP/ref100000_bkg20000_sig0/data_ref100000_bkg20000_sig0_wcli
 p2-15.pdf>]
 <Python/W_CLIP/ref500000_bkg20000_sig0/data_ref500000_bkg20000_sig0_wclip2-55.p
-df, id=1001, 939.51pt x 650.43pt>
+df, id=1006, 939.51pt x 614.295pt>
 File: Python/W_CLIP/ref500000_bkg20000_sig0/data_ref500000_bkg20000_sig0_wclip2
 -55.pdf Graphic file (type pdf)
 <use Python/W_CLIP/ref500000_bkg20000_sig0/data_ref500000_bkg20000_sig0_wclip2-
 55.pdf>
 Package pdftex.def Info: Python/W_CLIP/ref500000_bkg20000_sig0/data_ref500000_b
-kg20000_sig0_wclip2-55.pdf  used on input line 84.
-(pdftex.def)             Requested size: 483.69687pt x 334.86105pt.
+kg20000_sig0_wclip2-55.pdf  used on input line 89.
+(pdftex.def)             Requested size: 483.69687pt x 316.25766pt.
 <Python/W_CLIP/ref1000000_bkg20000_sig0/data_ref1000000_bkg20000_sig0_wclip2-7.
-pdf, id=1002, 939.51pt x 650.43pt>
+pdf, id=1007, 939.51pt x 614.295pt>
 File: Python/W_CLIP/ref1000000_bkg20000_sig0/data_ref1000000_bkg20000_sig0_wcli
 p2-7.pdf Graphic file (type pdf)
 <use Python/W_CLIP/ref1000000_bkg20000_sig0/data_ref1000000_bkg20000_sig0_wclip
 2-7.pdf>
 Package pdftex.def Info: Python/W_CLIP/ref1000000_bkg20000_sig0/data_ref1000000
-_bkg20000_sig0_wclip2-7.pdf  used on input line 91.
-(pdftex.def)             Requested size: 483.69687pt x 334.86105pt.
+_bkg20000_sig0_wclip2-7.pdf  used on input line 96.
+(pdftex.def)             Requested size: 483.69687pt x 316.25766pt.
 
-[37 <./Python/W_CLIP/ref200000_bkg20000_sig0/data_ref200000_bkg20000_sig0_wclip
-2-4.pdf> <./Python/W_CLIP/ref300000_bkg20000_sig0/data_ref300000_bkg20000_sig0_
-wclip2-45.pdf
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [37 <./Python/W_CLIP/ref200000_bkg20000_sig0/data_ref200000_bkg20000_sig0_wcli
+p2-4.pdf> <./Python/W_CLIP/ref300000_bkg20000_sig0/data_ref300000_bkg20000_sig0
+_wclip2-45.pdf
 
 pdfTeX warning: pdflatex.exe (file ./Python/W_CLIP/ref300000_bkg20000_sig0/data
 _ref300000_bkg20000_sig0_wclip2-45.pdf): PDF inclusion: multiple pdfs with page
  group included in a single page
->]) (./TeX/RESULTS.tex [38 <./Python/W_CLIP/ref500000_bkg20000_sig0/data_ref500
-000_bkg20000_sig0_wclip2-55.pdf> <./Python/W_CLIP/ref1000000_bkg20000_sig0/data
-_ref1000000_bkg20000_sig0_wclip2-7.pdf
+>]
+<Python/W_CLIP/ref100000_bkg20000_eft0/data_ref100000_bkg20000_eft0_wclip2-25.p
+df, id=1062, 939.51pt x 614.295pt>
+File: Python/W_CLIP/ref100000_bkg20000_eft0/data_ref100000_bkg20000_eft0_wclip2
+-25.pdf Graphic file (type pdf)
+<use Python/W_CLIP/ref100000_bkg20000_eft0/data_ref100000_bkg20000_eft0_wclip2-
+25.pdf>
+Package pdftex.def Info: Python/W_CLIP/ref100000_bkg20000_eft0/data_ref100000_b
+kg20000_eft0_wclip2-25.pdf  used on input line 110.
+(pdftex.def)             Requested size: 483.69687pt x 316.25766pt.
+<Python/W_CLIP/ref200000_bkg20000_eft0/data_ref200000_bkg20000_eft0_wclip2-4.pd
+f, id=1063, 939.51pt x 614.295pt>
+File: Python/W_CLIP/ref200000_bkg20000_eft0/data_ref200000_bkg20000_eft0_wclip2
+-4.pdf Graphic file (type pdf)
+<use Python/W_CLIP/ref200000_bkg20000_eft0/data_ref200000_bkg20000_eft0_wclip2-
+4.pdf>
+Package pdftex.def Info: Python/W_CLIP/ref200000_bkg20000_eft0/data_ref200000_b
+kg20000_eft0_wclip2-4.pdf  used on input line 117.
+(pdftex.def)             Requested size: 483.69687pt x 316.25766pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [38 <./Python/W_CLIP/ref500000_bkg20000_sig0/data_ref500000_bkg20000_sig0_wcli
+p2-55.pdf> <./Python/W_CLIP/ref1000000_bkg20000_sig0/data_ref1000000_bkg20000_s
+ig0_wclip2-7.pdf
 
 pdfTeX warning: pdflatex.exe (file ./Python/W_CLIP/ref1000000_bkg20000_sig0/dat
 a_ref1000000_bkg20000_sig0_wclip2-7.pdf): PDF inclusion: multiple pdfs with pag
 e group included in a single page
 >]
+<Python/W_CLIP/ref300000_bkg20000_eft0/data_ref300000_bkg20000_eft0_wclip2-45.p
+df, id=1117, 939.51pt x 614.295pt>
+File: Python/W_CLIP/ref300000_bkg20000_eft0/data_ref300000_bkg20000_eft0_wclip2
+-45.pdf Graphic file (type pdf)
+<use Python/W_CLIP/ref300000_bkg20000_eft0/data_ref300000_bkg20000_eft0_wclip2-
+45.pdf>
+Package pdftex.def Info: Python/W_CLIP/ref300000_bkg20000_eft0/data_ref300000_b
+kg20000_eft0_wclip2-45.pdf  used on input line 124.
+(pdftex.def)             Requested size: 483.69687pt x 316.25766pt.
+<Python/W_CLIP/ref500000_bkg20000_eft0/data_ref500000_bkg20000_eft0_wclip2-55.p
+df, id=1118, 939.51pt x 614.295pt>
+File: Python/W_CLIP/ref500000_bkg20000_eft0/data_ref500000_bkg20000_eft0_wclip2
+-55.pdf Graphic file (type pdf)
+<use Python/W_CLIP/ref500000_bkg20000_eft0/data_ref500000_bkg20000_eft0_wclip2-
+55.pdf>
+Package pdftex.def Info: Python/W_CLIP/ref500000_bkg20000_eft0/data_ref500000_b
+kg20000_eft0_wclip2-55.pdf  used on input line 131.
+(pdftex.def)             Requested size: 483.69687pt x 316.25766pt.
+
+Underfull \vbox (badness 3579) has occurred while \output is active []
+
+ [39 <./Python/W_CLIP/ref100000_bkg20000_eft0/data_ref100000_bkg20000_eft0_wcli
+p2-25.pdf> <./Python/W_CLIP/ref200000_bkg20000_eft0/data_ref200000_bkg20000_eft
+0_wclip2-4.pdf
+
+pdfTeX warning: pdflatex.exe (file ./Python/W_CLIP/ref200000_bkg20000_eft0/data
+_ref200000_bkg20000_eft0_wclip2-4.pdf): PDF inclusion: multiple pdfs with page 
+group included in a single page
+>]
+<Python/W_CLIP/W_CLIP_CURVE/w_clip_curve.pdf, id=1173, 939.51pt x 361.35pt>
+File: Python/W_CLIP/W_CLIP_CURVE/w_clip_curve.pdf Graphic file (type pdf)
+<use Python/W_CLIP/W_CLIP_CURVE/w_clip_curve.pdf>
+Package pdftex.def Info: Python/W_CLIP/W_CLIP_CURVE/w_clip_curve.pdf  used on i
+nput line 145.
+(pdftex.def)             Requested size: 483.69687pt x 186.03392pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [40 <./Python/W_CLIP/ref300000_bkg20000_eft0/data_ref300000_bkg20000_eft0_wcli
+p2-45.pdf> <./Python/W_CLIP/ref500000_bkg20000_eft0/data_ref500000_bkg20000_eft
+0_wclip2-55.pdf
+
+pdfTeX warning: pdflatex.exe (file ./Python/W_CLIP/ref500000_bkg20000_eft0/data
+_ref500000_bkg20000_eft0_wclip2-55.pdf): PDF inclusion: multiple pdfs with page
+ group included in a single page
+>]) (./TeX/RESULTS.tex [41 <./Python/W_CLIP/W_CLIP_CURVE/w_clip_curve.pdf>]
+[42
+
+]
 Chapter 7.
-<Python/RESULTS/ID_SIG/id_sig_Zmumu_Zprime.pdf, id=1112, 939.51pt x 794.97pt>
+<Python/RESULTS/ID_SIG/id_sig_Zmumu_Zprime.pdf, id=1271, 939.51pt x 794.97pt>
 File: Python/RESULTS/ID_SIG/id_sig_Zmumu_Zprime.pdf Graphic file (type pdf)
 <use Python/RESULTS/ID_SIG/id_sig_Zmumu_Zprime.pdf>
 Package pdftex.def Info: Python/RESULTS/ID_SIG/id_sig_Zmumu_Zprime.pdf  used on
  input line 38.
 (pdftex.def)             Requested size: 483.69687pt x 409.27463pt.
-[39
-
-]
+[43]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 53.
@@ -1962,55 +2040,52 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 53.
 
 <Python/RESULTS/ref100000_bkg20000_sig40/data_ref100000_bkg20000_sig40_wclip2-1
-5.pdf, id=1122, 939.51pt x 325.215pt>
+5.pdf, id=1280, 939.51pt x 289.08pt>
 File: Python/RESULTS/ref100000_bkg20000_sig40/data_ref100000_bkg20000_sig40_wcl
 ip2-15.pdf Graphic file (type pdf)
 <use Python/RESULTS/ref100000_bkg20000_sig40/data_ref100000_bkg20000_sig40_wcli
 p2-15.pdf>
 Package pdftex.def Info: Python/RESULTS/ref100000_bkg20000_sig40/data_ref100000
 _bkg20000_sig40_wclip2-15.pdf  used on input line 68.
-(pdftex.def)             Requested size: 483.69687pt x 167.43053pt.
+(pdftex.def)             Requested size: 483.69687pt x 148.82713pt.
 <Python/RESULTS/ref200000_bkg20000_sig40/data_ref200000_bkg20000_sig40_wclip2-4
-.pdf, id=1123, 939.51pt x 325.215pt>
+.pdf, id=1281, 939.51pt x 289.08pt>
 File: Python/RESULTS/ref200000_bkg20000_sig40/data_ref200000_bkg20000_sig40_wcl
 ip2-4.pdf Graphic file (type pdf)
 <use Python/RESULTS/ref200000_bkg20000_sig40/data_ref200000_bkg20000_sig40_wcli
 p2-4.pdf>
 Package pdftex.def Info: Python/RESULTS/ref200000_bkg20000_sig40/data_ref200000
 _bkg20000_sig40_wclip2-4.pdf  used on input line 75.
-(pdftex.def)             Requested size: 483.69687pt x 167.43053pt.
-[40 <./Python/RESULTS/ID_SIG/id_sig_Zmumu_Zprime.pdf>]
+(pdftex.def)             Requested size: 483.69687pt x 148.82713pt.
+[44 <./Python/RESULTS/ID_SIG/id_sig_Zmumu_Zprime.pdf>]
 <Python/RESULTS/ref300000_bkg20000_sig40/data_ref300000_bkg20000_sig40_wclip2-4
-5.pdf, id=1162, 939.51pt x 325.215pt>
+5.pdf, id=1318, 939.51pt x 289.08pt>
 File: Python/RESULTS/ref300000_bkg20000_sig40/data_ref300000_bkg20000_sig40_wcl
 ip2-45.pdf Graphic file (type pdf)
 <use Python/RESULTS/ref300000_bkg20000_sig40/data_ref300000_bkg20000_sig40_wcli
 p2-45.pdf>
 Package pdftex.def Info: Python/RESULTS/ref300000_bkg20000_sig40/data_ref300000
 _bkg20000_sig40_wclip2-45.pdf  used on input line 82.
-(pdftex.def)             Requested size: 483.69687pt x 167.43053pt.
+(pdftex.def)             Requested size: 483.69687pt x 148.82713pt.
 <Python/RESULTS/ref500000_bkg20000_sig40/data_ref500000_bkg20000_sig40_wclip2-5
-5.pdf, id=1163, 939.51pt x 325.215pt>
+5.pdf, id=1319, 939.51pt x 289.08pt>
 File: Python/RESULTS/ref500000_bkg20000_sig40/data_ref500000_bkg20000_sig40_wcl
 ip2-55.pdf Graphic file (type pdf)
 <use Python/RESULTS/ref500000_bkg20000_sig40/data_ref500000_bkg20000_sig40_wcli
 p2-55.pdf>
 Package pdftex.def Info: Python/RESULTS/ref500000_bkg20000_sig40/data_ref500000
 _bkg20000_sig40_wclip2-55.pdf  used on input line 89.
-(pdftex.def)             Requested size: 483.69687pt x 167.43053pt.
+(pdftex.def)             Requested size: 483.69687pt x 148.82713pt.
 <Python/RESULTS/ref1000000_bkg20000_sig40/data_ref1000000_bkg20000_sig40_wclip2
--7.pdf, id=1164, 939.51pt x 325.215pt>
+-7.pdf, id=1320, 939.51pt x 289.08pt>
 File: Python/RESULTS/ref1000000_bkg20000_sig40/data_ref1000000_bkg20000_sig40_w
 clip2-7.pdf Graphic file (type pdf)
 <use Python/RESULTS/ref1000000_bkg20000_sig40/data_ref1000000_bkg20000_sig40_wc
 lip2-7.pdf>
 Package pdftex.def Info: Python/RESULTS/ref1000000_bkg20000_sig40/data_ref10000
 00_bkg20000_sig40_wclip2-7.pdf  used on input line 96.
-(pdftex.def)             Requested size: 483.69687pt x 167.43053pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [41 <./Python/RESULTS/ref100000_bkg20000_sig40/data_ref100000_bkg20000_sig40_w
+(pdftex.def)             Requested size: 483.69687pt x 148.82713pt.
+ [45 <./Python/RESULTS/ref100000_bkg20000_sig40/data_ref100000_bkg20000_sig40_w
 clip2-15.pdf> <./Python/RESULTS/ref200000_bkg20000_sig40/data_ref200000_bkg2000
 0_sig40_wclip2-4.pdf
 
@@ -2023,18 +2098,92 @@ p2-45.pdf
 pdfTeX warning: pdflatex.exe (file ./Python/RESULTS/ref300000_bkg20000_sig40/da
 ta_ref300000_bkg20000_sig40_wclip2-45.pdf): PDF inclusion: multiple pdfs with p
 age group included in a single page
->]) (./TeX/Conclusion.tex [42 <./Python/RESULTS/ref500000_bkg20000_sig40/data_r
-ef500000_bkg20000_sig40_wclip2-55.pdf> <./Python/RESULTS/ref1000000_bkg20000_si
-g40/data_ref1000000_bkg20000_sig40_wclip2-7.pdf
+> <./Python/RESULTS/ref500000_bkg20000_sig40/data_ref500000_bkg20000_sig40_wcli
+p2-55.pdf
 
-pdfTeX warning: pdflatex.exe (file ./Python/RESULTS/ref1000000_bkg20000_sig40/d
-ata_ref1000000_bkg20000_sig40_wclip2-7.pdf): PDF inclusion: multiple pdfs with 
-page group included in a single page
+pdfTeX warning: pdflatex.exe (file ./Python/RESULTS/ref500000_bkg20000_sig40/da
+ta_ref500000_bkg20000_sig40_wclip2-55.pdf): PDF inclusion: multiple pdfs with p
+age group included in a single page
 >]
-Chapter 8.
-) (./TeX/bibliography.tex [43
+<Python/RESULTS/ref100000_bkg0_eft20000/data_ref100000_bkg0_eft20000_wclip2-25.
+pdf, id=1416, 939.51pt x 289.08pt>
+File: Python/RESULTS/ref100000_bkg0_eft20000/data_ref100000_bkg0_eft20000_wclip
+2-25.pdf Graphic file (type pdf)
+<use Python/RESULTS/ref100000_bkg0_eft20000/data_ref100000_bkg0_eft20000_wclip2
+-25.pdf>
+Package pdftex.def Info: Python/RESULTS/ref100000_bkg0_eft20000/data_ref100000_
+bkg0_eft20000_wclip2-25.pdf  used on input line 109.
+(pdftex.def)             Requested size: 483.69687pt x 148.82713pt.
+<Python/RESULTS/ref200000_bkg0_eft20000/data_ref200000_bkg0_eft20000_wclip2-4.p
+df, id=1417, 939.51pt x 289.08pt>
+File: Python/RESULTS/ref200000_bkg0_eft20000/data_ref200000_bkg0_eft20000_wclip
+2-4.pdf Graphic file (type pdf)
+<use Python/RESULTS/ref200000_bkg0_eft20000/data_ref200000_bkg0_eft20000_wclip2
+-4.pdf>
+Package pdftex.def Info: Python/RESULTS/ref200000_bkg0_eft20000/data_ref200000_
+bkg0_eft20000_wclip2-4.pdf  used on input line 116.
+(pdftex.def)             Requested size: 483.69687pt x 148.82713pt.
+<Python/RESULTS/ref300000_bkg0_eft20000/data_ref300000_bkg0_eft20000_wclip2-45.
+pdf, id=1418, 939.51pt x 289.08pt>
+File: Python/RESULTS/ref300000_bkg0_eft20000/data_ref300000_bkg0_eft20000_wclip
+2-45.pdf Graphic file (type pdf)
+<use Python/RESULTS/ref300000_bkg0_eft20000/data_ref300000_bkg0_eft20000_wclip2
+-45.pdf>
+Package pdftex.def Info: Python/RESULTS/ref300000_bkg0_eft20000/data_ref300000_
+bkg0_eft20000_wclip2-45.pdf  used on input line 123.
+(pdftex.def)             Requested size: 483.69687pt x 148.82713pt.
+<Python/RESULTS/ref500000_bkg0_eft20000/data_ref500000_bkg0_eft20000_wclip2-55.
+pdf, id=1419, 939.51pt x 289.08pt>
+File: Python/RESULTS/ref500000_bkg0_eft20000/data_ref500000_bkg0_eft20000_wclip
+2-55.pdf Graphic file (type pdf)
+<use Python/RESULTS/ref500000_bkg0_eft20000/data_ref500000_bkg0_eft20000_wclip2
+-55.pdf>
+Package pdftex.def Info: Python/RESULTS/ref500000_bkg0_eft20000/data_ref500000_
+bkg0_eft20000_wclip2-55.pdf  used on input line 130.
+(pdftex.def)             Requested size: 483.69687pt x 148.82713pt.
+ [46 <./Python/RESULTS/ref1000000_bkg20000_sig40/data_ref1000000_bkg20000_sig40
+_wclip2-7.pdf> <./Python/RESULTS/ref100000_bkg0_eft20000/data_ref100000_bkg0_ef
+t20000_wclip2-25.pdf
 
-] [44
+pdfTeX warning: pdflatex.exe (file ./Python/RESULTS/ref100000_bkg0_eft20000/dat
+a_ref100000_bkg0_eft20000_wclip2-25.pdf): PDF inclusion: multiple pdfs with pag
+e group included in a single page
+> <./Python/RESULTS/ref200000_bkg0_eft20000/data_ref200000_bkg0_eft20000_wclip2
+-4.pdf
+
+pdfTeX warning: pdflatex.exe (file ./Python/RESULTS/ref200000_bkg0_eft20000/dat
+a_ref200000_bkg0_eft20000_wclip2-4.pdf): PDF inclusion: multiple pdfs with page
+ group included in a single page
+> <./Python/RESULTS/ref300000_bkg0_eft20000/data_ref300000_bkg0_eft20000_wclip2
+-45.pdf
+
+pdfTeX warning: pdflatex.exe (file ./Python/RESULTS/ref300000_bkg0_eft20000/dat
+a_ref300000_bkg0_eft20000_wclip2-45.pdf): PDF inclusion: multiple pdfs with pag
+e group included in a single page
+>]
+<Python/RESULTS/MED_SIG/med_sig_plot.pdf, id=1514, 939.51pt x 361.35pt>
+File: Python/RESULTS/MED_SIG/med_sig_plot.pdf Graphic file (type pdf)
+<use Python/RESULTS/MED_SIG/med_sig_plot.pdf>
+Package pdftex.def Info: Python/RESULTS/MED_SIG/med_sig_plot.pdf  used on input
+ line 160.
+(pdftex.def)             Requested size: 483.69687pt x 186.03392pt.
+ [47 <./Python/RESULTS/ref500000_bkg0_eft20000/data_ref500000_bkg0_eft20000_wcl
+ip2-55.pdf> <./Python/RESULTS/MED_SIG/med_sig_plot.pdf
+
+pdfTeX warning: pdflatex.exe (file ./Python/RESULTS/MED_SIG/med_sig_plot.pdf): 
+PDF inclusion: multiple pdfs with page group included in a single page
+>]
+<Python/RESULTS/INV_MASS/f_plot.pdf, id=1571, 1445.4pt x 1156.32pt>
+File: Python/RESULTS/INV_MASS/f_plot.pdf Graphic file (type pdf)
+<use Python/RESULTS/INV_MASS/f_plot.pdf>
+Package pdftex.def Info: Python/RESULTS/INV_MASS/f_plot.pdf  used on input line
+ 183.
+(pdftex.def)             Requested size: 483.69687pt x 386.95056pt.
+) (./TeX/Conclusion.tex [48 <./Python/RESULTS/INV_MASS/f_plot.pdf>]
+Chapter 8.
+) (./TeX/bibliography.tex [49
+
+] [50
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 38--40
@@ -2042,27 +2191,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 38--40
  / en / SSWRJV _ 10 . 1 . 0 / lsf _ welcome / lsf _
  []
 
-[45]
+[51]
 Underfull \hbox (badness 10000) in paragraph at lines 88--90
 [][]$\T1/cmtt/m/n/10.95 http : / / cms . web . cern . ch / news / should -[] yo
 u -[] get -[] excited -[] your -[] data -[] let -[] look -[] elsewhere -[]
  []
 
-) [46]
+) [52]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 21.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 21.
  (./main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 21.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 21.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 60BD3A87E173C1EC13A92AC3A71539D9;3649.
+(rerunfilecheck)             Checksum: 0319E2FB84974EF8D405E5BD26862077;3732.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 21.
  ) 
 Here is how much of TeX's memory you used:
- 52071 strings out of 492623
- 1151737 string characters out of 6133291
- 1464851 words of memory out of 5000000
- 54805 multiletter control sequences out of 15000+600000
+ 52167 strings out of 492623
+ 1156612 string characters out of 6133291
+ 1463849 words of memory out of 5000000
+ 54861 multiletter control sequences out of 15000+600000
  589128 words of font info for 189 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  74i,27n,122p,2205b,1971s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2088,50 +2237,50 @@ pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
 e/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2019/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><c:/texlive/2019/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2019/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmbx8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmbx9.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmex10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10
-.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/
-texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/20
-19/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2019/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2019/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmmi9.pfb><c:/texlive/2019/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmmib10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfo
-nts/cmextra/cmmib8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmr10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.p
-fb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/tex
-live/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2019/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2019/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmr9.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/c
-msy6.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><
-c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive
-/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb><c:/texlive/2019/texm
-f-dist/fonts/type1/public/amsfonts/euler/eusm10.pfb><c:/texlive/2019/texmf-dist
-/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2019/texmf-dist/fon
-ts/type1/public/cm-super/sfbi1440.pfb><c:/texlive/2019/texmf-dist/fonts/type1/p
-ublic/cm-super/sfbx0800.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-s
-uper/sfbx0900.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1
-000.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb><c
-:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><c:/texlive/
-2019/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><c:/texlive/2019/texmf
--dist/fonts/type1/public/cm-super/sfbx1728.pfb><c:/texlive/2019/texmf-dist/font
-s/type1/public/cm-super/sfbx2074.pfb><c:/texlive/2019/texmf-dist/fonts/type1/pu
-blic/cm-super/sfbx2488.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-su
-per/sfcc1095.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm06
-00.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb><c:
-/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb><c:/texlive/2
-019/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><c:/texlive/2019/texmf-
-dist/fonts/type1/public/cm-super/sfrm1095.pfb><c:/texlive/2019/texmf-dist/fonts
-/type1/public/cm-super/sfti1095.pfb><c:/texlive/2019/texmf-dist/fonts/type1/pub
-lic/cm-super/sftt1000.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-sup
-er/sftt1095.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfxc120
-0.pfb>
-Output written on main.pdf (50 pages, 4309811 bytes).
+pe1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmbx8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmbx9.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10
+.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/
+texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2
+019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2019/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2019/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmmi9.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmmib10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cmext
+ra/cmmib8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.
+pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/te
+xlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2019
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2019/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2019/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmr9.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/c
+msy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb>
+<c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texliv
+e/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2019/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb><c:/texlive/2019/texmf-dist/fo
+nts/type1/public/amsfonts/euler/eusm10.pfb><c:/texlive/2019/texmf-dist/fonts/ty
+pe1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/
+public/cm-super/sfbi1440.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-
+super/sfbx0800.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx
+0900.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb><
+c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb><c:/texlive
+/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><c:/texlive/2019/texm
+f-dist/fonts/type1/public/cm-super/sfbx1440.pfb><c:/texlive/2019/texmf-dist/fon
+ts/type1/public/cm-super/sfbx1728.pfb><c:/texlive/2019/texmf-dist/fonts/type1/p
+ublic/cm-super/sfbx2074.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-s
+uper/sfbx2488.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfcc1
+095.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb><c
+:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb><c:/texlive/
+2019/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb><c:/texlive/2019/texmf
+-dist/fonts/type1/public/cm-super/sfrm1000.pfb><c:/texlive/2019/texmf-dist/font
+s/type1/public/cm-super/sfrm1095.pfb><c:/texlive/2019/texmf-dist/fonts/type1/pu
+blic/cm-super/sfti1095.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-su
+per/sftt1000.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sftt10
+95.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfxc1200.pfb>
+Output written on main.pdf (56 pages, 6361804 bytes).
 PDF statistics:
- 1521 PDF objects out of 1728 (max. 8388607)
- 1214 compressed objects within 13 object streams
- 240 named destinations out of 1000 (max. 500000)
- 811 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1834 PDF objects out of 2073 (max. 8388607)
+ 1455 compressed objects within 15 object streams
+ 258 named destinations out of 1000 (max. 500000)
+ 874 words of extra memory for PDF output out of 10000 (max. 10000000)
 

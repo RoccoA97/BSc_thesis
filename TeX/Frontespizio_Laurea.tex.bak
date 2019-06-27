@@ -26,27 +26,30 @@
 
 \vspace{10mm}
 %----------------------------------------------------------------------
-\begin{comment}
+
 \begin{spacing}{2}
-\begin{tabular}{ c  c  c c c  ccccccc c c c  c  c }
-{\Large{\bf Relatore}} &&&&&&&&&&&&&&&& {\Large{\bf Laureando}}\\
-{\Large{\bf \textit{Prof. Marco Zanetti}}} &&&&&&&&&&&&&&&& {\Large{\bf \textit{Rocco Ardino}}}\\
+\begin{tabular}{ l  c  c c c  cccccccc c c c  c  l }
+{\Large{\bf Relatore:}} &&&&&&&&&&&&&&&&& {\Large{\bf Laureando:}}\\
+{\Large{\bf \textit{Prof. Marco Zanetti}}} &&&&&&&&&&&&&&&&& {\Large{\bf \textit{Rocco Ardino}}}\\
 % {\Large{\bf Correlatore}}\\
 % {\Large{\bf Prof./Dr. Nome Cognome}}\\
 \end{tabular}
 \end{spacing}
-\end{comment}
+
 %----------------------------------------------------------------------
+\begin{comment}
 \begin{spacing}{2}
 \begin{flushleft}                           
-{\Large \textbf{Relatore:}	\\
+{\Large \textbf{Relatore\colon}	\\
 \textbf{\textit{Prof. Marco Zanetti}}} \\
-{\Large \textbf{Laureando:}	\\
-\textbf{\textit{Rocco Ardino}}} \\
-\end{flushleft} 
+{\Large \textbf{Laureando\colon}	\\
+\textbf{\textit{Rocco Ardino}}}
+\end{flushleft}
 \end{spacing}
+\end{comment}
 \vspace{15 mm}
-
+\vspace*{\fill}
+\hrule
 \begin{center}
 {\Large{\bf Anno Accademico 2018/2019}}
 \end{center}
@@ -54,8 +57,8 @@
 
 
 
-
-
+\vspace*{\fill}
+\begingroup
 
 \begin{center}
 {{\large{\bf Abstract}}}
@@ -70,6 +73,21 @@ to apply such model-independent strategies to concrete physics cases, aiming at 
 data with what predicted by the SM.
 \end{center}
 
+
+\vspace{40mm}
+
+
+\begin{center}
+{{\large{\bf Sommario}}}
+\end{center}
+%\vspace{10mm}
+
+\begin{center}
+La ricerca di nuova fisica è l'obiettivo primario dell'esperimento CMS a LHC. Eseguire una ricerca del genere senza fare affidamento su una teoria specifica che allarga il Modello Standard (SM) è di primaria importanza, ma allo stesso tempo anche altamente non banale. Recentemente, sono state avanzate diverse proposte verso questa direzione, in particolare sfruttando la potenza delle tecniche moderne di Machine Learning. L'obiettivo di questa tesi è applicare tali strategie "model-independent" a casi fisici concreti, mirando a rivelare segnali esclusivamente comparando i dati delle collisioni con quelli predetti dallo SM.
+\end{center}
+
+\endgroup
+\vspace*{\fill}
 
 
 

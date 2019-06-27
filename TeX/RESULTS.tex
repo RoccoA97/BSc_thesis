@@ -62,7 +62,7 @@ where $p$ is the median $p$-value computed through the median $t$ of the observe
 
 
 \subsection*{Zmumu-Zprime dataset}
-
+\vspace{-5mm}
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1.0\textwidth]{Python/RESULTS/ref100000_bkg20000_sig40/data_ref100000_bkg20000_sig40_wclip2-15.pdf}
@@ -103,7 +103,34 @@ where $p$ is the median $p$-value computed through the median $t$ of the observe
 
 
 \subsection*{EFT\_YW06 dataset}
-
+\vspace{-5mm}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1.0\textwidth]{Python/RESULTS/ref100000_bkg0_eft20000/data_ref100000_bkg0_eft20000_wclip2-25.pdf}
+	\caption{Results for $N_\mathrm{ref}=100\si{k}$, $N_\mathrm{eft}=20\si{k}$, $W=2.25$.}
+	\label{fig:REF100000_BKG0_EFT20000_WCLIP2.25}
+\end{figure}
+\vspace{-5mm}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1.0\textwidth]{Python/RESULTS/ref200000_bkg0_eft20000/data_ref200000_bkg0_eft20000_wclip2-4.pdf}
+	\caption{Results for $N_\mathrm{ref}=200\si{k}$, $N_\mathrm{eft}=20\si{k}$, $W=2.4$.}
+	\label{fig:REF200000_BKG0_EFT20000_WCLIP2.4}
+\end{figure}
+\vspace{-5mm}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1.0\textwidth]{Python/RESULTS/ref300000_bkg0_eft20000/data_ref300000_bkg0_eft20000_wclip2-45.pdf}
+	\caption{Results for $N_\mathrm{ref}=300\si{k}$, $N_\mathrm{eft}=20\si{k}$, $W=2.45$.}
+	\label{fig:REF300000_BKG0_EFT20000_WCLIP2.45}
+\end{figure}
+\vspace{-5mm}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1.0\textwidth]{Python/RESULTS/ref500000_bkg0_eft20000/data_ref500000_bkg0_eft20000_wclip2-55.pdf}
+	\caption{Results for $N_\mathrm{ref}=500\si{k}$, $N_\mathrm{eft}=20\si{k}$, $W=2.55$.}
+	\label{fig:REF500000_BKG0_EFT20000_WCLIP2.55}
+\end{figure}
 
 
 
@@ -111,23 +138,51 @@ where $p$ is the median $p$-value computed through the median $t$ of the observe
 \subsection*{Observed significances}
 
 \begin{table}[H]
+	\centering
 	\begin{tabular}{c c c c c c c}
 		\toprule
 		\multicolumn{4}{c}{\textbf{Zmumu-Zprime}}	&	\multicolumn{3}{c}{\textbf{EFT\_YW06}}	\\
 		$N_\mathrm{ref}$	&	$N_\mathrm{bkg}$	&	$N_\mathrm{sig}$	&	$\sigma_\mathrm{med}$	&	$N_\mathrm{ref}$	&	$N_\mathrm{eft}$	&	$\sigma_\mathrm{med}$	\\
 		\midrule
-		100k	&	20k	&	40	&	****	&	100k	&	20k	&	****	\\
-		200k	&	20k	&	40	&	****	&	200k	&	20k	&	****	\\
-		300k	&	20k	&	40	&	****	&	300k	&	20k	&	****	\\
-		500k	&	20k	&	40	&	****	&	500k	&	20k	&	****	\\
-		1000k	&	20k	&	40	&	****	&	1000k	&	20k	&	****	\\
+		100k	&	20k	&	40	&	3,873	&	100k	&	20k	&	1,556	\\
+		200k	&	20k	&	40	&	4,025	&	200k	&	20k	&	1,216	\\
+		300k	&	20k	&	40	&	3,766	&	300k	&	20k	&	1,052	\\
+		500k	&	20k	&	40	&	3,721	&	500k	&	20k	&	1,100	\\
+		1000k	&	20k	&	40	&	4,059	&	1000k	&	20k	&	2.016	\\
 		\bottomrule		
 	\end{tabular}
 	\caption{Median significances observed at the end of training.}
 	\label{tab:MED_SIG}
 \end{table}
 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1.0\textwidth]{Python/RESULTS/MED_SIG/med_sig_plot.pdf}
+	\caption{Median $\sigma_\mathrm{obs}$ to varying of the ratio between $N_\mathrm{ref}$ and $N_\mathrm{data}$.}
+	\label{fig:MED_SIG_CURVE}
+\end{figure}
+
+The trend of the median $\sigma_\mathrm{obs}$ gives us informations on what the network learns from the data fed to it. Higher values of $\sigma_\mathrm{obs}$ are obtained when the reference size is wide enough or small. A possible explanation can be given by highlighting two remarks:
+\begin{itemize}
+	\item When the reference size is small, the fluctuations in the data could be seen by the network as new physics signals. Therefore the significance increases on average.
+	\item When the reference size is higher, the influence of the statistical fluctuations on the results is less relevant, but the differences between signal and background events are more pronunced. So the network has a more classification power after training and the significance becomes greater.
+\end{itemize}
+For a middle size of the reference none of these effects is relevant, so we find a minimum in $\sigma_\mathrm{obs}$ plot.
+
+In general, the performances of the algorithm are much better in the case of the \textbf{Zmumu-Zprime} dataset respect to the corresponding value of the ideal significance. However, more operations can be done in order to enhance the power of the test statistic performed by the trained network and in the conclusion Chapter some of the possible improvements are stated along with the future development of this work.
 
 
+
+
+
+\section{Training results: NN output analysis}
+The final part of the analysis consits of studying the output $f(x)$ of the network. In the statistical foundation of the algorithm it was explained that $f(x)4$, when training is completed, approximates the log-likelihood ratio between the data distribution and the reference one. An interesting result arise when we plot $f(x)$ vs the invariant mass corresponding to every event $x$.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1.0\textwidth]{Python/RESULTS/INV_MASS/f_plot.pdf}
+	\caption{NN output $f(M_{Z})$ for different toys for \textbf{Zmumu-Zprime} with $N_\mathrm{ref}=1000\si{k}$, $N_\mathrm{bkg}=20\si{k}$, $N_\mathrm{sig}=40$, $W=2,7$.}
+	\label{fig:F_PLOT}
+\end{figure}
 
 

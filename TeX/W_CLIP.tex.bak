@@ -50,7 +50,7 @@ The starting point of the search should be the case with the smallest size of re
 
 
 \section{Results for optimal weight clipping search}
-Only the best results for each case are reported in the Figures below. Results for other trials are reported in Table [INSERIRE LABEL]. In the following figures four plots are given:
+Only the best results for each case are reported in the Figures below. In the following figures four plots are given:
 \begin{itemize}
 	\item The final distribution of the observed $t$ along with the expected distribution at 96 dofs.
 	\item A plot of several quantiles of the observed $t$ distribution. The quantiles chosen are 2.5\%, 25\%, 50\%, 75\%, 97.5\%. The most important thing to note in this plot is the plateaux reached during training.
@@ -58,13 +58,18 @@ Only the best results for each case are reported in the Figures below. Results f
 	\item A plot of the observed $p$-value over training related to the corresponding value of observed $\chi^2$ in the previous plot. It is calculated considering a $\chi^2$ distribution at $N-1$ dofs, where $N$ is the number of bins.
 \end{itemize}
 
+
+
+
+\subsection*{Zmumu-Zprime dataset}
+\vspace{-5mm}
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1.0\textwidth]{Python/W_CLIP/ref100000_bkg20000_sig0/data_ref100000_bkg20000_sig0_wclip2-15.pdf}
 	\caption{Results of optimal $W$ search for $W=2.15$.}
 	\label{fig:REF100000_BKG20000_SIG0_WCLIP2.15}
 \end{figure}
-
+\vspace{-5mm}
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1.0\textwidth]{Python/W_CLIP/ref200000_bkg20000_sig0/data_ref200000_bkg20000_sig0_wclip2-4.pdf}
@@ -78,7 +83,7 @@ Only the best results for each case are reported in the Figures below. Results f
 	\caption{Results of optimal $W$ search for $W=2.45$.}
 	\label{fig:REF300000_BKG20000_SIG0_WCLIP2.45}
 \end{figure}
-
+\vspace{-5mm}
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1.0\textwidth]{Python/W_CLIP/ref500000_bkg20000_sig0/data_ref500000_bkg20000_sig0_wclip2-55.pdf}
@@ -92,3 +97,64 @@ Only the best results for each case are reported in the Figures below. Results f
 	\caption{Results of optimal $W$ search for $W=2.7$.}
 	\label{fig:REF1000000_BKG20000_SIG0_WCLIP2.7}
 \end{figure}
+
+
+
+
+
+
+\subsection*{EFT\_YW06 dataset}
+\vspace{-5mm}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1.0\textwidth]{Python/W_CLIP/ref100000_bkg20000_eft0/data_ref100000_bkg20000_eft0_wclip2-25.pdf}
+	\caption{Results of optimal $W$ search for $W=2.25$.}
+	\label{fig:REF100000_BKG20000_EFT0_WCLIP2.25}
+\end{figure}
+\vspace{-5mm}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1.0\textwidth]{Python/W_CLIP/ref200000_bkg20000_eft0/data_ref200000_bkg20000_eft0_wclip2-4.pdf}
+	\caption{Results of optimal $W$ search for $W=2.4$.}
+	\label{fig:REF200000_BKG20000_EFT0_WCLIP2.4}
+\end{figure}
+\vspace{-5mm}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1.0\textwidth]{Python/W_CLIP/ref300000_bkg20000_eft0/data_ref300000_bkg20000_eft0_wclip2-45.pdf}
+	\caption{Results of optimal $W$ search for $W=2.45$.}
+	\label{fig:REF300000_BKG20000_EFT0_WCLIP2.45}
+\end{figure}
+\vspace{-5mm}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1.0\textwidth]{Python/W_CLIP/ref500000_bkg20000_eft0/data_ref500000_bkg20000_eft0_wclip2-55.pdf}
+	\caption{Results of optimal $W$ search for $W=2.55$.}
+	\label{fig:REF500000_BKG20000_EFT0_WCLIP2.55}
+\end{figure}
+
+
+
+
+
+
+\subsection*{Optimal weight clipping curve}
+\vspace{-5mm}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1.0\textwidth]{Python/W_CLIP/W_CLIP_CURVE/w_clip_curve.pdf}
+	\caption{Optimal weight clipping curves.}
+	\label{fig:W_CLIP_CURVE}
+\end{figure}
+
+As it is possible to see in Figure \ref{fig:W_CLIP_CURVE}, the parameter $W$ as a tendency to saturation when $N_\mathrm{ref}$ is much greater than $N_\mathrm{bkg}$. This trend is visible for both type of datasets. Moreover, it is interesting to observe that, fixed the ratio between $N_\mathrm{ref}$ and $N_\mathrm{bkg}$, the optimal weight clipping is approximately the same for the two cases analyzed. Exceptions occur only when the reference is not so populated. This result suggests that for a small reference the anomalies that can be found in the data distributions are different in the two cases. However, these exceptions become irrelevant with a sufficiently large reference, therefore when the statistical fluctuations in the distributions are suppressed by the high statistic.
+
+Finally, these curves showing the optimal weight clipping trend can be used to find an approximation of the optimal $W$ when we want to train the network with new values of $N_\mathrm{ref}$ and $N_\mathrm{bkg}$. What we have to do is just evaluating the ratio $N_\mathrm{ref}/N_\mathrm{bkg} = \xi$, solving the system:
+\begin{equation*}
+	\begin{cases}
+		y = W \left( x = \frac{N_\mathrm{ref}}{N_\mathrm{bkg}} \right)	\\
+		x = \xi
+	\end{cases}
+	\Longrightarrow (x^*,y^*)
+\end{equation*}
+and taking as optimal $W$ estimate the value of $y^*$.

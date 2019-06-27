@@ -44,4 +44,5 @@
 \BOOKMARK [0][-]{chapter.7}{Training with signal events and results}{}% 44
 \BOOKMARK [1][-]{section.7.1}{Ideal significance computation}{chapter.7}% 45
 \BOOKMARK [1][-]{section.7.2}{Training results: tobs distribution and observed significance}{chapter.7}% 46
-\BOOKMARK [0][-]{chapter.8}{Conclusion and future developments}{}% 47
+\BOOKMARK [1][-]{section.7.3}{Training results: NN output analysis}{chapter.7}% 47
+\BOOKMARK [0][-]{chapter.8}{Conclusion and future developments}{}% 48
