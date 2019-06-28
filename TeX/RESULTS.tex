@@ -176,13 +176,26 @@ In general, the performances of the algorithm are much better in the case of the
 
 
 \section{Training results: NN output analysis}
-The final part of the analysis consits of studying the output $f(x)$ of the network. In the statistical foundation of the algorithm it was explained that $f(x)4$, when training is completed, approximates the log-likelihood ratio between the data distribution and the reference one. An interesting result arise when we plot $f(x)$ vs the invariant mass corresponding to every event $x$.
+The final part of the analysis consits of studying the output $f(x)$ of the network. In the statistical foundation of the algorithm it was explained that $f(x)$, when training is completed, approximates the log-likelihood ratio between the data distribution and the reference one. An interesting result arise when we plot $f(x)$ vs the invariant mass corresponding to every event $x$.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1.0\textwidth]{Python/RESULTS/INV_MASS/f_plot.pdf}
-	\caption{NN output $f(M_{Z})$ for different toys for \textbf{Zmumu-Zprime} with $N_\mathrm{ref}=1000\si{k}$, $N_\mathrm{bkg}=20\si{k}$, $N_\mathrm{sig}=40$, $W=2,7$.}
-	\label{fig:F_PLOT}
+	\includegraphics[width=1.0\textwidth]{Python/RESULTS/INV_MASS/f_plot_Zprime.pdf}
+	\caption{NN output $f(x)$ for different toys for \textbf{Zmumu-Zprime} with $N_\mathrm{ref}=1000\si{k}$, $N_\mathrm{bkg}=20\si{k}$, $N_\mathrm{sig}=40$, $W=2,7$.}
+	\label{fig:F_PLOT_Z_PRIME}
 \end{figure}
+
+Concerning the results obtained with \textbf{Zmumu-Zprime} dataset, what we can see from the plots in Figure \ref{fig:F_PLOT_Z_PRIME} is the presence of two peaks. The first one is approximately near the mass of the $Z$ boson, $M_{Z} \approx 91~\si{GeV}$, and it is due to the statistical fluctuations in the mass distribution. The second peak can be found at $M_{Z} \approx 300~\si{GeV}$, which is the central value of the mass of the resonant peak in the spectrum. This feature shows that the network has learnt the discrepancies of the observed data with the reference hypothesis in these portion of the spectrum. However, what makes this evidence interesting is the fact that the invariant mass was not given to the network when running the algorithm. In fact, the features given to the network are $p_{T,1}$, $p_{T,2}$, $\eta_{1}$, $\eta_{2}$ and $\Delta \phi$, while $M_{Z}$ is a highly not-linear combination of the previous variables and this highlights the power of a neural network in classification tasks.
+
+In the analysis of \textbf{EFT\_YW06} dataset, there is not a strong evidence of this result, as we can see in Figure \ref{fig:F_PLOT_Z_EFT}. A soft rise in the output $f(x)$ is visible with the growth of $M_{Z}$, but it is not so pronunced in every toy sample. A possible explanation of this phenomenon can be the small size of the data sample for this type of dataset, in fact the signal events are such that their invariant mass is distributed along the tail of the distribution. Therefore the sparsity of the data in the tail region causes a loss in performance of the algorithm, as it is possible to deduce by comparing the trend of the median $\sigma_\mathrm{obs}$ of the two different datasets, and so a minor discriminating power of the network.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1.0\textwidth]{Python/RESULTS/INV_MASS/f_plot_Zeft.pdf}
+	\caption{NN output $f(x)$ for different toys for \textbf{EFT\_YW06} with $N_\mathrm{ref}=300\si{k}$, $N_\mathrm{eft}=20\si{k}$, $W=2,45$.}
+	\label{fig:F_PLOT_Z_EFT}
+\end{figure}
+
+
 
 

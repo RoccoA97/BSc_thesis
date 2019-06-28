@@ -46,4 +46,6 @@
 \contentsline {section}{\numberline {7.1}Ideal significance computation}{43}{section.7.1}% 
 \contentsline {section}{\numberline {7.2}Training results: $t_\mathrm {obs}$ distribution and observed significance}{44}{section.7.2}% 
 \contentsline {section}{\numberline {7.3}Training results: NN output analysis}{48}{section.7.3}% 
-\contentsline {chapter}{\numberline {8}Conclusion and future developments}{49}{chapter.8}% 
+\contentsline {chapter}{\numberline {8}Conclusion and future developments}{51}{chapter.8}% 
+\contentsline {section}{\numberline {8.1}Overview of the results}{51}{section.8.1}% 
+\contentsline {section}{\numberline {8.2}Future developments of the algorithm}{51}{section.8.2}% 
