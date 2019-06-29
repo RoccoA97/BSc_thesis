@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.5.2)  28 JUN 2019 19:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.5.2)  29 JUN 2019 10:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2191,15 +2191,15 @@ Package pdftex.def Info: Python/RESULTS/INV_MASS/f_plot_Zeft.pdf  used on input
 
 ]
 Chapter 8.
-) (./TeX/bibliography.tex [51] [52
-
-]
+[51]) (./TeX/bibliography.tex [52]
 Underfull \hbox (badness 10000) in paragraph at lines 38--40
 [][]$\T1/cmtt/m/n/10.95 https : / / www . ibm . com / support / knowledgecenter
  / en / SSWRJV _ 10 . 1 . 0 / lsf _ welcome / lsf _
  []
 
-[53]
+[53
+
+]
 Underfull \hbox (badness 10000) in paragraph at lines 88--90
 [][]$\T1/cmtt/m/n/10.95 http : / / cms . web . cern . ch / news / should -[] yo
 u -[] get -[] excited -[] your -[] data -[] let -[] look -[] elsewhere -[]
@@ -2285,7 +2285,7 @@ s/type1/public/cm-super/sfrm1095.pfb><c:/texlive/2019/texmf-dist/fonts/type1/pu
 blic/cm-super/sfti1095.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-su
 per/sftt1000.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sftt10
 95.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfxc1200.pfb>
-Output written on main.pdf (58 pages, 8220508 bytes).
+Output written on main.pdf (58 pages, 8221844 bytes).
 PDF statistics:
  1870 PDF objects out of 2073 (max. 8388607)
  1488 compressed objects within 15 object streams

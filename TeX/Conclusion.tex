@@ -25,3 +25,10 @@ Lastly, the plot of the output of the network $f(x)$, when plotted versus the in
 
 \section{Future developments of the algorithm}
 \label{sec:FUTURE_DEVELOPMENTS}
+
+\paragraph*{New input features}
+In order to achieve a higher significance through the trained network, a possible solution is add other dimentions in the input space, which means to add new features in addition to the HLFs previously listed. There are several choices in this sense, but one of the most suited seems to be the invariant mass $M_{Z}$. This feature contains a very high level information and it can boost significantly the classification power of the network. However, more specific tests are needed in order to give quantitative answers and by adding another feature the time needed for the algorithm routine becomes larger. In facr, the number of parameters to optimize becomes more if the nuber of layers of the network stays the same.
+
+\paragraph*{Distributed computing and parallelization}
+Another important development can be made in this sense. First of all, a way to reduce the time needed for sampling $t_\mathrm{obs}$ distributions is exploiting a bigger cluster of machines and with more resources for every single worker. An alternative to this possible solution could be a cluster of GPUs. In fact, these units have an architecture which make them suitable to this kind of tasks. Moreover, Keras API employed for this work is optimized for GPU distributed computing, so it spreads the various computations done during the training phase to the graphic unit, if there is one.
+
