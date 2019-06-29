@@ -32,3 +32,25 @@ In order to achieve a higher significance through the trained network, a possibl
 \paragraph*{Distributed computing and parallelization}
 Another important development can be made in this sense. First of all, a way to reduce the time needed for sampling $t_\mathrm{obs}$ distributions is exploiting a bigger cluster of machines and with more resources for every single worker. An alternative to this possible solution could be a cluster of GPUs. In fact, these units have an architecture which make them suitable to this kind of tasks. Moreover, Keras API employed for this work is optimized for GPU distributed computing, so it spreads the various computations done during the training phase to the graphic unit, if there is one.
 
+Last but not least, the most remarkable improvement that can be done to the procedure is the parallelization of a single process. In order to explain the key idea that make this technique theoretically possible, we have split the ensemble of reference and data into $n$ subsets $(x^{(k)},y^{(k)})$, with $k=1,\dots,n$, and then we have to rewrite the loss function into $n$ pieces, computed over the $n$ subsets:
+
+\begin{align}
+	L[f]
+	&= 
+	\sum_{(x,y)} \left[
+	(1-y) \frac{N(\R)}{N_{\mathcal{R}}} (e^{f(x)} - 1) - yf(x)
+	\right]	\nonumber \\
+	&=
+	\sum_{k=1}^{n} \sum_{(x^{(k)},y^{(k)})} \left[
+	(1-y^{(k)}) \frac{N(\R)}{N_{\mathcal{R}}} (e^{f(x^{(k)})} - 1) - y^{(k)}f(x^{(k)})
+	\right]	\label{eqn:PARALLEL_LOSS}	\\
+	&=
+	\sum_{k=1}^{n}
+	L^{(k)}[f]	\label{eqn:JOINT_LOSS}
+\end{align}
+
+\noindent
+Equations \ref{eqn:PARALLEL_LOSS} and \ref{eqn:JOINT_LOSS} show that the algorithm is scalable on $n$ different workers. In fact, the $k^\text{th}$-worker can compute $L^{(k)}[f]$ in parallel with the other workers, with $k=1,\dots,n$, and then every worker communicates in order to compute $L[f]$ by summing every $L^{(k)}[f]$. By this way the computation is $n$ times faster respect to the standard procedure, since the time of computation grows linearly with the size of the reference and the data. The same idea is applicable to the compute of the gradient, needed for parameters update. Concerning the fulfilment of this idea, there are several tools which can manage parallel computing. One of the most known is the framework \textsc{Apache Spark}, made for parallel computing and automatic learning tasks.
+
+\bigskip
+Putting all the previous ideas together is the actual prospective of this work. A boost in the performance and in the computation time is needed before applying this analysis to real datasets taken by the LHC detectors, in particular CMS, Their size is bigger than the sizes analyzed in this work. However, the results obtained are encouraging and there is also extensive room for improvement.
