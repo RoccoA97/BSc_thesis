@@ -7,6 +7,9 @@ import datetime
 import h5py
 
 
+fontsize=13
+
+
 INPUT_PATH_BKG = './Z_5D_DATA/EFT_YW06/bkg/'
 INPUT_PATH_SIG = './Z_5D_DATA/EFT_YW06/sig/'
 
@@ -58,57 +61,57 @@ plt.clf()
 fig.clf()
 
 plt.subplot(3,2,1)
-plt.title('$p_{T,1}$ distribution')
-plt.xlabel('$p_{T,1}$ [GeV/c]')
-plt.ylabel('Density')
+plt.title('$p_{T,1}$ distribution', fontsize=fontsize)
+plt.xlabel('$p_{T,1}$ [GeV/c]', fontsize=fontsize)
+plt.ylabel('Density', fontsize=fontsize)
 plt.yscale('log')
 plt.hist(test_All_Bkg[:,0], bins=pt_bins, range=(0,1000), histtype='step', linewidth=2, density=True, label='Background')
 plt.hist(test_All_Sig[:,0], bins=pt_bins, range=(0,1000), histtype='step', linewidth=2, density=True, label='Signal')
-plt.legend()
+plt.legend(fontsize=fontsize)
 
 plt.subplot(3,2,2)
-plt.title('$p_{T,2}$ distribution')
-plt.xlabel('$p_{T,2}$ [GeV/c]')
-plt.ylabel('Density')
+plt.title('$p_{T,2}$ distribution', fontsize=fontsize)
+plt.xlabel('$p_{T,2}$ [GeV/c]', fontsize=fontsize)
+plt.ylabel('Density', fontsize=fontsize)
 plt.yscale('log')
 plt.hist(test_All_Bkg[:,1], bins=pt_bins, range=(0,1000), histtype='step', linewidth=2, density=True, label='Background')
 plt.hist(test_All_Sig[:,1], bins=pt_bins, range=(0,1000), histtype='step', linewidth=2, density=True, label='Signal')
-plt.legend()
+plt.legend(fontsize=fontsize)
 
 plt.subplot(3,2,3)
-plt.title('$\eta_{1}$ distribution')
-plt.xlabel('$\eta_{1}$')
-plt.ylabel('Density')
+plt.title('$\eta_{1}$ distribution', fontsize=fontsize)
+plt.xlabel('$\eta_{1}$', fontsize=fontsize)
+plt.ylabel('Density', fontsize=fontsize)
 plt.hist(test_All_Bkg[:,2], bins=100, histtype='step', linewidth=2, density=True, label='Background')
 plt.hist(test_All_Sig[:,2], bins=100, histtype='step', linewidth=2, density=True, label='Signal')
-plt.legend()
+plt.legend(fontsize=fontsize)
 
 plt.subplot(3,2,4)
-plt.title('$\eta_{2}$ distribution')
-plt.xlabel('$\eta_{2}$')
-plt.ylabel('Density')
+plt.title('$\eta_{2}$ distribution', fontsize=fontsize)
+plt.xlabel('$\eta_{2}$', fontsize=fontsize)
+plt.ylabel('Density', fontsize=fontsize)
 plt.hist(test_All_Bkg[:,3], bins=100, histtype='step', linewidth=2, density=True, label='Background')
 plt.hist(test_All_Sig[:,3], bins=100, histtype='step', linewidth=2, density=True, label='Signal')
-plt.legend()
+plt.legend(fontsize=fontsize)
 
 plt.subplot(3,2,5)
-plt.title('$\Delta \phi$ distribution')
-plt.xlabel('$\Delta \phi$ [rad]')
-plt.ylabel('Density')
+plt.title('$\Delta \phi$ distribution', fontsize=fontsize)
+plt.xlabel('$\Delta \phi$ [rad]', fontsize=fontsize)
+plt.ylabel('Density', fontsize=fontsize)
 plt.hist(test_All_Bkg[:,4], bins=100, histtype='step', linewidth=2, density=True, label='Background')
 plt.hist(test_All_Sig[:,4], bins=100, histtype='step', linewidth=2, density=True, label='Signal')
-plt.legend()
+plt.legend(fontsize=fontsize)
 
 plt.subplot(3,2,6)
-plt.title('$M_{Z}$ distribution')
-plt.xlabel('$M_{Z}$ [GeV/c$^2$]')
-plt.ylabel('Density')
+plt.title('$M_{Z}$ distribution', fontsize=fontsize)
+plt.xlabel('$M_{Z}$ [GeV/c$^2$]', fontsize=fontsize)
+plt.ylabel('Density', fontsize=fontsize)
 plt.yscale('log')
 plt.hist(test_All_Bkg[:,5], bins=mass_bins, range=(0,500), histtype='step', linewidth=2, density=True, label='Background')
 plt.hist(test_All_Sig[:,5], bins=mass_bins, range=(0,500), histtype='step', linewidth=2, density=True, label='Signal')
-plt.legend()
+plt.legend(fontsize=fontsize)
 
-fig.subplots_adjust(left = 0.05,right = 0.95,bottom = 0.025,top = 0.975)
+fig.subplots_adjust(left = 0.05,right = 0.95,bottom = 0.035,top = 0.975)
 fig.savefig('./Python/Z/features_EFT_YW06.pdf')
 
 plt.show()

@@ -5,7 +5,7 @@
 
 
 
-In this Chapter the foundations of the algorithm employed for data analysis will be carefully explained step by step. A good practice is to begin from the statistical foundation of the algorithm itself as it is set on not trivial concepts. In the next step, a network shall be built for the purpose beginning from its architecture and then choosing proper activation functions, optimizer and weight initialization. Moreover, several crucial aspects that may cause difficulties in the work progression will be highlighted and faced in order to find the best solution or at least a compromise, if there isn't. Some of the problems that shall be faced are:
+In this Chapter the foundations of the algorithm employed for data analysis will be carefully explained step by step. A good practice is to begin from the statistical foundations of the algorithm itself as it is set on non-trivial concepts. In the next step, a network shall be built for the purpose beginning from its architecture and then choosing proper activation functions, optimizer and weight initialization. Moreover, several crucial aspects that may cause difficulties in the work progression will be highlighted and faced in order to find the best solution or at least a compromise, if there isn't. Some of the problems that shall be faced are:
 \begin{itemize}
 	\item The search for the number of degrees of freedom of the network employed.
 	\item The look-elsewhere effect.
@@ -17,7 +17,7 @@ In this Chapter the foundations of the algorithm employed for data analysis will
 
 
 \section{Statistical foundations}
-The entire construction of the statistical foundations of the procedure is accurately described in \cite{wulzer} for a monodimensional case. Here we recap the main steps to the construction of a hypotesis test and so of a variable with discriminating power, but for a multidimensional case. However, the logical passages remain unchanged.
+The entire construction of the statistical foundations of the procedure is accurately described in \cite{wulzer} for a monodimensional case. Here we recap the main steps to the construction of a hypotesis test and so of a variable with discriminating power, but for a multidimensional case. However, the logical steps remain unchanged.
 
 
 
@@ -28,7 +28,7 @@ The starting point is a dataset of repeated measurements of a $d$-dimensional ra
 \end{equation}
 where $f(x)$ is a function from a set $\mathcal{F} = \{ f(x;\mathbf{w}), \forall \mathbf{w} \}$.
 
-Now that the set of alternative hypoteses is built in a parametrized form, the optimal statistical test for the reference model is defined by the Neyman-Pearson construction, which is based on the maximum likelihood principle\footnotemark. The idea is to compare $n(x|\R)$ with the best fit distribution $n(x|\hat{\mathbf{w}})$, where $\hat{\mathbf{w}}$ is the one that maximizes the likelihood. Hence the test statistic is:
+Now that the set of alternative hypoteses is built in a parametrized form, the optimal statistical test for the reference model is defined by the Neyman-Pearson construction, which is based on the maximum likelihood principle\footnotemark. The idea is to compare $n(x|\R)$ with the best fit distribution $n(x|\hat{\mathbf{w}})$, where $\hat{\mathbf{w}}$ is the one that maximizes the likelihood. Hence, the test statistic is:
 \begin{equation}
 	\label{eqn:T}
 	t(\mathcal{D})
@@ -61,13 +61,13 @@ Let's suppose we are performing a hypotesis test between two simple hypotesis $H
 \begin{equation}
 	\Lambda(x) := \frac{\mathcal{L}(\theta_{0}|x)}{\mathcal{L}(\theta_{1}|x)}
 \end{equation}
-with a threshold $\eta$, for which $H_{0}$ is rejected in favour of $H_{1}$ at a significance level of $\alpha = P(\Lambda(x) \le | H_{0})$. Then, the Neyman-Pearson lemma states that $\Lambda(x)$ is the most powerful test at significance level $\alpha$.
+with a threshold $\eta$, for which $H_{0}$ is rejected in favour of $H_{1}$ at a significance level of $\alpha = P(\Lambda(x) \le \eta | H_{0})$. Then, the Neyman-Pearson lemma states that $\Lambda(x)$ is the most powerful test at significance level $\alpha$.
 }
 
 \subsection{Ideal test statistic}
 The results of the method that exploits the power of neural networks must be discussed in comparison with something we already know. It means that assuming we have complete knowledge of the distribution describing the observed data, an ideal test statistic could be defined and it will be the previous cited benchmark.
 
-The alternate hypotesis with the assumption of complete knowledge will be denoted by 'NP' and it has no free parameters. In this case the test statistic becomes:
+The alternative hypotesis with the assumption of complete knowledge will be denoted by `NP' and it has no free parameters. In this case the test statistic becomes:
 \begin{equation}
 	t_\mathrm{id}(\mathcal{D})
 	=
@@ -95,7 +95,7 @@ According to the Neyman-Pearson lemma, $t_\mathrm{id}$ is the optimal discrimina
 	}	\label{eqn:ID_SIG}
 \end{equation}
 
-This test statistic is denoted as 'ideal' because it is the most suited one to discover data departures from the reference model. However, it is not useful but as a benchmark because we can use it only when the true data distribution is known a priori. In our case we are testing the efficiency of a ML-approach and therefore the true distribution is known.
+This test statistic is denoted as `ideal' because it is the most suited to discover data departures from the reference model. However, it is not useful but as a benchmark because we can use it only when the true data distribution is known a priori. In our case we are testing the efficiency of a ML-approach and therefore the true distribution is known.
 
 
 
@@ -106,14 +106,14 @@ The first thing to do is to estimate $N(\mathbf{w})$. This task can be done thro
 \begin{equation}
 	N(\mathbf{w}) = \frac{N(\R)}{N_{\mathcal{R}}} \sum_{x \in \mathcal{R}} e^{f(x;\mathbf{w})}
 \end{equation}
-Thus Equation \ref{eqn:T} becomes:
+where $N_\mathcal{R}$ is the size of the reference dataset. Thus, Equation \ref{eqn:T} becomes:
 \begin{equation}
 	t(\mathcal{D}) = -2 \min_{\{\mathbf{w}\}}{\left[
 	\frac{N(\R)}{N_{\mathcal{R}}} \sum_{x \in \mathcal{R}} (e^{f(x;\mathbf{w})} -1) -
 	\sum_{x \in \mathcal{D}} f(x;\mathbf{w})
 	\right]}
 	\equiv
-	-2 \min_{\{\mathbf{w}\}}{\left[ f(\cdot,\mathbf{w}) \right]}
+	-2 \min_{\{\mathbf{w}\}}{L \left[ f(\cdot,\mathbf{w}) \right]}
 \end{equation}
 $L$ has the form of a loss function. It is convenient to write it as a single sum over events by introducing a target variable $y$ such that:
 \begin{itemize}
