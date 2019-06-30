@@ -35,10 +35,10 @@
 \contentsline {section}{\numberline {5.2}The algorithm}{29}{section.5.2}% 
 \contentsline {section}{\numberline {5.3}Computing resources}{30}{section.5.3}% 
 \contentsline {subsection}{\numberline {5.3.1}\textsc {TensorFlow} back-end and \textsc {Keras} API}{30}{subsection.5.3.1}% 
-\contentsline {subsection}{\numberline {5.3.2}LSF and clustering}{30}{subsection.5.3.2}% 
+\contentsline {subsection}{\numberline {5.3.2}LSF and clustering}{31}{subsection.5.3.2}% 
 \contentsline {section}{\numberline {5.4}Degrees of freedom of the network}{31}{section.5.4}% 
 \contentsline {section}{\numberline {5.5}The "look-elsewhere" effect}{32}{section.5.5}% 
-\contentsline {section}{\numberline {5.6}Weight clipping}{32}{section.5.6}% 
+\contentsline {section}{\numberline {5.6}Weight clipping}{33}{section.5.6}% 
 \contentsline {chapter}{\numberline {6}Tuning of weight clipping parameter}{35}{chapter.6}% 
 \contentsline {section}{\numberline {6.1}A criterion for optimal weight clipping}{35}{section.6.1}% 
 \contentsline {section}{\numberline {6.2}Results for optimal weight clipping search}{36}{section.6.2}% 
