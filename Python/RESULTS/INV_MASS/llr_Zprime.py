@@ -86,7 +86,7 @@ for i in range(len(toys)):
     print(y.shape)
 
     plt.title('NN output $f(M_Z)$ - Toy ' + str(toys[i]), fontsize=fontsize)
-    plt.xlabel('$M_Z$', fontsize=fontsize)
+    plt.xlabel('$M_{Z}$ [GeV/c$^2$]', fontsize=fontsize)
     plt.ylabel('$f(M_Z)$', fontsize=fontsize)
     plt.hist2d(x,y, bins=100, range=[[0, 400], [-0.25, 3.0]], norm=colors.PowerNorm(0.05))
     #plt.plot(predictions[i][5][predictions[i][2]==1],predictions[i][0][predictions[i][2]==1],'.')

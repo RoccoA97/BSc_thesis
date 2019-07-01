@@ -250,7 +250,7 @@ A selection of possible techniques that can be used for optimization is presente
     \item \textbf{Kullback-Leibler Divergence (KL)}:\\
     In mathematical statistics, the Kullback–Leibler Divergence (also called `relative entropy') is a measure of how a probability distribution is different from a second reference probability distribution. Translated in terms of our optimization problem:
     \begin{equation}
-        D_{\mathrm{KL}}(p||q) = - \left( \sum_{i=1}^{M} y_{o,i} \log{p_{o,i}} - \sum_{i=1}^{M} y_{o,i} \log{y_{o,i}} \right)
+        D_{\mathrm{KL}}(p||q) = - \left( \sum_{i=1}^{M} p_{o,i} \log{q_{o,i}} - \sum_{i=1}^{M} p_{o,i} \log{p_{o,i}} \right)
     \end{equation}
 \end{itemize}
 

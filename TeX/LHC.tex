@@ -135,12 +135,22 @@ The extremely unstable hadrons can be observed as `resonances' in two different 
 \end{equation}
 In a quantum scattering process the relevant functions of energy are the scattering amplitude and the cross section, which is the measured observable. Near a resonance, the distribution of $\sigma$ will remark the shape of the resonant peak in Figure \ref{fig:RESONANCE_PLOT}.
 
+
 \begin{figure}[H]
+\centering%
+\begin{minipage}{0.4\textwidth}
 	\centering
-	\includegraphics[width=0.7\textwidth]{Images/LHC/cross_section_resonance.PNG}
-	\caption{Schematic of a resonance formation study in the cross section.}
-	\label{fig:CROSS_SECTION_RESONANCE}
+	\input{Images/LHC/res_cross_section.tex}
+\end{minipage}
+%
+\begin{minipage}{0.4\textwidth}\centering
+	\includegraphics[width=1.0\linewidth]{Python/LHC/RES/res1.pdf}
+\end{minipage}%Images/LHC/res_cross_section.tex
+
+\caption{Schematic of a resonance formation study in the cross section.}
+\label{fig:CROSS_SECTION_RESONANCE}
 \end{figure}
+
 
 The second approach, corresponding to a specific class of experiments, is based on resonance production. To better explain the method, let's suppose we are studying the following process:
 \begin{equation}
@@ -156,11 +166,20 @@ In these cases, the mass of $c+d$, called $M_{cd}$, is expected to be equal to t
 \end{equation}
 The resonance appears as a peak on a smooth background in the $M_{cd}$ distribution.
 
+
 \begin{figure}[H]
+\centering%
+\begin{minipage}{0.4\textwidth}
 	\centering
-	\includegraphics[width=0.7\textwidth]{Images/LHC/invariant_mass_resonance.PNG}
-	\caption{Schematic of a resonance formation study in the invariant mass.}
-	\label{fig:INVARIANT_MASS_RESONANCE}
+	\input{Images/LHC/res_inv_mass.tex}
+\end{minipage}
+%
+\begin{minipage}{0.4\textwidth}\centering
+	\includegraphics[width=1.0\linewidth]{Python/LHC/RES/res2.pdf}
+\end{minipage}%Images/LHC/ref_inv_mass.tex
+
+\caption{Schematic of a resonance formation study in the mass distribution.}
+\label{fig:INVARIANT_MASS_RESONANCE}
 \end{figure}
 
 

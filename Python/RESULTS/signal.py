@@ -99,7 +99,7 @@ def __analysis_plot__(FILE_NAME, OUTPUT_DIR_NAME):
     if not os.path.exists('./Python/RESULTS/' + OUTPUT_DIR_NAME):
         os.makedirs('./Python/RESULTS/' + OUTPUT_DIR_NAME)
 
-    fig.subplots_adjust(left = 0.05,right = 0.95,bottom = 0.11,top = 0.92)
+    fig.subplots_adjust(left = 0.05,right = 0.95,bottom = 0.12,top = 0.93)
     fig.savefig('./Python/RESULTS/' + OUTPUT_DIR_NAME + '/' + file.replace('.','-') + '.pdf')
     plt.clf()
     fig.clf()

@@ -16,21 +16,21 @@ fontsize=13
 
 
 def bkg(x):
-    return -1.0*x*x*(0.15*x-0.5)
+    return np.exp(-1.7*x)
 
 def sig(x):
-    return 0.02/((x*x-0.8)**2 + 0.03)
+    return 0.02/((x*x-0.8)**2 + 0.05)
 
 xmin = 0
-xmax = 3.332
-samples = 1000000
+xmax = 2.0
+samples = 2000000
 
 x_bkg = []
 x_sig = []
 
 for i in range(samples):
     r = np.random.uniform(xmin,xmax)
-    s = np.random.uniform(0,1)
+    s = np.random.uniform(0,1.1)
 
     if s <= bkg(r):
         x_bkg.append(r)
@@ -47,13 +47,20 @@ plt.clf()
 x_all = x_bkg + x_sig
 fig,ax = plt.subplots(1)
 plt.hist(x_all,bins=100,density=True,histtype='step')
-plt.ylim(0,1)
-#ax.set_yticklabels([])
-#ax.set_xticklabels([])
+plt.ylim(0,1.5)
+ax.set_yticklabels([])
+ax.set_xticklabels([])
+for tic in ax.xaxis.get_major_ticks():
+    tic.tick1On = tic.tick2On = False
+for tic in ax.yaxis.get_major_ticks():
+    tic.tick1On = tic.tick2On = False
+
 plt.title('Resonance in the cross section', fontsize=fontsize)
 plt.xlabel('$\sqrt{s}$', fontsize=fontsize)
 plt.ylabel('$\sigma$', fontsize=fontsize)
-plt.tick_params(axis='both', labelsize=0, length = 0)
+#plt.tick_params(axis='both', labelsize=0, length = 0)
+
+fig.subplots_adjust(left = 0.08,right = 0.92,bottom = 0.09,top = 0.92)
+fig.savefig('./Python/LHC/RES/res1.pdf')
 plt.show()
 plt.clf()
-        

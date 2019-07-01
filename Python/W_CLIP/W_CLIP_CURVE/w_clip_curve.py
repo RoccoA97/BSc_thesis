@@ -29,7 +29,7 @@ x_Zeft   = x_Zeft / N_Bkg
 
 
 
-fig=plt.figure(figsize=(13, 5))
+fig=plt.figure(figsize=(13, 4.5))
 
 plt.subplot(1,2,1)
 plt.title('Weight clipping curve - \\textbf{Zprime-Zmumu}', fontsize=fontsize)
@@ -46,7 +46,7 @@ plt.ylim(2.1,2.9)
 plt.plot(x_Zeft, y_Zeft, 'C1o-')
 
 plt.show()
-fig.subplots_adjust(left = 0.05,right = 0.95,bottom = 0.11,top = 0.93)
+fig.subplots_adjust(left = 0.05,right = 0.95,bottom = 0.12,top = 0.93)
 fig.savefig('./Python/W_CLIP/W_CLIP_CURVE/w_clip_curve.pdf')
 plt.clf()
 fig.clf()

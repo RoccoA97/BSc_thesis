@@ -36,7 +36,7 @@
 \BOOKMARK [2][-]{subsection.5.3.1}{TensorFlow back-end and Keras API}{section.5.3}% 36
 \BOOKMARK [2][-]{subsection.5.3.2}{LSF and clustering}{section.5.3}% 37
 \BOOKMARK [1][-]{section.5.4}{Degrees of freedom of the network}{chapter.5}% 38
-\BOOKMARK [1][-]{section.5.5}{The "look-elsewhere" effect}{chapter.5}% 39
+\BOOKMARK [1][-]{section.5.5}{The `look-elsewhere' effect}{chapter.5}% 39
 \BOOKMARK [1][-]{section.5.6}{Weight clipping}{chapter.5}% 40
 \BOOKMARK [0][-]{chapter.6}{Tuning of weight clipping parameter}{}% 41
 \BOOKMARK [1][-]{section.6.1}{A criterion for optimal weight clipping}{chapter.6}% 42
